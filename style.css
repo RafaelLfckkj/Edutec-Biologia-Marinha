@@ -260,6 +260,7 @@ div>.mario {
   position: relative;
   left: -15rem;
   top: 8rem;
+  cursor: pointer;
 }
 
 .cnidarios-gallery {
@@ -298,7 +299,7 @@ div>.mario {
   cursor: pointer;
   position: absolute;
   right: 0;
-  margin-top: -2rem;
+  margin-top: -29rem;
   margin-right: 0.625rem;
   z-index: 100;
 }
@@ -316,6 +317,79 @@ div>.mario {
   width: 18.75rem;
 }
 
+.moluscos-gallery {
+  position: relative;
+  left: 130rem;
+}
+.Crustaceos-gallery {
+  position: relative;
+  left: 230rem;
+}
+.moluscos-gallery h1 {
+  left: -20rem;
+  top: -12rem;
+}
+
+
+.peixes-content h1 {
+  top: -1rem;
+  left: 15rem;
+}
+
+.Crustaceos-gallery h1 {
+  top: -22rem;
+  left: -14rem;
+}
+
+.moluscos-gallery img {
+  display: flex;
+  top: -20rem;
+  right: 30rem;
+}
+
+.peixes-content img {
+  display: flex;
+  top: -8rem;
+}
+
+.Crustaceos-gallery img {
+  display: flex;
+  top: -29rem;
+  left: 15rem;
+}
+.moluscos-gallery p {
+  left: -22rem;
+  top: -7rem;
+}
+.Crustaceos-gallery p {
+  left: -12rem;
+  top: -19rem;
+}
+
+.moluscos-gallery .ver-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -20rem;
+  top: -8rem;
+  width: 40%;
+}
+.peixes-content .ver-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 3rem;
+  top: 3rem;
+  width: 40%;
+}
+.Crustaceos-gallery .ver-button {
+  display: flex;
+  align-items: center;
+  left: -8rem;
+  top: -20rem;
+  width: 40%;
+  justify-content: center;
+}
 
 .ver-button {
   display: inline-block;
@@ -329,6 +403,7 @@ div>.mario {
   font-size: 0.9375rem;
   position: relative;
   top: 21rem;
+  cursor: pointer;
 }
 
 .baixo {
