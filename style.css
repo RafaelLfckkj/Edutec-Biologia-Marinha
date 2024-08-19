@@ -1,5 +1,5 @@
-.barra-de-navegacao{
-  background-color: #003366;  
+.barra-de-navegacao {
+  background-color: #003366;
   padding: 1rem 2rem;
   text-align: center;
   justify-content: space-between;
@@ -13,25 +13,21 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-li{
-    display: inline-block;
-}
-
-li{
+li {
   display: inline-block;
 }
 
-a{
+a {
   color: white;
   margin: 2.5rem;
 }
 
-ul > img{
+ul>img {
   float: left;
-  margin-right: 0.625rem; 
+  margin-right: 0.625rem;
   color: white;
   width: 2.5rem;
   cursor: pointer;
@@ -43,7 +39,7 @@ ul > img{
   margin: auto;
   display: flex;
   position: relative;
-  
+
 }
 
 .imagem video {
@@ -51,17 +47,17 @@ ul > img{
   z-index: -1000;
 }
 
-div > .bill {
+div>.bill {
   position: absolute;
   top: 40%;
   left: 95%;
   transform: translate(-100%, -50%);
   color: white;
   font-size: 3.75rem;
-  
+
 }
 
-div > .mario {
+div>.mario {
   position: absolute;
   top: 45%;
   right: 0;
@@ -77,7 +73,7 @@ div > .mario {
   top: 92%;
 }
 
-.onda > img{
+.onda>img {
   width: 100%;
 }
 
@@ -94,7 +90,7 @@ div > .mario {
   width: 100%;
   background-color: #195171;
   margin: 1.0625rem;
-  display: flex; 
+  display: flex;
 }
 
 .linhab {
@@ -108,17 +104,17 @@ div > .mario {
   width: 100%;
   display: flex;
   justify-content: center;
-  
+
 }
 
 
-.definition-section > .container{
+.definition-section>.container {
   display: flex;
   padding: 3.125rem 0;
-  
+
 }
 
-.definition-section .container > p{
+.definition-section .container>p {
   margin-top: 3.125rem;
   margin-right: 5.625rem;
   width: 31.25;
@@ -126,10 +122,10 @@ div > .mario {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
-  
+
 }
 
-.definition-section .container h2{
+.definition-section .container h2 {
   height: 3.125rem;
   font-size: 2rem;
   color: #0072CE;
@@ -145,7 +141,7 @@ div > .mario {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .image-gallery img {
@@ -156,29 +152,29 @@ div > .mario {
 }
 
 
-.mulher-mergulho{
-  margin-bottom: 3.75rem; 
+.mulher-mergulho {
+  margin-bottom: 3.75rem;
 }
 
-.tres-mergulho{
+.tres-mergulho {
   margin-top: 9.375rem;
   margin-left: 15.625rem;
   position: absolute;
- 
+
 }
 
-.cnidarios-section h2{
+.cnidarios-section h2 {
   text-align: center;
   font-size: 2rem;
   color: #3f73d9;
 }
 
-.cnidarios-section{
+.cnidarios-section {
   margin-top: 3.125rem;
 }
 
 .carroselimg {
-   transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cnidarios-content p {
@@ -194,6 +190,7 @@ div > .mario {
   min-width: 100%;
   box-sizing: border-box;
 }
+
 .peixes-c p {
   font-size: 1.4rem;
   width: 18.75rem;
@@ -214,6 +211,7 @@ div > .mario {
   font-size: 9.375rem;
 
 }
+
 .peixes-c h1 {
   position: absolute;
   display: block;
@@ -229,26 +227,28 @@ div > .mario {
   color: black;
 
 }
+
 .peixes-c strong {
   color: black;
 
 }
 
-.cnidarios-content img{
+.cnidarios-content img {
   display: block;
   position: absolute;
   left: 42%;
-  margin:auto;
+  margin: auto;
   width: 47rem;
   z-index: -1;
   margin-top: 12.5rem;
   height: 31.25rem;
 }
-.peixes-c img{
+
+.peixes-c img {
   display: block;
   position: absolute;
   left: 42%;
-  margin:auto;
+  margin: auto;
   width: 47rem;
   z-index: -1;
   margin-top: -6rem;
@@ -268,6 +268,7 @@ div > .mario {
   justify-content: space-between;
   margin-top: 1.25rem;
 }
+
 .peixes-gallery {
   display: flex;
   align-items: center;
@@ -289,7 +290,7 @@ div > .mario {
   z-index: 100;
 }
 
-.seta-direita{
+.seta-direita {
   background: none;
   border: none;
   color: #000000;
@@ -301,15 +302,16 @@ div > .mario {
   margin-right: 0.625rem;
   z-index: 100;
 }
+
 .cnidarios-section h2,
 .cnidarios-content h3 {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 
 .cnidarios-content p {
   font-size: 1.4rem;
-  position: relative; 
+  position: relative;
   top: 21.875rem;
   width: 18.75rem;
 }
@@ -325,9 +327,10 @@ div > .mario {
   margin-top: 1.875rem;
   font-weight: bold;
   font-size: 0.9375rem;
-  position: relative; 
-  top: 21rem; 
+  position: relative;
+  top: 21rem;
 }
+
 .baixo {
   margin-top: 18.75rem;
   color: white;
@@ -340,7 +343,7 @@ div > .mario {
   align-items: center;
 }
 
-.noticia p{
+.noticia p {
   width: 18.75rem;
 }
 
@@ -363,11 +366,11 @@ div > .mario {
   margin-top: 22rem;
 }
 
-.boneco{
+.boneco {
   width: 3.125rem;
 }
 
-.baixo{
+.baixo {
   position: relative;
   z-index: 1;
   margin-top: -30rem;
@@ -376,7 +379,7 @@ div > .mario {
 }
 
 
-h1{
+h1 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
