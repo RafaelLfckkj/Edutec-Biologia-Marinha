@@ -1,0 +1,205 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 1.25rem; 
+  color: white;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.comeco img{
+  width: 100%;
+  height: 62.5rem;
+}
+
+.comeco h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  color: #000;
+  opacity: 75%;
+  font-size: 9.375rem;
+}
+
+.texto-alto{
+  width: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: #000;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.onda-azul img{
+  width: 100%;
+  height: 70%;
+  position: relative;
+  bottom: 0.625rem;
+}
+
+.conteudo-container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.CG h2{
+  font-size: 4.375rem;
+  text-align: center;
+}
+.CG p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classificacao h3{
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.classificacao p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.Respiração h3{
+  font-size: 1.5625rem;
+  text-align: center;
+
+}
+
+.Respiração p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.RP h3{
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.RP p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.Reprodu h3{
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.Reprodu p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+hr{
+  border: 1px solid black;
+  width: 55%;
+  margin: 0 20.625rem;
+  margin-bottom: 3.125rem;
+}
+
+.ondinha img{
+  width: 100%;
+  display: flex;
+}
+
+.verdinho img{
+  margin-top: 6.25rem;
+  width: 100%;
+}
+
+.azul-tubarao img{
+  margin-top: 6.25rem;
+  width: 100%;
+}
+
+.palhaco img{
+  margin-top: 6.25rem;
+  width: 100%;
+}
+.C4 img{
+  margin-top: 6.25rem;
+  width: 100%;
+}
+
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.0625rem;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+

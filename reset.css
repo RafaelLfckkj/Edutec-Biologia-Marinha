@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.0625rem;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+a {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
+}

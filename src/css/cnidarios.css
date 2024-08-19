@@ -1,0 +1,322 @@
+
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.comeco img{
+  width: 100%;
+  height: 62.5rem;
+}
+
+.comeco h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  color: #fff;
+  opacity: 75%;
+  font-size: 9.375rem;
+}
+
+.texto-alto{
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.texto-baixo{  
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 93%;
+  left: 40%;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.retangulo-roxo{
+  width: 100%;
+  background-color: black;
+  padding: 3.125rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0.5625rem;
+  z-index: -1;
+}
+
+.onda-azulescuro img{
+  width: 100%;
+  position: relative;
+  bottom: 0.625rem;
+}
+
+.conteudo-container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.CG h2{
+  font-size: 4.375rem;
+  text-align: center;
+}
+.CG p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Alimento h3{
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.Alimento p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.Respiração h3{
+  font-size: 1.5625rem;
+  text-align: center;
+  
+}
+
+.Respiração p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.SN h3{
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.SN p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.Reprodu h3{
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.Reprodu p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+
+hr{
+  border: 0.0625rem solid black;
+  width: 55%;
+  margin: 0 20.625rem;
+}
+
+.ondinha img{
+  width: 100%;
+  display: flex;
+}
+
+
+
+.laranja {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.laranja > .quadra {
+  width: 100%;
+  z-index: -1;
+}
+
+.laranja > .ant {
+  position: absolute;
+
+}
+
+.laranja p {
+  position: absolute;
+  left: 31.25rem;
+  text-align: center;
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+
+.cinzas {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.cinzas > .quadrocin {
+  width: 100%;
+  z-index: -1;
+}
+
+.cinzas > .hi {
+  position: absolute;
+
+}
+
+.cinzas p {
+  position: absolute;
+  left: 31.25rem;
+  text-align: center;
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+.azuls {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.azuls > .quadroaz {
+  width: 100%;
+  z-index: -1;
+}
+
+.azuls > .aguavi {
+  position: absolute;
+
+}
+
+.azuls p {
+  position: absolute;
+  left: 31.25rem;
+  text-align: center;
+  width: 40%;
+  font-size: 1.25rem;
+}
+
+.azuls > .agua {
+  position: absolute;
+  left: 73.75rem;
+  top: 810%;
+}
+
+.cianos {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.cianos > .qua {
+  width: 100%;
+  z-index: -1;
+}
+
+.cianos > .cubo {
+  position: absolute;
+
+}
+
+.cianos p {
+  position: absolute;
+  left: 31.25rem;
+  text-align: center;
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.0625rem;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+}

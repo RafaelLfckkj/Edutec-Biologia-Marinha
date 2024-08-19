@@ -1,0 +1,396 @@
+.barra-de-navegacao{
+  background-color: #003366;  
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+
+.imagem {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  
+}
+
+.imagem video {
+  width: 100%;
+  z-index: -1000;
+}
+
+div > .bill {
+  position: absolute;
+  top: 40%;
+  left: 95%;
+  transform: translate(-100%, -50%);
+  color: white;
+  font-size: 3.75rem;
+  
+}
+
+div > .mario {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translate(0, -50%);
+  color: #0F5B85;
+  font-size: 3.75rem;
+}
+
+.onda {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 92%;
+}
+
+.onda > img{
+  width: 100%;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.25rem;
+  /* border: 1px solid #ccc; */
+}
+
+
+.linhaa {
+  width: 100%;
+  background-color: #195171;
+  margin: 1.0625rem;
+  display: flex; 
+}
+
+.linhab {
+  width: 100%;
+  margin: 1.0625rem;
+  background: #195171;
+  display: flex;
+}
+
+.filolinha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.definition-section > .container{
+  display: flex;
+  padding: 3.125rem 0;
+  
+}
+
+.definition-section .container > p{
+  margin-top: 3.125rem;
+  margin-right: 5.625rem;
+  width: 31.25;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  
+}
+
+.definition-section .container h2{
+  height: 3.125rem;
+  font-size: 2rem;
+  color: #0072CE;
+  margin-left: 3.125rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 15%;
+}
+
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.image-gallery img {
+  max-width: 18.75rem;
+  border-radius: 0.75rem;
+  height: auto;
+  width: 12.5rem;
+}
+
+
+.mulher-mergulho{
+  margin-bottom: 3.75rem; 
+}
+
+.tres-mergulho{
+  margin-top: 9.375rem;
+  margin-left: 15.625rem;
+  position: absolute;
+ 
+}
+
+.cnidarios-section h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #3f73d9;
+}
+
+.cnidarios-section{
+  margin-top: 3.125rem;
+}
+
+.carroselimg {
+   transition: transform 0.5s ease-in-out;
+}
+
+.cnidarios-content p {
+  display: flex;
+  justify-content: left;
+}
+
+.peixes-c {
+  display: flex;
+  position: relative;
+  left: 150%;
+  top: 5rem;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.peixes-c p {
+  font-size: 1.4rem;
+  width: 18.75rem;
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.cnidarios-content h1 {
+  position: absolute;
+  display: block;
+  color: white;
+  z-index: 100;
+  margin-top: 6.25rem;
+  left: 15%;
+  font-size: 9.375rem;
+
+}
+.peixes-c h1 {
+  position: absolute;
+  display: block;
+  color: white;
+  z-index: 100;
+  margin-top: -12rem;
+  left: 22%;
+  font-size: 9.375rem;
+
+}
+
+.cnidarios-content strong {
+  color: black;
+
+}
+.peixes-c strong {
+  color: black;
+
+}
+
+.cnidarios-content img{
+  display: block;
+  position: absolute;
+  left: 42%;
+  margin:auto;
+  width: 47rem;
+  z-index: -1;
+  margin-top: 12.5rem;
+  height: 31.25rem;
+}
+.peixes-c img{
+  display: block;
+  position: absolute;
+  left: 42%;
+  margin:auto;
+  width: 47rem;
+  z-index: -1;
+  margin-top: -6rem;
+  height: 31.25rem;
+}
+
+.peixes-c .ver-button {
+  display: flex;
+  position: relative;
+  left: -15rem;
+  top: 8rem;
+}
+
+.cnidarios-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+.peixes-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.seta-esquerda {
+  background: none;
+  border: none;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  margin-top: 23rem;
+  margin-left: 0.625rem;
+  z-index: 100;
+}
+
+.seta-direita{
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 6rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: -2rem;
+  margin-right: 0.625rem;
+  z-index: 100;
+}
+.cnidarios-section h2,
+.cnidarios-content h3 {
+  font-size: 2rem; 
+}
+
+
+.cnidarios-content p {
+  font-size: 1.4rem;
+  position: relative; 
+  top: 21.875rem;
+  width: 18.75rem;
+}
+
+
+.ver-button {
+  display: inline-block;
+  padding: 0.625rem 3.125rem;
+  background-color: #00A9E0;
+  color: white;
+  text-decoration: none;
+  border-radius: 3.125rem;
+  margin-top: 1.875rem;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  position: relative; 
+  top: 21rem; 
+}
+.baixo {
+  margin-top: 18.75rem;
+  color: white;
+}
+
+.noticia {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.noticia p{
+  width: 18.75rem;
+}
+
+.noticia img {
+  width: 100%;
+  max-width: 9.375rem;
+  border-radius: 0.5rem;
+}
+
+.sobre-nos {
+  text-align: right;
+}
+
+.onda-azul {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 22rem;
+}
+
+.boneco{
+  width: 3.125rem;
+}
+
+.baixo{
+  position: relative;
+  z-index: 1;
+  margin-top: -30rem;
+  margin-right: 3.125rem;
+  margin-left: 3rem;
+}
+
+
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.0625rem;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+}

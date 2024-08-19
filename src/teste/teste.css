@@ -1,0 +1,35 @@
+.carousel {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+.carousel-images {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+   min-width: 100%;
+   box-sizing: border-box;
+}
+
+.prev, .next {
+   position: absolute;
+   top: 60%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 100;
+}
+
+.prev {
+   left: 0;
+}
+
+.next {
+   right: 0;
+}
