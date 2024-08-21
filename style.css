@@ -74,7 +74,7 @@ div>.mario {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 92%;
+  top: 88.5%;
 }
 
 .onda>img {
@@ -191,7 +191,7 @@ div>.mario {
   position: relative;
   left: 150%;
   top: 5rem;
-  min-width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -211,9 +211,8 @@ div>.mario {
   color: white;
   z-index: 100;
   margin-top: 6.25rem;
-  left: 11%;
+  left: 17%;
   font-size: 9.375rem;
-
 }
 
 .peixes-c h1 {
