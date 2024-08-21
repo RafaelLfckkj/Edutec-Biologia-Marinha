@@ -73,7 +73,7 @@ div>.mario {
 .onda {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   top: 88.5%;
 }
 
@@ -88,7 +88,10 @@ div>.mario {
   padding: 1.25rem;
   /* border: 1px solid #ccc; */
 }
-
+.definition-section > .container{
+  margin-top: 100px;
+  margin-left: 100px;
+}
 
 .linhaa {
   width: 100%;
@@ -133,7 +136,6 @@ div>.mario {
   height: 3.125rem;
   font-size: 2rem;
   color: #0072CE;
-  margin-left: 3.125rem;
   display: flex;
   justify-content: center;
   position: relative;
@@ -445,7 +447,8 @@ div>.mario {
 }
 
 .boneco {
-  width: 3.125rem;
+  width: 4.125rem;
+  cursor: pointer;
 }
 
 .baixo {
