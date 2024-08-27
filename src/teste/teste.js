@@ -1,15 +1,16 @@
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const carouselImages = document.querySelector('.carousel-images');
-const carouselItems = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
 
-function showSlide(index) {
-   if (index < 0) index = carouselItems.length - 1;
-   if (index >= carouselItems.length) index = 0;
-   currentIndex = index;
-   carouselImages.style.transform = `translateX(-${index * 100}%)`;
+let idx = 0;
+
+function carrossel() {
+  idx ++ ;
+
+  if (idx > img.length -1){
+    idx = 0;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 500}px)`;
 }
 
-prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
-nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+setInterval(carrossel, 1800)

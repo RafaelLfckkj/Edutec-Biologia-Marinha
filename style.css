@@ -34,7 +34,7 @@ ul>img {
   margin-right: 0.625rem;
   color: white;
   width: 2.5rem;
-  cursor: pointer;
+  
 }
 
 
@@ -70,27 +70,23 @@ div>.mario {
   font-size: 3.75rem;
 }
 
-.onda {
-  position: absolute;
+.onda{
   width: 100%;
-  height: 100%;
-  top: 88.5%;
-}
-
-.onda>img {
-  width: 100%;
+  position: relative;
+  bottom: 200px;
 }
 
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 1.25rem;
+  
   /* border: 1px solid #ccc; */
 }
+
 .definition-section > .container{
-  margin-top: 100px;
   margin-left: 100px;
+
 }
 
 .linhaa {
@@ -117,7 +113,8 @@ div>.mario {
 
 .definition-section>.container {
   display: flex;
-  padding: 3.125rem 0;
+  margin-bottom: 150px;
+  margin-right: 320px;
 
 }
 
@@ -128,18 +125,18 @@ div>.mario {
   text-align: justify;
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #1f1f1f;
 
 }
 
 .definition-section .container h2 {
   height: 3.125rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #0072CE;
   display: flex;
   justify-content: center;
   position: relative;
-  left: 15%;
+  left: 18%;
 }
 
 
@@ -179,8 +176,13 @@ div>.mario {
   margin-top: 3.125rem;
 }
 
+.carrosel {
+  left: 20%;
+}
+
 .carroselimg {
-  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
 }
 
 .cnidarios-content p {
@@ -213,7 +215,7 @@ div>.mario {
   color: white;
   z-index: 100;
   margin-top: 6.25rem;
-  left: 17%;
+  left: 12%;
   font-size: 9.375rem;
 }
 
@@ -225,7 +227,6 @@ div>.mario {
   margin-top: -12rem;
   left: 22%;
   font-size: 9.375rem;
-
 }
 
 .cnidarios-content strong {
@@ -324,11 +325,11 @@ div>.mario {
 
 .moluscos-gallery {
   position: relative;
-  left: 130rem;
+  left: 135rem;
 }
 .Crustaceos-gallery {
   position: relative;
-  left: 230rem;
+  left: 240rem;
 }
 .moluscos-gallery h1 {
   left: -20rem;
@@ -338,7 +339,7 @@ div>.mario {
 
 .peixes-content h1 {
   top: -1rem;
-  left: 15rem;
+  left: 17rem;
 }
 
 .Crustaceos-gallery h1 {
@@ -443,7 +444,6 @@ div>.mario {
   width: 100%;
   bottom: 0;
   left: 0;
-  margin-top: 22rem;
 }
 
 .boneco {
@@ -460,25 +460,4 @@ div>.mario {
 }
 
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 6.25rem;
-}
 
-h2 {
-  font-family: "Zen Maru Gothic", serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 4.0625rem;
-}
-
-p {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-}

@@ -1,35 +1,33 @@
-.carousel {
-   position: relative;
-   width: 100%;
-   overflow: hidden;
+* {
+  box-sizing: border-box;
 }
 
-.carousel-images {
-   display: flex;
-   transition: transform 0.5s ease-in-out;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
 }
 
-.carousel-item {
-   min-width: 100%;
-   box-sizing: border-box;
+
+.carrossel {
+  box-sizing: 2px 2px 4px black ;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
 }
 
-.prev, .next {
-   position: absolute;
-   top: 60%;
-   transform: translateY(-50%);
-   background-color: rgba(0, 0, 0, 0.5);
-   color: white;
-   border: none;
-   padding: 10px;
-   cursor: pointer;
-   z-index: 100;
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
 
-.prev {
-   left: 0;
-}
 
-.next {
-   right: 0;
+.img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
 }
