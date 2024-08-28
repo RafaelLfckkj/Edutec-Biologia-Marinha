@@ -1,5 +1,5 @@
 .barra-de-navegacao {
-  background-color: #003366;
+  background-color: #082841;
   padding: 1rem 2rem;
   text-align: center;
   justify-content: space-between;
@@ -70,11 +70,31 @@ div>.mario {
   font-size: 3.75rem;
 }
 
+/* Normal */
+
 .onda{
   width: 100%;
   position: relative;
-  bottom: 200px;
+  transform: translateX(-60%);
+  bottom: 10.625rem;
 }
+
+/* Tela menores */
+
+@media screen and (max-width: 768px) {
+    .onda {
+        left: 40%;
+    }
+}
+
+/* Telas maiores */
+
+@media screen and (min-width: 1200px) {
+    .onda {
+        left: 60%;
+    }
+}
+
 
 
 .container {
@@ -92,13 +112,13 @@ div>.mario {
 .linhaa {
   width: 100%;
   background-color: #195171;
-  margin: 1.0625rem;
+  margin: 1.2625rem;
   display: flex;
 }
 
 .linhab {
   width: 100%;
-  margin: 1.0625rem;
+  margin: 1.2625rem;
   background: #195171;
   display: flex;
 }
@@ -132,7 +152,7 @@ div>.mario {
 .definition-section .container h2 {
   height: 3.125rem;
   font-size: 2.5rem;
-  color: #0072CE;
+  color: #195171;
   display: flex;
   justify-content: center;
   position: relative;
@@ -169,7 +189,7 @@ div>.mario {
 .cnidarios-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #3f73d9;
+  color: #195171;
 }
 
 .cnidarios-section {
@@ -400,7 +420,7 @@ div>.mario {
 .ver-button {
   display: inline-block;
   padding: 0.625rem 3.125rem;
-  background-color: #00A9E0;
+  background-color: #21679c;
   color: white;
   text-decoration: none;
   border-radius: 3.125rem;
@@ -410,6 +430,7 @@ div>.mario {
   position: relative;
   top: 21rem;
   cursor: pointer;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 .baixo {
@@ -425,7 +446,7 @@ div>.mario {
 }
 
 .noticia p {
-  width: 18.75rem;
+  width: 19.75rem;
 }
 
 .noticia img {
@@ -436,6 +457,13 @@ div>.mario {
 
 .sobre-nos {
   text-align: right;
+  position: relative;
+  bottom: 50px;
+}
+
+.sobre-nos p{
+  width: 200px;
+  margin-left: 87%;
 }
 
 .onda-azul {
@@ -454,10 +482,35 @@ div>.mario {
 .baixo {
   position: relative;
   z-index: 1;
-  margin-top: -30rem;
+  margin-top: -34rem;
   margin-right: 3.125rem;
   margin-left: 3rem;
 }
 
+
+.barra-de-navegacao a:hover{
+  background-color: #53a6ea;;
+  padding: 7px 25px;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.carrosel a:hover{
+  background-color: #1c3787;
+  transition: all 0.5s ease;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.7);
+}
+
+.sobre-nos img:hover{
+  width: 5rem;
+  transition: all 0.5s ease;
+}
+
+.noticias-section img:hover{
+  border: 2px solid #ffffff;
+  transition: all 0.5s ease;
+  filter: brightness(80%);
+  cursor: pointer;
+}
 
 

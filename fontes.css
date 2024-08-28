@@ -6,7 +6,7 @@ h1{
   font-size: 6.25rem;
 }
 
-h2 {
+h2{
   font-family: "Zen Maru Gothic", serif;
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,10 @@ p {
 
 a {
   font-family: "Sniglet", system-ui;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
+}
 
+.carrosel > a{
+  
 }

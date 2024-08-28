@@ -320,3 +320,11 @@ p {
   font-style: normal;
   font-size: 1.25rem;
 }
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}

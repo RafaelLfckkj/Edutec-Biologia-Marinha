@@ -10,9 +10,18 @@ function showSlide(index) {
   if (index > carouselItems.length);
   currentIndex = index;
   carouselImages.style.transform = `translateX(-${index * 150}%)`;
-  
-   if(index > 4)
-     (carouselImages.style.transform = `translateX(${index / 300}%)`);
+  while (index > 3){
+    if(index > 3) {
+      (carouselImages.style.transform = `translateX(${index / 300}%)`);
+
+    }else if (index > carouselItems.length) {
+      carouselImages.style.transform = `translateX(-${index * 150}%)`;
+    }
+    index = 0;
+    currentIndex = index;
+  }
+  console.log(currentIndex)
+  console.log(index)
 }
 
 prevButton.addEventListener('click', () => showSlide(currentIndex - 1)); 
