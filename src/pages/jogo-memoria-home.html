@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória</title>
   <link rel="stylesheet" href="../../reset.css"> 
   <link rel="icon" type="image/x-icon" href="../../src/imagens/logo.png">
-  <link rel="stylesheet" href="../css/jogos.css">
   <link rel="stylesheet" href="../../fontes.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,56 +19,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sniglet:wght@400;800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-  <title>Jogos</title>
+  <link rel="stylesheet" href="../css/jogo-memoria-home.css">    
 </head>
 <body>
   
-  <header>
-    <nav class="barra-de-navegacao">
-      <ul>
-         <img src="../../src/imagens/logo.png" alt="logo do home" class="logo">
-
-         <li>
-           <a href="../../index.html" >HOME</a>
-         </li>
-
-       </ul>
-    </nav>
-  </header>
-  <div class="on">
-    <img src="../jogos/Ondacima.png" alt="">
-  </div>
-
   <main>
-    <div id="cards">
-        <div  id="jogo-memoria" onclick="redirecionarParaQuiz()">
-          <div class="quiz">
-            <h3>QUIZ</h3>
-            <hr>
-            <img src="../imagens/Idea.png" alt="ícone quiz">
-          </div>
-
-        </div>
-        <div id="quiz" onclick="redirecionarParaMemoria()">
-          <div class="pa">
-            <h3>JOGO DA MEMÓRIA</h3>
-            <hr>
-          </div>
-            <img src="../jogos/retanguloazul.png" alt="ícone memoria" class="reto">
-            <img src="../jogos/Ondameio.png" alt="" class="omeio">
-        </div>
-    </div>
+    <h1>JOGO DA MEMÓRIA</h1>
+    <p>Teste seu conhecimento e sabedoria nesse quiz onde você aprendera sobre biologia marinha e mostre que você é capaz de aprender e enteder o mar</p>
+    <nav>
+      <a href="./jogo-da-memoria.html">JOGAR</a>
+    </nav>
   </main>
-
-  <script>
-    function redirecionarParaMemoria() {
-      window.location.href = '/src/pages/jogo-memoria-home.html'; 
-    }
-
-    function redirecionarParaQuiz() {
-      window.location.href = 'caminho/para/pagina-quiz.html'; 
-    }
-  </script>
   
 </body>
 </html>

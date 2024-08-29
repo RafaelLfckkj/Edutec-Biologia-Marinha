@@ -1,0 +1,32 @@
+p{
+ color: #3d93f0;
+ text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 40%;
+  font-size: 25px;
+  margin-left: 27.875rem;
+}
+
+h1{
+  color: #3d93f0;
+  width: 50%;
+  text-align: center;
+  margin-left: 22.875rem;
+  margin-top: 100px;
+}
+
+a{
+  padding: 0.625rem 3.125rem;
+  background-color: #21679c;
+  color: white;
+  border-radius: 30px;
+  margin-left: 43rem;
+  margin-top: 100px;
+}
+
+a:hover{
+  background-color: #1c3787;
+  transition: all 0.5s ease;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.7);
+}
+

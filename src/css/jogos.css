@@ -1,0 +1,172 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.barra-de-navegacao > a{
+  color: white;
+}
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+
+}
+
+.on{
+  width: 100%;
+  display: flex;
+}
+.on img{
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+#cards {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+#quiz, #jogo-memoria{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  border-radius: 30px;
+  padding-inline: 2rem;
+  padding-block: 5rem;
+  width: 20rem;
+  border: 4px solid #11549c;;
+  color: #11549c;;
+}
+
+#quiz, #jogo-memoria > img{
+  width: 10rem;
+}
+
+hr{
+  border: 1px solid #11549c;
+  width: 90%;
+}
+
+#jogo-memoria{
+  width: 22%;
+  background: #CEEDFF;
+  position: relative;
+  top: 7rem;
+}
+
+#quiz{
+  width: 22%;
+  background: #CEEDFF;
+  position: relative;
+  top: 7rem;
+  margin-left: 10rem;
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quiz h3 {
+  bottom: 2rem;
+}
+.quiz h3, hr {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.quiz hr {
+  bottom: 2rem;
+}
+.pa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  top: -20%;
+}
+.pa h3 {
+  margin-top: 10%;
+}
+.pa hr {
+  font-size: 1.5rem;;
+  width: 110%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#quiz > .reto {
+  position: absolute;
+  top: 25%;
+}
+
+#quiz > .omeio {
+  position: relative;
+  z-index: 1;
+  bottom: 20%;
+}
+#jogo-memoria:hover {
+  background: linear-gradient(to bottom right, #c4e4e9, #38afd6);
+  cursor: pointer;
+}
+
+#quiz:hover {
+  background: linear-gradient(to bottom left, #c4e4e9, #38afd6);
+  cursor: pointer;
+}
+
+#quiz a:hover, #jogo-memoria a:hover{
+  text-decoration: underline;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+h3{
+  font-size: 25px;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+

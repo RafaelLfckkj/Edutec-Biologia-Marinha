@@ -34,7 +34,6 @@ ul>img {
   margin-right: 0.625rem;
   color: white;
   width: 2.5rem;
-  
 }
 
 
@@ -83,7 +82,9 @@ div>.mario {
 
 @media screen and (max-width: 768px) {
     .onda {
-        left: 40%;
+        left: 60%;
+        bottom: 5rem;
+        
     }
 }
 
@@ -92,6 +93,7 @@ div>.mario {
 @media screen and (min-width: 1200px) {
     .onda {
         left: 60%;
+        bottom: 12.5rem;
     }
 }
 
@@ -509,7 +511,7 @@ div>.mario {
 .noticias-section img:hover{
   border: 2px solid #ffffff;
   transition: all 0.5s ease;
-  filter: brightness(80%);
+  filter: brightness(70%);
   cursor: pointer;
 }
 

@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../reset.css"> 
   <link rel="icon" type="image/x-icon" href="../../src/imagens/logo.png">
-  <link rel="stylesheet" href="../css/jogos.css">
   <link rel="stylesheet" href="../../fontes.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,56 +18,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sniglet:wght@400;800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-  <title>Jogos</title>
+  <link rel="stylesheet" href="../../src/css/memoria.css">
+  <title>Jogo da Memória</title>
 </head>
 <body>
-  
-  <header>
-    <nav class="barra-de-navegacao">
-      <ul>
-         <img src="../../src/imagens/logo.png" alt="logo do home" class="logo">
+  <a href="../../index.html" id='sair'>X</a>
+      <div id="container">
+          <span >Tempo: <span id="tempo">10</span></span>
+      </div>
 
-         <li>
-           <a href="../../index.html" >HOME</a>
-         </li>
-
-       </ul>
-    </nav>
-  </header>
-  <div class="on">
-    <img src="../jogos/Ondacima.png" alt="">
-  </div>
-
-  <main>
-    <div id="cards">
-        <div  id="jogo-memoria" onclick="redirecionarParaQuiz()">
-          <div class="quiz">
-            <h3>QUIZ</h3>
-            <hr>
-            <img src="../imagens/Idea.png" alt="ícone quiz">
+      <div id="tabuleiro">
+          <div class="jogo">
+              <div class="face frente"></div>
+              <div class="face verso"></div>
           </div>
+      </div>
 
-        </div>
-        <div id="quiz" onclick="redirecionarParaMemoria()">
-          <div class="pa">
-            <h3>JOGO DA MEMÓRIA</h3>
-            <hr>
+      <dialog id="final">
+          <div class="macarrao">
+              <section id="imagem">
+                  <img src="./images/" alt="">
+              </section>
+              <section id="texto">
+                  <p>Oh não você perdeu</p>
+                  <p>Oque você acha de jogar novamente ?</p>
+                  <button id="fechar_modal_derrota">Jogar novamente</button>
+                  <a href='/'><button id="voltar_inicio" >Voltar a pagina inicial</button></a>
+              </section>
           </div>
-            <img src="../jogos/retanguloazul.png" alt="ícone memoria" class="reto">
-            <img src="../jogos/Ondameio.png" alt="" class="omeio">
-        </div>
-    </div>
+      </dialog>
+
+      <dialog id="vitoria">
+          <div class="macarrao">
+              <section id="imagem">
+
+              </section>
+              <section id="texto">
+                  <p>Parabéns você ganhou !!!</p>
+                  <p>Oque você acha de jogar novamente ?</p>
+                  <button id="fechar_modal_vitoria">Jogar novamente</button>
+                  <a href='/'><button id="voltar_inicio" >Voltar a pagina inicial</button></a>
+              </section>
+          </div>
+      </dialog>
   </main>
-
-  <script>
-    function redirecionarParaMemoria() {
-      window.location.href = '/src/pages/jogo-memoria-home.html'; 
-    }
-
-    function redirecionarParaQuiz() {
-      window.location.href = 'caminho/para/pagina-quiz.html'; 
-    }
-  </script>
-  
 </body>
 </html>

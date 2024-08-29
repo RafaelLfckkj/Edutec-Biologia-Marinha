@@ -2,7 +2,6 @@ const prevButton = document.querySelector('.seta-esquerda');
 const nextButton = document.querySelector('.seta-direita');
 const carouselImages = document.querySelector('.carroselimg');
 const carouselItems = document.querySelectorAll('.peixes-c');
-const crust = document.querySelector('.Crustaceos-gallery')
 let currentIndex = 0;
 
 function showSlide(index) {
