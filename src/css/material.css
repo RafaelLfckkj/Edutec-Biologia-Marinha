@@ -1,0 +1,226 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+.barra-de-navegacao > a{
+  color: white;
+}
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+
+}
+
+.on{
+  display: flex;
+}
+.on img{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+.on h1 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  left: 15%;
+  top: 3.8rem;
+}
+.circima img{
+  position: absolute;
+  top: 6rem;
+  left: 45%;
+  width: 48%;
+  bottom: 0rem;
+}
+#cards {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+#mar-prof, #filmes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  border-radius: 30px;
+  padding-inline: 2rem;
+  padding-block: 5rem;
+  width: 20rem;
+  border: 7px solid #11549c;;
+  color: #11549c;;
+}
+
+hr{
+  border: 1px solid #11549c;
+  width: 90%;
+}
+
+#filmes{
+  width: 22%;
+  background: #CEEDFF;
+  position: relative;
+  bottom: 2rem;
+  z-index: 2;
+}
+
+#mar-prof{
+  width: 22%;
+  background: #CEEDFF;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 10rem;
+  z-index: 2;
+}
+.filme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.filme h3 {
+  bottom: 2rem;
+}
+.filme h3, hr {
+  position: relative;
+}
+.filme hr {
+  bottom: 2rem;
+}
+.filme > .aon {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  z-index: -2;
+}
+.filme > .ona {
+  width: 100%;
+  position: absolute;
+  bottom: 0.0rem;
+  z-index: -1;
+}
+
+.Mar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+.Mar h3, hr {
+  bottom: 7rem;
+}
+.Mar h3 {
+  position: relative;
+}
+.Mar hr {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.Mar .mare {
+  width: 163%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 5rem;
+}
+
+
+.Mar .omeio {
+  width: 158%;
+  position: absolute;
+  z-index: 0;
+  margin-top: 6.5rem;
+}
+
+.cirbaixo img {
+  position: absolute;
+  width: 48%;
+  bottom: 0;
+}
+
+.ondi img{
+  position: absolute;
+  width: 100%;
+  top: 28rem;
+  margin-bottom: 0;
+}
+.ondi {
+  bottom: 0;
+}
+
+
+#filmes:hover {
+  background: linear-gradient(to bottom right, #c4e4e9, #38afd6);
+  cursor: pointer;
+}
+
+#mar-prof:hover {
+  background: linear-gradient(to bottom left, #c4e4e9, #38afd6);
+  cursor: pointer;
+}
+
+#mar-prof a:hover, #filmes a:hover{
+  text-decoration: underline;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+h3{
+  font-size: 25px;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+

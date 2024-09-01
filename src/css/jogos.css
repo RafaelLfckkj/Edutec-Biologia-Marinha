@@ -1,5 +1,6 @@
 .barra-de-navegacao{
   padding: 1rem 2rem;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -8,6 +9,11 @@
   z-index: 1000;
   font-size: 1.25rem;
   background-color:  rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 .barra-de-navegacao > a{
@@ -44,15 +50,27 @@ ul > img{
 }
 
 .on{
-  width: 100%;
   display: flex;
 }
 .on img{
   width: 100%;
   display: flex;
   position: absolute;
+  z-index: 1;
 }
-
+.on h1 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  left: 38%;
+  top: 3.8rem;
+}
+.circima img{
+  position: absolute;
+  top: 5rem;
+  width: 35%;
+  bottom: 0rem;
+}
 #cards {
   display: flex;
   gap: 10rem;
@@ -71,7 +89,7 @@ ul > img{
   padding-inline: 2rem;
   padding-block: 5rem;
   width: 20rem;
-  border: 4px solid #11549c;;
+  border: 7px solid #11549c;;
   color: #11549c;;
 }
 
@@ -88,15 +106,17 @@ hr{
   width: 22%;
   background: #CEEDFF;
   position: relative;
-  top: 7rem;
+  bottom: 2rem;
+  z-index: 2;
 }
 
 #quiz{
   width: 22%;
   background: #CEEDFF;
   position: relative;
-  top: 7rem;
+  bottom: 2rem;
   margin-left: 10rem;
+  z-index: 2;
 }
 .quiz {
   display: flex;
@@ -115,6 +135,18 @@ hr{
 .quiz hr {
   bottom: 2rem;
 }
+.quiz > .aon {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  z-index: -2;
+}
+.quiz > .ona {
+  width: 100%;
+  position: absolute;
+  bottom: 0.0rem;
+  z-index: -1;
+}
 .pa {
   display: flex;
   flex-direction: column;
@@ -123,10 +155,10 @@ hr{
   text-align: center;
   position: relative;
   z-index: 1;
-  top: -20%;
+  bottom: 20%;
 }
 .pa h3 {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .pa hr {
   font-size: 1.5rem;;
@@ -135,15 +167,50 @@ hr{
   margin-bottom: 3rem;
 }
 
-#quiz > .reto {
+#quiz .reto {
   position: absolute;
-  top: 25%;
+  top: 24%;
+  margin-top: 1rem;
+  bottom: 0;
 }
 
-#quiz > .omeio {
+#quiz .omeio {
   position: relative;
   z-index: 1;
-  bottom: 20%;
+  top: 3rem;
+}
+
+.pa > .an {
+  position: absolute;
+  width: 140%;
+  z-index: -2;
+  top: 12rem;
+  bottom: 0;
+}
+.pa > .na {
+  position: absolute;
+  width: 139%;
+  z-index: -1;
+  top: 15.6rem;
+  bottom: 0;
+}
+
+.cirbaixo img {
+  position: absolute;
+  width: 30%;
+  left: 50rem;
+  top: 10rem;
+  bottom: 0;
+}
+
+.ondi img{
+  position: absolute;
+  width: 100%;
+  top: 28rem;
+  margin-bottom: 0;
+}
+.ondi {
+  bottom: 0;
 }
 #jogo-memoria:hover {
   background: linear-gradient(to bottom right, #c4e4e9, #38afd6);

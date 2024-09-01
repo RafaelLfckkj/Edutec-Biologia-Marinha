@@ -435,6 +435,7 @@ div>.mario {
   font-family: "Sofia Sans", sans-serif;
 }
 
+
 .baixo {
   margin-top: 18.75rem;
   color: white;
@@ -502,6 +503,7 @@ div>.mario {
   transition: all 0.5s ease;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.7);
 }
+
 
 .sobre-nos img:hover{
   width: 5rem;

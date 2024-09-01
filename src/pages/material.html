@@ -4,10 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../reset.css"> 
+  <link rel="icon" type="image/x-icon" href="../../src/imagens/logo.png">
    <link rel="stylesheet" href="../../fontes.css">
+  <link rel="stylesheet" href="../css/material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sniglet:wght@400;800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <title>Material</title>
 </head>
 <body>
-  
+  <header>
+    <nav class="barra-de-navegacao">
+
+           <ul>
+             <img src="../../src/imagens/logo.png" alt="logo do home" class="logo">
+
+             <li>
+               <a href="../../index.html" >HOME</a>
+             </li>
+
+             <li>
+               <a href="../pages/material.html" >MATERIAL DE APOIO</a>
+             </li>
+
+             <li>
+               <a href="../pages/jogos.html" >JOGOS</a>
+             </li>
+           </ul>
+    </nav>
+  </header>
+  <div class="on">
+    <h1>MATERIAL DE APOIO</h1>
+    <img src="../material/ondaaa.png" alt="">
+  </div>
+  <div class="circima">
+    <img src="../material/circimam.png" alt="">
+  </div>
+  <main>
+    <div id="cards">
+        <div  id="filmes" onclick="redirecionarParaFilmes()">
+          <div class="filme">
+            <h3>FILMES</h3>
+            <hr>
+            <img src="../material/Cinema.png" alt="ícone quiz">
+            <img src="../jogos/Ondaa.png" alt="" class="aon">
+            <img src="../jogos/ondan.png" alt="" class="ona">
+          </div>
+        </div>
+          <div id="mar-prof" onclick="redirecionarParaMarProfundo()">
+                  <div class="Mar">
+                    <h3>MAR PROFUNDO</h3>
+                    <hr>
+                    <img src="../material/ondama.png" alt="" class="mare">
+                    <img src="../material/maro.png" alt="" class="omeio">
+                  </div>
+          </div>
+    </div>
+    <div class="cirbaixo">
+      <img src="../material/cirbaixo.png" alt="">
+    </div>
+    <div class="ondi">
+      <img src="../material/onbaixo.png" alt="">
+    </div>
+  </main>
+
+  <script>
+    function redirecionarParaFilmes() {
+      window.location.href = '/src/pages/filmes.html'; 
+    }
+
+    function redirecionarParaMarProfundo() {
+      window.location.href = '/src/pages/mar-profundo.html'; 
+    }
+  </script>
 </body>
 </html>

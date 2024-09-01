@@ -1,33 +1,6 @@
 * {
-  box-sizing: border-box;
-}
-
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0;
-  min-height: 100vh;
-}
-
-
-.carrossel {
-  box-sizing: 2px 2px 4px black ;
-  overflow: hidden;
-  height: 500px;
-  width: 500px;
-}
-
-.container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-}
-
-
-.img {
-  object-fit: cover;
-  height: 500px;
-  width: 500px;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }

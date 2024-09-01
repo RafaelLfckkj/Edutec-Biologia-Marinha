@@ -1,4 +1,3 @@
-
 .barra-de-navegacao{
   padding: 1rem 2rem;
   text-align: center;
@@ -14,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 li{
@@ -56,7 +56,7 @@ ul > img{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 80%;
+  top: 78%;
   left: 40%;
   color: #fff;
   font-size: 1.25rem;
@@ -185,118 +185,223 @@ hr{
   display: flex;
 }
 
-
-
-.laranja {
+.box {
   display: flex;
   width: 100%;
-  align-items: center;
+  height: 18rem;
   margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 5rem;
 }
-
-.laranja > .quadra {
+.box > .ant {
+  width: 20rem;
+  height: 19rem;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  position: absolute;
+  pointer-events: none;
+  transition: .5s;
+}
+.box > .circulo {
   width: 100%;
-  z-index: -1;
+  position: relative;
+  height: 100%;
+  background-color: #9487EE;
+  clip-path: circle(9.5rem);
+  transition: .5s;
 }
 
-.laranja > .ant {
-  position: absolute;
-
+.box > .circulo:hover ~ img {
+  left: calc(15% + 1rem);
 }
-
-.laranja p {
-  position: absolute;
-  left: 31.25rem;
-  text-align: center;
-  width: 60%;
-  font-size: 1.25rem;
-}
-
-
-.cinzas {
+.box > .circulo:hover{
   display: flex;
   width: 100%;
-  align-items: center;
-  margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
+  height: 145%;
+  clip-path: circle(45rem);
 }
-
-.cinzas > .quadrocin {
-  width: 100%;
-  z-index: -1;
+.texto {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
 }
-
-.cinzas > .hi {
-  position: absolute;
-
+.texto > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 40rem;
+  font-size: 1rem;
+  color: #ffffff;
 }
-
-.cinzas p {
-  position: absolute;
-  left: 31.25rem;
-  text-align: center;
-  width: 60%;
-  font-size: 1.25rem;
+.texto h4 {
+  color: #ffffff;
+  font-size: 2rem;
 }
-
-.azuls {
+.texto h1{
+  max-width: 100%;
+  position: relative;
+  left: 20%;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.circulo:hover .texto {
+  opacity: 1;
+}
+.box1 {
   display: flex;
   width: 100%;
-  align-items: center;
-  margin-top: 3.125rem;
+  height: 18rem;
+  margin-top: 9rem;
   margin-bottom: 3.125rem;
 }
-
-.azuls > .quadroaz {
+.box1 > .ant {
+  width: 20rem;
+  height: 19rem;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  position: absolute;
+  pointer-events: none;
+  transition: .5s;
+}
+.box1 > .circulo {
   width: 100%;
-  z-index: -1;
+  position: relative;
+  height: 100%;
+  background-color: #519D10;
+  clip-path: circle(9.5rem);
+  transition: .5s;
 }
 
-.azuls > .aguavi {
-  position: absolute;
-
+.box1 > .circulo:hover ~ img {
+  left: calc(15% + 1rem);
 }
-
-.azuls p {
-  position: absolute;
-  left: 31.25rem;
-  text-align: center;
-  width: 40%;
-  font-size: 1.25rem;
-}
-
-.azuls > .agua {
-  position: absolute;
-  left: 73.75rem;
-  top: 810%;
-}
-
-.cianos {
+.box1 > .circulo:hover{
   display: flex;
   width: 100%;
-  align-items: center;
-  margin-top: 3.125rem;
+  height: 125%;
+  clip-path: circle(45rem);
+}
+.texto1 {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.texto1 > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 28rem;
+  font-size: 1rem;
+}
+.texto1 h4 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.texto1 h1{
+  max-width: 100%;
+  font-size: 4rem;
+  position: relative;
+  left: 20%;
+  color: #ffffff;
+}
+.circulo:hover .texto1{
+  opacity: 1;
+}
+.box2 {
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  margin-top: 9rem;
   margin-bottom: 3.125rem;
 }
-
-.cianos > .qua {
+.box2 > .ant {
+  width: 20rem;
+  height: 19rem;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  position: absolute;
+  pointer-events: none;
+  transition: .5s;
+}
+.box2 > .circulo {
   width: 100%;
-  z-index: -1;
+  position: relative;
+  height: 100%;
+  background-color: #596E82;
+  clip-path: circle(9.5rem);
+  transition: .5s;
 }
 
-.cianos > .cubo {
+.box2 > .circulo:hover ~ img {
+  left: calc(15% + 1rem);
+}
+.box2 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  clip-path: circle(45rem);
+}
+.box3 {
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  margin-top: 9rem;
+  margin-bottom: 3.125rem;
+}
+.box3 > .ant {
+  width: 20rem;
+  height: 19rem;
+  left: 50%;
+  transform: translate(-50%, 1%);
   position: absolute;
-
+  pointer-events: none;
+  transition: .5s;
+}
+.box3 > .circulo {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-color: #303B46;
+  clip-path: circle(9.5rem);
+  transition: .5s;
 }
 
-.cianos p {
-  position: absolute;
-  left: 31.25rem;
-  text-align: center;
-  width: 60%;
-  font-size: 1.25rem;
+.box3 > .circulo:hover ~ img {
+  left: calc(15% + 1rem);
 }
+.box3 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  clip-path: circle(45rem);
+}
+.texto1 {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.texto1 > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 28rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.texto1 h4 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.texto1 h1{
+  max-width: 100%;
+  font-size: 4rem;
+  position: relative;
+  left: 20%;
+  color: #ffffff;
+}
+.circulo:hover .texto1{
+  opacity: 1;
+}
+
 
 h1{
   font-family: "Inter", sans-serif;

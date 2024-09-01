@@ -1,0 +1,117 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: #0C2233;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.barra-de-navegacao > a{
+  color: white;
+}
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.filmes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filmes img {
+  margin-left: 1rem;
+}
+
+.container {
+  height: 25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.card {
+  width: 5rem;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 0.625rem;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+}
+input {
+  display: none;
+}
+input:checked + label{
+  width: 20rem;
+}
+
+Vai descansar yago 
+valeu por hoje e desculpa
+
+input:checked + label img{
+  width: 20rem;
+}
+.serie {
+  display: flex;
+}
+
+.serie img {
+  margin-left: 1rem;
+}
+.jogo {
+  display: flex;
+}
+
+.jogo img {
+  margin-left: 1rem;
+}
