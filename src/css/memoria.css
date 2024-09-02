@@ -1,65 +1,163 @@
-#sair{
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.onc {
+  display: flex;
+}
+.onc .ondac {
+  width: 100%;
+  height: 20%;
+  display: flex;
   position: absolute;
-  left: 2rem;
-  top: 1rem;
-  text-decoration: none;
+  z-index: 2;
 }
-
-#container{
-  opacity: 0;
+.onc .ondacm {
+  width: 100%;
+  height: 28%;
+  display: flex;
+  position: absolute;
+  z-index: 1;
 }
-
-#container span, #sair{
-  color: #ffffff;
-  font-family: 'Numans';
-  font-size: 1.75rem;
+.cire img {
+  position: absolute;
+  z-index: 0;
+  width: 10%;
+  height: 95%;
 }
-
-
-
-
-main{
-  background: linear-gradient(to right, #111111, #3d1c4d);
+.cird img {
+  position: absolute;
+  z-index: 0;
+  width: 44%;
+  left: 56%;
+}
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  justify-content: center;
+  max-width: 100%;
+  height: 55%;
+  margin: 0;
+
 }
-
-
-.jogo{
-  aspect-ratio: 1/1;
-  width: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 0.5s ease;
-}
-
-.jogo:active{
-  transform: scale(.95);
-}
-
-.jogo.vira{
-  transform: rotateY(180deg);
-}
-
-.face{
-  width: 90%;
-  height: 90%;
+#exit-btn {
   position: absolute;
-  border-radius: 10px;
-}
-
-.verso{
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.frente{
-  transform: rotateY(180deg);
-}  
-
-.jogo:hover {
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
+  z-index: 2;
+}
+#volta {
+  position: absolute;
+  top: 10px;
+  left: 5rem;
+  background-color: yellow;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.game-board {
+  max-width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-left: 20rem;
+  margin-top: 3.1rem;
+  align-items: center;
+  position: relative;
+  top: 9rem;
+  overflow: hidden;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  z-index: 1;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+#timer {
+  width: 15rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  text-align: center;
+  left: -28rem;
+  top: -6rem;
+  font-size: 1.5rem;
+  border: 2px #ffffff solid;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+#popup-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.ond {
+  display: flex;
+  width: 100%;
+}
+.ond .ondb{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  position: absolute;
+  left: 0rem;
+  bottom: 0rem;
+  z-index: 1;
+}
+.ond .ondba{
+  width: 100%;
+  height: 33%;
+  position: absolute;
+  display: flex;
+  bottom: 0rem;
+  left: 0rem;
 }

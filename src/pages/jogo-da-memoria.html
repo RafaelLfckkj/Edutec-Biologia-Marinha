@@ -23,46 +23,29 @@
   <title>Jogo da Memória</title>
 </head>
 <body>
+  <div class="onc">
+    <img src="../quizememoria/oncm.png" alt="" class="ondac">
+    <img src="../quizememoria/oncimm.png" alt="" class="ondacm">
+  </div>
+  <div class="cire">
+    <img src="../quizememoria/cires.png" alt="cires">
+  </div>
+  <div class="cird">
+    <img src="../quizememoria/cirdi.png" alt="">
+  </div>
   <main>
-    <a href='/' id='sair'>X</a>
-    <div id="container">
-        <span >Tempo: <span id="tempo">10</span></span>
+    <button id="exit-btn" onclick="goHome()">Sair</button>
+    <button id="volta" onclick="volte()">Voltar</button>
+    <div id="game-board" class="game-board"></div>
+    <div id="timer">TEMPO: <span id="time">10</span></div>
+    <div id="popup" class="popup hidden">
+        <div id="popup-message"></div>
+        <button id="popup-btn" onclick="nextPhase()">Próxima fase</button>
     </div>
-
-    <div id="tabuleiro">
-        <div class="jogo">
-            <div class="face frente"></div>
-            <div class="face verso"></div>
-        </div>
-    </div>
-
-    <dialog id="final">
-        <div class="macarrao">
-            <section id="imagem">
-                <img src="./images/" alt="">
-            </section>
-            <section id="texto">
-                <p>Oh não você perdeu</p>
-                <p>Oque você acha de jogar novamente ?</p>
-                <button id="fechar_modal_derrota">Jogar novamente</button>
-                <a href='/'><button id="voltar_inicio" >Voltar a pagina inicial</button></a>
-            </section>
-        </div>
-    </dialog>
-
-    <dialog id="vitoria">
-        <div class="macarrao">
-            <section id="imagem">
-
-            </section>
-            <section id="texto">
-                <p>Parabéns você ganhou !!!</p>
-                <p>Oque você acha de jogar novamente ?</p>
-                <button id="fechar_modal_vitoria">Jogar novamente</button>
-                <a href='/'><button id="voltar_inicio" >Voltar a pagina inicial</button></a>
-            </section>
-        </div>
-    </dialog>
   </main>
+  <div class="ond">
+    <img src="../quizememoria/Vector (13).png" alt="" class="ondba">
+    <img src="../quizememoria/Vector (14).png" alt="" class="ondb">
+  </div>
 </body>
 </html>

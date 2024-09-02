@@ -15,10 +15,6 @@ body {
   background-color: #0C2233;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 .barra-de-navegacao > a{
   color: white;
 }
@@ -74,44 +70,112 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+  top: -18%;
+  position: relative;
+  width: 100%;
 }
 .card {
   width: 5rem;
-  border-radius: .75rem;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
   margin: 0 0.625rem;
+  margin-left: 8rem;
+  margin-right: 1rem;
   display: flex;
-  align-items: flex-end;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  transition: .5s cubic-bezier(.28,-0.03,0,.99);
   box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
 }
-input {
+.container > input {
   display: none;
 }
-input:checked + label{
+.container > input:checked + label{
   width: 20rem;
+  margin-right: 2rem;
 }
-
-Vai descansar yago 
-valeu por hoje e desculpa
-
-input:checked + label img{
-  width: 20rem;
+.seri {
+  position: relative;
+  top: -12rem;
 }
 .serie {
+  position: relative;
+  top: -9rem;
   display: flex;
 }
 
 .serie img {
   margin-left: 1rem;
 }
+.container1 {
+  height: 25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  top: -18%;
+  position: relative;
+  width: 100%;
+}
+.container1 .card {
+  width: 5rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 0.625rem;
+  margin-left: 8rem;
+  margin-right: 1rem;
+  display: flex;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+}
+.container1 > input {
+  display: none;
+}
+.container1 > input:checked + label{
+  width: 20rem;
+  margin-right: 2rem;
+}
+.jo {
+  position: relative;
+  top: -10rem;
+}
 .jogo {
+  position: relative;
+  top: -7rem;
   display: flex;
 }
 
 .jogo img {
   margin-left: 1rem;
+}
+
+.container2 {
+  height: 25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  top: -18%;
+  position: relative;
+  width: 100%;
+}
+.container2 .card {
+  width: 5rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 0.625rem;
+  margin-left: 8rem;
+  margin-right: 1rem;
+  display: flex;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+}
+.container2 > input {
+  display: none;
+}
+.container2 > input:checked + label{
+  width: 20rem;
+  margin-right: 2rem;
 }

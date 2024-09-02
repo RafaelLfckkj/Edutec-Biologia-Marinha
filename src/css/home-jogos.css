@@ -1,30 +1,66 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 1.25rem; 
+  color: white;
+  width: 2.5rem;
+}
+
 p{
  color: #3d93f0;
  text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
-  text-align: center;
   width: 40%;
   font-size: 25px;
   margin-left: 27.875rem;
+  font-family: "Zen Maru Gothic", serif;
 }
 
-h1{
-  color: #3d93f0;
+h2{
+  color: #0F5B85;
   width: 50%;
   text-align: center;
   margin-left: 22.875rem;
   margin-top: 100px;
 }
 
-a{
+.texto a{
   padding: 0.625rem 3.125rem;
   background-color: #21679c;
   color: white;
   border-radius: 30px;
   margin-left: 43rem;
   margin-top: 100px;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
-a:hover{
+.texto a:hover{
   background-color: #1c3787;
   transition: all 0.5s ease;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.7);

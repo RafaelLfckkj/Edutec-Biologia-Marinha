@@ -1,0 +1,118 @@
+.barra-de-navegacao{
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.25rem;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+.barra-de-navegacao > a{
+  color: white;
+}
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  color: white;
+  margin: 2.5rem;
+}
+
+ul > img{
+  float: left;
+  margin-right: 0.625rem; 
+  color: white;
+  width: 2.5rem;
+}
+.onc {
+  display: flex;
+  max-width: 100%;
+}
+.onc .ondac {
+  width: 100%;
+  height: 24%;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+}
+.onc .ondacm {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+.cire img {
+  position: absolute;
+  z-index: 0;
+  width: 35%;
+}
+.cird img {
+  position: absolute;
+  z-index: 0;
+  width: 18%;
+  left: 82%;
+}
+.texto {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: -1rem;
+  left: -1rem;
+  z-index: 100;
+}
+.texto h2{
+  position: relative;
+  margin-bottom: 1rem;
+  left: 4rem;
+  width: 40%;
+}
+.texto p {
+  position: relative;
+  left: -1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.texto a {
+  position: relative;
+  left: -4rem;
+  top: -1rem;
+  background-color: #027EA7;
+}
+.ond {
+  display: flex;
+  max-width: 100%;
+}
+.ond .ondb{
+  width: 100%;
+  height: 16%;
+  display: flex;
+  position: absolute;
+  bottom: 0rem;
+  z-index: 1;
+}
+.ond .ondba{
+  width: 100%;
+  height: 24%;
+  display: flex;
+  position: absolute;
+  bottom: 0rem;
+}
