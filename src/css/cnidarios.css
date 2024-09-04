@@ -188,13 +188,13 @@ hr{
 .box {
   display: flex;
   width: 100%;
-  height: 18rem;
+  height: 19rem;
   margin-top: 3.125rem;
   margin-bottom: 5rem;
 }
 .box > .ant {
-  width: 20rem;
-  height: 19rem;
+  width: 19rem;
+  height: 18rem;
   left: 50%;
   transform: translate(-50%, 1%);
   position: absolute;
@@ -249,14 +249,14 @@ hr{
 .box1 {
   display: flex;
   width: 100%;
-  height: 18rem;
+  height: 19rem;
   margin-top: 9rem;
   margin-bottom: 3.125rem;
 }
 .box1 > .ant {
   width: 20rem;
   height: 19rem;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, 1%);
   position: absolute;
   pointer-events: none;
@@ -309,7 +309,7 @@ hr{
 .box2 {
   display: flex;
   width: 100%;
-  height: 18rem;
+  height: 19rem;
   margin-top: 9rem;
   margin-bottom: 3.125rem;
 }
@@ -317,7 +317,7 @@ hr{
   width: 20rem;
   height: 19rem;
   left: 50%;
-  transform: translate(-50%, 1%);
+  transform: translate(-50%, -1%);
   position: absolute;
   pointer-events: none;
   transition: .5s;
@@ -343,15 +343,15 @@ hr{
 .box3 {
   display: flex;
   width: 100%;
-  height: 18rem;
+  height: 19rem;
   margin-top: 9rem;
   margin-bottom: 3.125rem;
 }
 .box3 > .ant {
-  width: 20rem;
+  width: 19rem;
   height: 19rem;
-  left: 50%;
-  transform: translate(-50%, 1%);
+  left: 51%;
+  transform: translate(-50%, 10%);
   position: absolute;
   pointer-events: none;
   transition: .5s;
