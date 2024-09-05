@@ -11,9 +11,9 @@
   background-color:  rgba(0, 0, 0, 0.5);
 }
 
+
 html {
-  scroll-behavior: smooth;
-  overflow-y: hidden;
+  scroll-behavior: smooth; 
 }
 
 .barra-de-navegacao > a{
@@ -49,15 +49,6 @@ ul > img{
 
 }
 
-.on{
-  display: flex;
-}
-.on img{
-  width: 100%;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-}
 .on h1 {
   position: relative;
   z-index: 2;
@@ -65,12 +56,9 @@ ul > img{
   left: 38%;
   top: 3.8rem;
 }
-.circima img{
-  position: absolute;
-  top: 5rem;
-  width: 35%;
-  bottom: 0rem;
-}
+
+
+
 #cards {
   display: flex;
   gap: 10rem;
@@ -235,5 +223,12 @@ h3{
   font-family: "Sniglet", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+body{
+  background-image: url(../imagens/imagem-de-fundo-do-jogos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 

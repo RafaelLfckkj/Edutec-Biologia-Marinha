@@ -79,38 +79,14 @@ div>.mario {
 
 }
 
-/* Tela menores */
 
-@media screen and (max-width: 768px) {
-    .onda {
-        left: 60%;
-        bottom: 5rem;
-        
-    }
+
+.definition-section > .container{
+  margin-left: 100px;
 }
 
-/* Telas maiores */
 
-@media screen and (min-width: 1200px) {
-    .onda {
-        left: 60%;
-        bottom: 9.5rem;
-    }
-}
 
-@media screen and (min-width: 1300px) {
-    .onda {
-        left: 60%;
-        bottom: 10.5rem;
-    } */
-}
-
-@media screen and (min-width: 1500px) {
-    .onda {
-        left: 60%;
-        bottom: 12.5rem;
-    }
-}
 
 .container {
   max-width: 1200px;
@@ -119,10 +95,6 @@ div>.mario {
   /* border: 1px solid #ccc; */
 }
 
-.definition-section > .container{
-  margin-left: 100px;
-
-}
 
 .linhaa {
   width: 100%;
@@ -449,35 +421,66 @@ div>.mario {
   margin-top: 1.875rem;
   cursor: pointer;
   font-family: "Sofia Sans", sans-serif;
-  --clr-font-main: hsla(0 0% 20% / 100);
-    --btn-bg-1: hsla(194 100% 69% / 1);
-    --btn-bg-2: hsla(217 100% 56% / 1);
-    --btn-bg-color: hsla(360 100% 100% / 1);
-    --radii: 0.5em;
-    min-width: 120px;
-    min-height: 44px;
-    transition: 0.8s;
-    background-size: 280% auto;
-    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
-    border: none;
-    border-radius: var(--radii);
-    color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.ver-button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.ver-button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.ver-button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #1488e1;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
 }
 
 .ver-button:hover {
-  background-position: right top;
+  color: #ffffff;
+  border: 1px solid #1488e1;
 }
 
-.ver-button:is(:focus, :focus-visible, :active) {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+.ver-button:hover:before {
+  top: -35%;
+  background-color: #1488e1;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .ver-button {
-    transition: linear;
-  }
+.ver-button:hover:after {
+  top: -45%;
+  background-color: #1488e1;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 
@@ -543,13 +546,6 @@ div>.mario {
   border-radius: 10px;
 }
 
-.carrosel a:hover{
-  background-color: #1c3787;
-  transition: all 0.5s ease;
-  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.7);
-}
-
-
 .sobre-nos img:hover{
   width: 5rem;
   transition: all 0.5s ease;
@@ -560,4 +556,114 @@ div>.mario {
   transition: all 0.5s ease;
   filter: brightness(70%);
   cursor: pointer;
+}
+
+/* Tela menores */
+
+@media screen and (max-width: 768px) {
+    .onda {
+        left: 60%;
+        bottom: 5rem;
+
+    }
+}
+
+/* Telas maiores */
+
+@media screen and (min-width: 1200px){
+    .onda {
+        left: 60%;
+        bottom: 9.5rem;
+    }
+
+  div>.mario {
+    top: 47%;
+  }
+
+  .definition-section > .container{
+    margin-left: 0px;
+  }
+
+  .definition-section .container h2 {
+    left: 23%;
+  }
+
+  .seta-direita{
+    color: white;
+  }
+
+  .cnidarios-content p{
+    margin-left: 150px;
+  }
+
+  .ver-button{
+    margin-left: 150px;
+  }
+
+  .noticias-section{
+    margin-top: 100px;
+   
+  }
+
+  .noticias-section h2{
+     font-size: 3.0625rem;
+  }
+
+  .sobre-nos p {
+    margin-left: 83%;
+    
+}
+
+@media screen and (min-width: 1300px) {
+    .onda {
+        left: 60%;
+        bottom: 10.5rem;
+    } */
+
+  .seta-direita{
+    color: black;
+  }
+
+  .definition-section .container h2 {
+      left: 20%;
+  }
+
+  .baixo{
+    margin-top: -38rem;
+  }
+
+}
+
+  @media screen and (min-width: 1400px) {
+    .seta-direita{
+      color: black;
+    }
+
+    .definition-section .container h2 {
+        left: 16.5%;
+    }
+  }
+
+@media screen and (min-width: 1500px) {
+    .onda {
+        left: 60%;
+        bottom: 12.5rem;
+    }
+
+  .seta-direita{
+    color: black;
+  }
+
+
+  .sobre-nos p {
+      margin-left: 86%;
+  }
+
+  .definition-section > .container {
+    margin-left: 100px;
+  }
+  
+  .definition-section .container h2 {
+      left: 17%;
+  }
 }

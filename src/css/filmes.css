@@ -54,128 +54,317 @@ h2 {
 }
 
 .filmes {
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  margin-right: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 21.85rem;
+  aspect-ratio: 10/10;
+  background-color: #0C2233;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.filmes img {
-  margin-left: 1rem;
-}
-
-.container {
-  height: 25rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  top: -18%;
-  position: relative;
-  width: 100%;
-}
-.card {
-  width: 5rem;
-  background-size: cover;
-  cursor: pointer;
+  margin-left: 0.8rem;
   overflow: hidden;
-  border-radius: 2rem;
-  margin: 0 0.625rem;
-  margin-left: 8rem;
-  margin-right: 1rem;
-  display: flex;
-  transition: .5s cubic-bezier(.28,-0.03,0,.99);
-  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #0C2233;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.container > input {
-  display: none;
-}
-.container > input:checked + label{
-  width: 20rem;
-  margin-right: 2rem;
-}
-.seri {
+.card1 {
   position: relative;
-  top: -12rem;
+  width: 21.85rem;
+  aspect-ratio: 10/10;
+  background-color: #0C2233;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #0C2233;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.card2 {
+  position: relative;
+  width: 21.85rem;
+  aspect-ratio: 10/10;
+  background-color: #0C2233;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #0C2233;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card3 {
+  position: relative;
+  width: 21.85rem;
+  aspect-ratio: 10/10;
+  background-color: #0C2233;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #0C2233;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card4 {
+  position: relative;
+  width: 21.85rem;
+  aspect-ratio: 10/10;
+  background-color: #0C2233;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #0C2233;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 99%;
+  height: 99%;
+}
+.card1 img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1 img {
+  width: 99%;
+  height: 99%;
+}
+.card2 img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2 img {
+  width: 99%;
+  height: 99%;
+}
+.card3 img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card3 img {
+  width: 99%;
+  height: 99%;
+}
+.card4 img {
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card4 img {
+  width: 99%;
+  height: 99%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.card4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+.card__content {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #0C2233;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card1:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card2:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card3:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card4:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card:hover img {
+  scale: 100%;
+}
+.card1:hover img {
+  scale: 100%;
+}
+.card2:hover img {
+  scale: 100%;
+}
+.card3:hover img {
+  scale: 100%;
+}
+.card4:hover img {
+  scale: 100%;
+}
+
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 0.7rem;
+  color: #fff;
+  line-height: 1;
+}
+.card1 .card__description {
+  margin: 0.1rem;
+  font-size: 0.7rem;
+  color: #fff;
+  line-height: 1;
+}
+.card2 .card__description {
+  margin: 0.1rem;
+  font-size: 0.7rem;
+  color: #fff;
+  line-height: 1;
+}
+.card3 .card__description {
+  margin: 0.1rem;
+  font-size: 0.7rem;
+  color: #fff;
+  line-height: 1;
+}
+.card4 .card__description {
+  margin: 0.1rem;
+  font-size: 0.7rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.card__button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: black;
+  border: none;
+  color: white;
+  position: relative;
+  left: 25%;
+}
+
+.secondary {
+  color: #0C2233;
+  border: 1px solid #777;
+}
+
+
+@media screen and (min-width: 1300px){
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 0.65rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card1 .card__description {
+    margin: 0.1rem;
+    font-size: 0.65rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card2 .card__description {
+    margin: 0.1rem;
+    font-size: 0.61rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card3 .card__description {
+    margin: 0.1rem;
+    font-size: 0.61rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card4 .card__description {
+    margin: 0.1rem;
+    font-size: 0.65rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .serie .card__description{
+    margin: 10px 0 10px;
+    font-size: 0.65rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .serie .card1 .card__description{
+    margin: 10px 0 10px;
+    font-size: 0.6rem;
+    color: #fff;
+    line-height: 1;
+  }
+}
+
 .serie {
-  position: relative;
-  top: -9rem;
   display: flex;
-}
-
-.serie img {
-  margin-left: 1rem;
-}
-.container1 {
-  height: 25rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  top: -18%;
-  position: relative;
-  width: 100%;
-}
-.container1 .card {
-  width: 5rem;
-  background-size: cover;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 2rem;
-  margin: 0 0.625rem;
-  margin-left: 8rem;
   margin-right: 1rem;
-  display: flex;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
-}
-.container1 > input {
-  display: none;
-}
-.container1 > input:checked + label{
-  width: 20rem;
-  margin-right: 2rem;
-}
-.jo {
-  position: relative;
-  top: -10rem;
-}
-.jogo {
-  position: relative;
-  top: -7rem;
-  display: flex;
+
 }
 
-.jogo img {
-  margin-left: 1rem;
-}
-
-.container2 {
-  height: 25rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  top: -18%;
-  position: relative;
-  width: 100%;
-}
-.container2 .card {
-  width: 5rem;
-  background-size: cover;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 2rem;
-  margin: 0 0.625rem;
-  margin-left: 8rem;
-  margin-right: 1rem;
-  display: flex;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  box-shadow: 0rem 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
-}
-.container2 > input {
-  display: none;
-}
-.container2 > input:checked + label{
-  width: 20rem;
-  margin-right: 2rem;
+@media screen and (min-width: 1500px){
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card1 .card__description {
+    margin: 0.1rem;
+    font-size: 0.7rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card2 .card__description {
+    margin: 0.1rem;
+    font-size: 0.7rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card3 .card__description {
+    margin: 0.1rem;
+    font-size: 0.7rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .card4 .card__description {
+    margin: 0.1rem;
+    font-size: 0.7rem;
+    color: #fff;
+    line-height: 1;
+  }
 }

@@ -9,6 +9,7 @@ let matchedCards = [];
 let timeLeft = 10;
 let timer;
 let currentPhase = 1;
+let isGameActive = false; // Variável para controlar o estado do jogo
 
 // Função para embaralhar as cartas
 function shuffle(array) {
@@ -23,8 +24,8 @@ function createBoard() {
     gameBoard.innerHTML = ''; // Limpa o tabuleiro
     cardImages = shuffle(cardImages); // Embaralha as cartas antes de criar o tabuleiro
     gameBoard.style.gridTemplateColumns = `repeat(${Math.sqrt(cardImages.length)}, 100px)`;
-// index
-    cardImages.forEach((img, ) => {
+
+    cardImages.forEach((img) => {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.dataset.card = img; // Associa a imagem da frente com a carta
@@ -34,10 +35,11 @@ function createBoard() {
     });
 
     startTimer();
+    isGameActive = true; // Ativa o estado do jogo
 }
 
 function flipCard() {
-    if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+    if (flippedCards.length < 2 && !this.classList.contains('flipped') && isGameActive) {
         this.classList.add('flipped');
         this.style.backgroundImage = `url('${this.dataset.card}')`; // Muda para a imagem da frente da carta
         flippedCards.push(this);
@@ -70,14 +72,18 @@ function checkForMatch() {
 }
 
 function startTimer() {
-    timeLeft = currentPhase === 1 ? 10 : currentPhase === 2 ? 30 : 45;
+    timeLeft = currentPhase === 1 ? 10 : currentPhase === 2 ? 20 : 35;
     document.getElementById('time').textContent = timeLeft;
+    clearInterval(timer); // Garante que não exista um timer ativo antes de iniciar um novo
     timer = setInterval(() => {
-        timeLeft= timeLeft-1;
-        document.getElementById('time').textContent = timeLeft;
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            showPopup('Tempo esgotado! Você perdeu!', 'Tentar de novo');
+        if (isGameActive) {
+            timeLeft = timeLeft - 1;
+            document.getElementById('time').textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                showPopup('Tempo esgotado! Você perdeu!', 'Recomeçar');
+                isGameActive = false; // Jogo termina ao perder
+            }
         }
     }, 1000);
 }
@@ -87,28 +93,44 @@ function showPopup(message, buttonText) {
     document.getElementById('popup-message').textContent = message;
     document.getElementById('popup-btn').textContent = buttonText;
     popup.classList.remove('hidden');
+    gameBoard.classList.add('no-click'); // Desabilita cliques no tabuleiro enquanto o popup está ativo
+    isGameActive = false; // Pausa o jogo quando o popup é mostrado
 }
 
-// Função para reiniciar a fase atual sem avançar
 function restartPhase() {
+    currentPhase = 1; // Reseta para a primeira fase
     matchedCards = [];
     flippedCards = [];
     document.getElementById('popup').classList.add('hidden');
+    gameBoard.classList.remove('no-click'); // Reabilita cliques no tabuleiro
+    isGameActive = false; // Reinicia o estado do jogo como inativo
+
+    // Recarrega as cartas da fase 1
+    cardImages = [
+        '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', 
+        '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png'
+    ]; // Imagens da fase 1
+
     createBoard(); // Recria o tabuleiro atual com as cartas embaralhadas
 }
 
 function nextPhase() {
-    if (currentPhase === 3) {
+    // Avança para a próxima fase corretamente
+    currentPhase++; // Incrementa a fase
+
+    if (currentPhase > 3) {
         alert("Parabéns! Você completou todas as fases!");
         goHome();
         return;
     }
 
-    currentPhase= currentPhase+1;
     matchedCards = [];
     flippedCards = [];
     document.getElementById('popup').classList.add('hidden');
+    gameBoard.classList.remove('no-click'); // Reabilita cliques no tabuleiro
+    isGameActive = true; // Ativa o estado do jogo
 
+    // Define as cartas para a próxima fase
     if (currentPhase === 2) {
         cardImages = [
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png',
@@ -128,13 +150,15 @@ function nextPhase() {
 function goHome() {
     window.location.href = '../../index.html'; // Redireciona para a página inicial
 }
-function volte(){
+
+function volte() {
     window.location.href = './jogos.html';
 }
+
 // Atribuir ações aos botões de popup
-document.getElementById('popup-btn').addEventListener('click', function() {
-    if (this.textContent === 'Tentar de novo') {
-        restartPhase(); // Reinicia a fase atual
+document.getElementById('popup-btn').addEventListener('click', function () {
+    if (this.textContent === 'Recomeçar') {
+        restartPhase(); // Reinicia o jogo para a fase inicial
     } else {
         nextPhase(); // Avança para a próxima fase
     }

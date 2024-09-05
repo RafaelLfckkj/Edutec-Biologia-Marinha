@@ -37,5 +37,5 @@ function redirecionarParanot2() {
 
 
 function redirecionarquemsomos() {
- window.location.href = ''; 
+ window.location.href = '..//src/pages/quem-somos.html'; 
 }

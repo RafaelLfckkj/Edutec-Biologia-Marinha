@@ -11,6 +11,12 @@
   background-color:  rgba(0, 0, 0, 0.5);
 }
 
+body{
+  background-image: url(../imagens/fundo\ material\ de\ apoio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
@@ -50,15 +56,6 @@ ul > img{
 
 }
 
-.on{
-  display: flex;
-}
-.on img{
-  width: 100%;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-}
 .on h1 {
   position: relative;
   z-index: 2;
@@ -66,13 +63,8 @@ ul > img{
   left: 15%;
   top: 3.8rem;
 }
-.circima img{
-  position: absolute;
-  top: 6rem;
-  left: 45%;
-  width: 48%;
-  bottom: 0rem;
-}
+
+
 #cards {
   display: flex;
   gap: 10rem;
@@ -222,5 +214,23 @@ h3{
   font-family: "Sniglet", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (min-width: 1500px) {
+    .Mar .mare {
+        width: 178%;
+        margin-top: 3.5rem;
+    }
+
+  .Mar .omeio {
+      width: 178%;
+      margin-top: 5rem;
+  }
+
+  .on h1 {
+    left: 20%;
+  }
+
+  
 }
 

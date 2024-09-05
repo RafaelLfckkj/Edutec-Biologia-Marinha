@@ -10,8 +10,16 @@
   font-size: 1.25rem;
   background-color:  rgba(0, 0, 0, 0.5);
 }
+
 .barra-de-navegacao > a{
   color: white;
+}
+
+body{
+  background-image: url(../imagens/fundo-jogo-da-memoria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 .barra-de-navegacao a:hover{
