@@ -49,35 +49,6 @@ ul > img{
   color: white;
   width: 2.5rem;
 }
-.onc {
-  display: flex;
-  max-width: 100%;
-}
-.onc .ondac {
-  width: 100%;
-  height: 24%;
-  display: flex;
-  position: absolute;
-  z-index: 2;
-}
-.onc .ondacm {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  position: absolute;
-  z-index: 1;
-}
-.cire img {
-  position: absolute;
-  z-index: 0;
-  width: 35%;
-}
-.cird img {
-  position: absolute;
-  z-index: 0;
-  width: 18%;
-  left: 82%;
-}
 .texto {
   position: relative;
   align-items: center;
@@ -97,6 +68,7 @@ ul > img{
   left: -1rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #027EA7;
 }
 
 .texto a {
@@ -123,4 +95,26 @@ ul > img{
   display: flex;
   position: absolute;
   bottom: 0rem;
+}
+
+@media screen and (min-width: 1500px){
+  
+  .texto h2 {
+      left: 13rem;
+      width: 30%;
+  }
+
+  .texto{
+    top: 0rem;
+  }
+
+  .texto p {
+    left: 4rem;
+  }
+
+  .texto a {
+    left: 3.5rem;
+    top: -1rem;
+  }
+  
 }

@@ -109,6 +109,12 @@ body{
   color: inherit;
   margin-left: 0px;
   margin-right: 40px;
+  
+}
+
+.social-media span{
+  font-weight: bold;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 .social-media a:last-child {
@@ -118,7 +124,7 @@ body{
 .social-media a svg {
   width: 1.1rem;
   fill: currentColor;
- 
+
 }
 
 /*-- Tooltip Social Media --*/
@@ -162,7 +168,7 @@ body{
 .tres-cima{
   display: flex;
   gap: 3rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   position: relative;
   left: 25%;

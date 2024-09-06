@@ -18,29 +18,61 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sniglet:wght@400;800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/home-jogos.css">  
   <link rel="stylesheet" href="../css/quiz.css">
   <script src="../scripts/quiz.js" defer></script>
   <title>Quiz</title>
 </head>
 <body>
-  <div class="quiz-container">
-    <div class="header">
-      <div id="progress-bar-container">
-        <div id="progress-bar"></div>
-      </div>
-      <div class="question-count" id="question-count">1/5 Questão</div>
-    </div>
+  <div class="container">
+    <main>
+      <!-- QUIZZ CONTAINER -->
+      <div id="quizz-container">
+        
+        
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
 
-    <div id="question-container">
-      <h2 id="question">Pergunta aqui</h2>
-      <div class="options-grid">
-        <button class="option" onclick="checkAnswer(this)">A</button>
-        <button class="option" onclick="checkAnswer(this)">B</button>
-        <button class="option" onclick="checkAnswer(this)">C</button>
-        <button class="option" onclick="checkAnswer(this)">D</button>
+            
+            <div class="question-count" id="question-count">1/5 Questão</div>
+          </div>
+        
+        <p id="question">
+          <span id="question-number">1</span> &#8212;
+          <span id="question-text">Qual é a unidade de medida para metros?</span>
+        </p>
+        <div id="answers-box">
+          
+          <div class="ac">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+          
+          <div class="bd">
+            
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+          
+        </div>
       </div>
-    </div>
+
+      <!-- SCORE BOARD -->
+      <div id="score-container" class="hide">
+        <h2>Parabéns</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>
+          Você acertou <span id="correct-answers">0</span> de
+          <span id="questions-qty">10</span> perguntas
+        </p>
+        <button id="restart">Refazer quizz!</button>
+      </div>
+
+      <!-- TEMPLATE RESPOSTA -->
+      <button class="answer-template hide">
+        <span class="btn-letter"></span> <span class="question-answer"></span>
+      </button>
+    </main>
   </div>
+  
 </body>
 </html>

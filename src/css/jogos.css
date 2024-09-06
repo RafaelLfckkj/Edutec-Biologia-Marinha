@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth; 
+  overflow-y: hidden;
 }
 
 .barra-de-navegacao > a{
@@ -200,6 +201,8 @@ hr{
 .ondi {
   bottom: 0;
 }
+
+
 #jogo-memoria:hover {
   background: linear-gradient(to bottom right, #c4e4e9, #38afd6);
   cursor: pointer;
@@ -230,5 +233,72 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+}
+
+
+@media screen and (min-width: 1300px) {
+
+  .quiz h3 {
+    bottom: 3rem;
+  }
+  .pa {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+    position: relative;
+    z-index: 1;
+    bottom: 20%;
+  }
+  
+  .pa h3 {
+    margin-top: -1rem;
+  }
+  
+  .pa hr {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #quiz .reto {
+    position: absolute;
+    width: 13rem;
+    height: 16rem;
+    top: 24%;
+    margin-top: 2rem;
+    bottom: 0;
+  }
+
+  #quiz .omeio {
+    width: 13rem;
+    height: 7.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .pa > .an {
+    position: absolute;
+    width: 135%;
+    z-index: -2;
+    top: 14.4rem;
+    bottom: 0;
+  }
+  .pa > .na {
+    position: absolute;
+    width: 128%;
+    z-index: -1;
+    top: 17.5rem;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1500px){
+
+  .on h1 {
+    left: 40%;
+  }
+
 }
 

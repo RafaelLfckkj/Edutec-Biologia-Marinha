@@ -328,12 +328,28 @@ h2 {
     color: #fff;
     line-height: 1;
   }
+  .jogo .card .card__description{
+    margin: 10px 0 10px;
+    font-size: 0.55rem;
+    color: #fff;
+    line-height: 1;
+  }
+  .jogo .card1 .card__description{
+    margin: 10px 0 10px;
+    font-size: 0.55rem;
+    color: #fff;
+    line-height: 1;
+  }
 }
 
 .serie {
   display: flex;
   margin-right: 1rem;
-
+}
+.jogo {
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1500px){

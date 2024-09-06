@@ -391,7 +391,7 @@ div>.mario {
   align-items: center;
   left: -24rem;
   top: -8rem;
-  width: 40%;
+  width: 38%;
 }
 .peixes-content .ver-button {
   display: flex;
@@ -399,7 +399,7 @@ div>.mario {
   align-items: center;
   left: 3rem;
   top: 3rem;
-  width: 40%;
+  width: 25%;
 }
 
 .Crustaceos-gallery .ver-button {
@@ -407,7 +407,7 @@ div>.mario {
   align-items: center;
   left: -12rem;
   top: -20rem;
-  width: 40%;
+  width: 38%;
   justify-content: center;
 }
 
@@ -632,9 +632,65 @@ div>.mario {
     margin-top: -38rem;
   }
 
+  .moluscos-gallery h1{
+    left: -20rem;
+  }
+
+  .moluscos-gallery img {
+    left: 7rem;
+  }
+
+
+  .Crustaceos-gallery img{
+    left: 17rem;
+  }
+
+  .Crustaceos-gallery h1{
+    left: -14rem;
+  }
+
+  .moluscos-gallery p{
+    left: -15rem;
+    top: -9rem;
+  }
+
+  .peixes-content p{
+    margin-left: 12rem;
+  }
+
+  .Crustaceos-gallery p{
+    left: -5rem;
+  }
+
+  .moluscos-gallery .ver-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -23.4rem;
+    top: -9rem;
+    width: 38%;
+  }
+  .peixes-content .ver-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 3rem;
+    top: 3rem;
+    width: 25%;
+  }
+
+  .Crustaceos-gallery .ver-button {
+    display: flex;
+    align-items: center;
+    left: -12rem;
+    top: -20rem;
+    width: 38%;
+    justify-content: center;
+  }
+
 }
 
-  @media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
     .seta-direita{
       color: black;
     }

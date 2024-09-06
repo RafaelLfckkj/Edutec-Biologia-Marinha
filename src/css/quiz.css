@@ -1,86 +1,164 @@
-body {
-  /* font-family: 'Arial', sans-serif; */
-  background-color: #f0f0f0;
+.container {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+#answers-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+#answers-box > .ac {
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none !important;
+}
+
+#correct-answers {
+  font-weight: bold;
+  color: #2eb94c;
+}
+
+#questions-qty {
+  font-weight: bold;
+  color: #00c9c8;
+}
+
+#restart {
+  background-color: #00c9c8;
+  color: #fff;
+  font-weight: bold;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  width: 180px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#restart:hover {
+  background-color: #2a272a;
+  color: #ffffff;
+}
+
+/* Quizz container */
+#question {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #0F5B85;
+  opacity: 65%;
+  font-weight: bold;
+}
+
+#answers-box button {
+  display: flex;
+  align-items: stretch;
+  margin: 15px 0;
+  width: 100%;
+  height: 4rem;
+  border: none;
+  text-align: left;
+  color: #00263A;
+  background-color: #80B4C6;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+#answers-box button:hover {
+  background-color: #0b1c51;
+  color: #fff;
+}
+
+#answers-box .btn-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #A5CBD8;
+  color: #00263A;
+  height: 2.5rem;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  margin-top: 0.7rem;
+  margin-left: 0.4rem;
+  flex: 1 1 0;
+  padding: 1rem;
+  max-width: 2.7rem;
+  border: 1px solid #A5CBD8;
+  border-radius: 0.3rem;
+  flex-shrink: 0;
 }
 
-.quiz-container {
-  background-color: #fff;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  position: relative;
-  overflow: hidden;
+.question-answer {
+  flex: 1 1 0;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#quizz-container .wrong-answer,
+#quizz-container .wrong-answer .btn-letter {
+  background-color: #e62210;
+  color: #fff;
+  border: none;
+}
+
+#quizz-container .correct-answer,
+#quizz-container .correct-answer .btn-letter {
+  background-color: #2eb94c;
+  color: #fff;
+  border: none;
 }
 
 .header {
-  background-color: #0072b1;
-  padding: 10px;
+  background-color: #004a75;
+  height: 5rem;
+  padding: 1rem;
   border-radius: 20px 20px 0 0;
-  color: #fff;
-  position: relative;
   text-align: center;
+  position: relative;
 }
 
 #progress-bar-container {
   background-color: #e0e0e0;
-  border-radius: 10px;
-  height: 8px;
+  height: 2.5rem;
   width: 80%;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
   position: relative;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  padding: 5px;
+  border: 3px solid #0e2e3f;
+  border-radius: 50px;
 }
 
 #progress-bar {
-  height: 8px;
-  width: 0%; /* Valor inicial */
-  background-color: #fff;
-  border-radius: 10px;
+  height: 2.11rem;
+  width: 20%;
+  left: -0.34rem;
+  position: relative;
+  background-color: #003354;
+  border-radius: 1.2rem;
   transition: width 0.5s;
 }
 
 .question-count {
-  font-size: 14px;
-  color: #d0e4f5;
-  margin-top: 5px;
-}
-
-#question-container {
-  padding: 20px;
-}
-
-.options-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.option {
-  padding: 15px;
-  font-size: 18px;
-  background-color: #b0cde9;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  color: #333;
-  font-weight: bold;
-}
-
-.option:hover {
-  background-color: #7eb4e5;
-}
-
-.option.correct {
-  background-color: #7ed957;
-}
-
-.option.wrong {
-  background-color: #ff6b6b;
+  position: absolute;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 0.1rem;
+  margin-left: 3.5rem;
 }
