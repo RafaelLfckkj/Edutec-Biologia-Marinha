@@ -199,6 +199,7 @@ div>.mario {
 
 .peixes-c {
   display: flex;
+  height: 10rem;
   position: relative;
   left: 150%;
   top: 5rem;
@@ -246,7 +247,7 @@ div>.mario {
 
 }
 
-.cnidarios-content img {
+.cnidarios-content video {
   display: block;
   position: absolute;
   left: 42%;
@@ -257,15 +258,15 @@ div>.mario {
   height: 31.25rem;
 }
 
-.peixes-c img {
-  display: block;
+.peixes-c video {
+  display: flex;
   position: absolute;
   left: 42%;
   margin: auto;
   width: 47rem;
   z-index: -1;
   margin-top: -6rem;
-  height: 31.25rem;
+  height: 31rem;
 }
 
 .peixes-c .ver-button {
@@ -315,7 +316,7 @@ div>.mario {
   cursor: pointer;
   position: absolute;
   right: 0;
-  margin-top: -30rem;
+  margin-top: -25rem;
   margin-right: 0.625rem;
   z-index: 100;
 }
@@ -357,23 +358,22 @@ div>.mario {
   left: -16rem;
 }
 
-.moluscos-gallery img {
+.moluscos-gallery video {
   display: flex;
   top: -20rem;
   align-items: center;
-  left: -1rem;
-  left: 2rem;
+  left: 6.5rem;
 }
 
-.peixes-content img {
+.peixes-content video {
   display: flex;
   top: -8rem;
 }
 
-.Crustaceos-gallery img {
+.Crustaceos-gallery video {
   display: flex;
   top: -29rem;
-  left: 15rem;
+  left: 17.4rem;
 }
 .moluscos-gallery p {
   left: -24rem;
@@ -621,7 +621,7 @@ div>.mario {
     }
 
   .seta-direita{
-    color: black;
+    color: white;
   }
 
   .definition-section .container h2 {
@@ -703,7 +703,7 @@ div>.mario {
 @media screen and (min-width: 1500px) {
     .onda {
         left: 60%;
-        bottom: 12.5rem;
+        bottom: 12rem;
     }
 
   .seta-direita{
@@ -716,12 +716,10 @@ div>.mario {
   }
 
   .definition-section > .container {
-    margin-left: 100px;
+    margin-left: 100px; 
   }
-  
   .definition-section .container h2 {
       left: 17%;
   }
-}
-}
 
+}

@@ -45,7 +45,7 @@ ul > img{
   align-items: center;
   position: absolute;
   top: 20%;
-  color: #000;
+  color: #ffffff;
   opacity: 75%;
   font-size: 9.375rem;
 }
@@ -58,7 +58,7 @@ ul > img{
   position: absolute;
   top: 50%;
   left: 35%;
-  color: #000;
+  color: #ffffff;
   font-size: 1.375rem;
   text-align: center;
 }
@@ -165,9 +165,10 @@ hr{
 .box {
   display: flex;
   width: 100%;
-  height: 22rem;
+  height: 25rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box > .ant {
   width: 18rem;
@@ -183,25 +184,26 @@ hr{
   position: relative;
   height: 100%;
   background: linear-gradient(to bottom right, #F8A836, #622711);
-  clip-path: circle(9.5rem);
+  clip-path: circle(11rem);
   transition: .5s;
 }
 
 .box > .circulo:hover ~ img {
-  left: calc(16% + 3rem);
+  left: calc(20% + 3rem);
 }
 .box > .circulo:hover{
   display: flex;
   width: 100%;
   height: 145%;
-  clip-path: circle(45rem);
+  clip-path: circle(46rem);
 }
 .box1 {
   display: flex;
   width: 100%;
-  height: 22rem;
+  height: 27rem;
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 11rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box1 > .ant {
   width: 18rem;
@@ -228,20 +230,21 @@ hr{
   display: flex;
   width: 100%;
   height: 145%;
-  clip-path: circle(45rem);
+  clip-path: circle(48rem);
 }
 .box2 {
   display: flex;
   width: 100%;
-  height: 22rem;
+  height: 28rem;
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+  font-family: "Urbanist", sans-serif;
 }
 .box2 > .ant {
   width: 18rem;
   height: 17rem;
   left: 50%;
-  transform: translate(-50%, 23%);
+  transform: translate(-50%, 40%);
   position: absolute;
   pointer-events: none;
   transition: .5s;
@@ -262,20 +265,21 @@ hr{
   display: flex;
   width: 100%;
   height: 145%;
-  clip-path: circle(45rem);
+  clip-path: circle(48rem);
 }
 .box3 {
   display: flex;
   width: 100%;
-  height: 22rem;
-  margin-top: 10rem;
+  height: 26rem;
+  margin-top: 13rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box3 > .ant {
   width: 18rem;
   height: 17rem;
   left: 50%;
-  transform: translate(-50%, 12%);
+  transform: translate(-50%, 24%);
   position: absolute;
   pointer-events: none;
   transition: .5s;
@@ -300,7 +304,7 @@ hr{
   display: flex;
   width: 100%;
   height: 145%;
-  clip-path: circle(45rem);
+  clip-path: circle(47rem);
 }
 .texto {
   display: block;
@@ -312,9 +316,13 @@ hr{
   text-align: left;
   max-width: 100%;
   margin-left: 35rem;
-  font-size: 1rem;
   color: #ffffff;
   margin-right: 2rem;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
 }
 .texto h4 {
   color: #ffffff;
@@ -325,8 +333,12 @@ hr{
   max-width: 100%;
   position: relative;
   left: 20%;
-  font-size: 4rem;
   color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6.25rem;
 }
 .circulo:hover .texto {
   opacity: 1;

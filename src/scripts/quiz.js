@@ -1,9 +1,13 @@
 // declaração de variáveis
 const question = document.querySelector('#question');
+const questionu = document.querySelector('#question1');
 const answerBox = document.querySelector('#answers-box');
 const quizzContainer = document.querySelector('#quizz-container');
 const scoreContainer = document.querySelector('#score-container');
 const progressBar = document.querySelector('#progress-bar'); // Seleciona a barra de progresso
+const questionNumber = questionu.querySelector('#question-number');
+const onda1 = document.querySelector('.onc');
+const onda2 = document.querySelector('.onq');
 const letters = ['a', 'b', 'c', 'd', 'e'];
 let points = 0;
 let actualQuestion = 0;
@@ -12,48 +16,48 @@ let questionAnswered = false; // Controla se a questão já foi respondida
 // perguntas
 const questions = [
   {
-    question: 'PHP foi desenvolvido para qual fim?',
+    question: 'Qual destes é um exemplo de um cnidário?',
     answers: [
-      { answer: 'Back-End', correct: true },
-      { answer: 'Front-End', correct: false },
-      { answer: 'Sistema operacional', correct: false },
-      { answer: 'Banco de dados', correct: false },
+      { answer: 'Polvo', correct: false },
+      { answer: 'Estrela-do-mar', correct: false },
+      { answer: 'Tartaruga-marinha', correct: false },
+      { answer: 'Água-viva', correct: true },
     ],
   },
   {
-    question: 'Uma forma de declarar variável em JavaScript:',
+    question: 'Qual é a principal característica dos crustáceos?',
     answers: [
-      { answer: '$var', correct: false },
-      { answer: 'var', correct: true },
-      { answer: '@var', correct: false },
-      { answer: '#let', correct: false },
+      { answer: 'Têm asas membranosas', correct: false },
+      { answer: 'Têm um corpo segmentado com dois pares de antenas', correct: true },
+      { answer: 'Possuem uma concha protetora externa', correct: false },
+      { answer: 'Têm espinhos ao longo do corpo', correct: false },
     ],
   },
   {
-    question: 'Qual o seletor de id no CSS?',
+    question: 'Qual é a característica que diferencia os peixes ósseos dos cartilaginosos?',
     answers: [
-      { answer: '#', correct: true },
-      { answer: '.', correct: false },
-      { answer: '@', correct: false },
-      { answer: '/', correct: false },
+      { answer: 'Esqueleto feito de osso', correct: true },
+      { answer: 'Presença de nadadeiras', correct: false },
+      { answer: 'Respiração por pulmões', correct: false },
+      { answer: 'Presença de escamas', correct: false },
     ],
   },
   {
-    question: 'O que é HTML?',
+    question: 'Qual é a principal estrutura usada pelos moluscos para locomoção?',
     answers: [
-      { answer: 'Linguagem de programação', correct: false },
-      { answer: 'Linguagem de marcação', correct: true },
-      { answer: 'Banco de dados', correct: false },
-      { answer: 'Framework', correct: false },
+      { answer: 'Nadadeiras', correct: false },
+      { answer: 'Flagelos', correct: false },
+      { answer: 'Pés musculares', correct: true },
+      { answer: 'Tentáculos', correct: false },
     ],
   },
   {
-    question: 'Qual a tag para criar um parágrafo em HTML?',
+    question: 'Qual é a principal característica dos cnidários?',
     answers: [
-      { answer: '<p>', correct: true },
-      { answer: '<h1>', correct: false },
-      { answer: '<div>', correct: false },
-      { answer: '<a>', correct: false },
+      { answer: 'Têm um esqueleto interno calcificado', correct: false },
+      { answer: 'Respiram por brânquias', correct: false },
+      { answer: 'Possuem espinhos venenosos', correct: false },
+      { answer: 'Apresentam células urticantes chamadas cnidócitos', correct: true },
     ],
   }
 ];
@@ -73,11 +77,9 @@ function createQuestion(i) {
   });
 
   const questionText = question.querySelector('#question-text');
-  const questionNumber = question.querySelector('#question-number');
 
   questionText.textContent = questions[i].question;
   questionNumber.textContent = i + 1;
-
   // Atualiza a barra de progresso
   updateProgressBar(i + 1, questions.length);
 
@@ -142,7 +144,7 @@ function nextQuestion() {
 
 // atualiza a barra de progresso
 function updateProgressBar(current, total) {
-  const progressPercentage = (current / total) * 100;
+  const progressPercentage = (current / total) * 85;
   progressBar.style.width = `${progressPercentage}%`;
 }
 
@@ -164,6 +166,8 @@ function showSuccessMessage() {
 // mostra ou esconde o score
 function hideOrShowQuizz() {
   quizzContainer.classList.toggle('hide');
+  onda1.classList.toggle('hide');
+  onda2.classList.toggle('hide');
   scoreContainer.classList.toggle('hide');
 }
 

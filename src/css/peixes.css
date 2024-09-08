@@ -33,9 +33,9 @@ ul > img{
 }
 
 
-.comeco img{
+.comeco video{
   width: 100%;
-  height: 62.5rem;
+  height: 62%;
 }
 
 .comeco h1 {
@@ -44,7 +44,7 @@ ul > img{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 40%;
+  top: 20%;
   color: #fff;
   opacity: 75%;
   font-size: 9.375rem;
@@ -56,7 +56,7 @@ ul > img{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 35%;
   color: #fff;
   font-size: 1.375rem;
@@ -169,6 +169,7 @@ hr{
   height: 20rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box > .ant {
   width: 17rem;
@@ -230,6 +231,7 @@ hr{
   height: 22rem;
   margin-top: 10rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box1 > .ant {
   width: 20rem;
@@ -264,6 +266,7 @@ hr{
   height: 21rem;
   margin-top: 11rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box2 > .ant {
   width: 16rem;

@@ -181,3 +181,28 @@ body{
   left: 25%;
 }
 
+.bubble {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 50%;
+  animation: bubble-rise 3s infinite ease-in;
+}
+
+.bubble1 { left: 20%; animation-duration: 5s; }
+.bubble2 { left: 50%; animation-duration: 7s; }
+.bubble3 { left: 70%; animation-duration: 4s; }
+.bubble4 { left: 10%; animation-duration: 6s; }
+.bubble5 { left: 30%; animation-duration: 8s; }
+.bubble6 { left: 40%; animation-duration: 3s; }
+.bubble7 { left: 60%; animation-duration: 5s; }
+.bubble8 { left: 80%; animation-duration: 7s; }
+.bubble9 { left: 90%; animation-duration: 4s; }
+.bubble10 { left: 15%; animation-duration: 6s; }
+
+@keyframes bubble-rise {
+  0% { bottom: 0; opacity: 0; transform: translateX(0); }
+  30% { opacity: 1; }
+  100% { bottom: 100%; opacity: 0; transform: translateX(-30px); }
+}

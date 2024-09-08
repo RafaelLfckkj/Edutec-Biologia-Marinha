@@ -19,6 +19,7 @@ function showSlide(index) {
     index = 0;
     currentIndex = index;
   }
+
   console.log(currentIndex)
   console.log(index)
 }

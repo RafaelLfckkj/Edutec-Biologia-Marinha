@@ -56,11 +56,13 @@ body{
 /* Quizz container */
 #question {
   text-align: center;
-  margin-bottom: 70px;
-  font-size: 20px;
+  margin-bottom: 64px;
+  font-size: 25px;
   color: #0F5B85;
   opacity: 65%;
   font-weight: bold;
+  position: relative;
+  top: 2rem;
 }
 
 #answers-box button {
@@ -157,12 +159,20 @@ body{
   transition: width 0.5s;
 }
 
-.question-count {
+#question1 {
+  display: flex;
   position: absolute;
-  font-size: 16px;
-  color: #ffffff;
-  margin-top: 0.1rem;
-  margin-left: 3.5rem;
+  transform: translate(260%, -150%);
+  
+  color: #000;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(15, 91, 133, 0.65);
+  font-family: "Zen Maru Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
 }
 
 #progress-bar-container .question-count {
@@ -219,7 +229,6 @@ body{
 
 .onc img{
   display: flex;
-  widht: 100%;
   height: 35%;
   margin-top: -5rem;
   margin-left: -20rem;
@@ -232,11 +241,7 @@ body{
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 1500px) {
-  .onq img {
-    margin-top: 9.3rem;
-  }
-}
+
 @media screen and (min-width: 1300px) {
   #progress-bar-container .question-count {
     margin-left: 35%;
@@ -245,4 +250,16 @@ body{
     color: #A5CBD8;
     font-family: "Sniglet", system-ui;
   }
+}
+
+@media screen and (min-width: 1500px) {
+  .onq img {
+    margin-top: 9.3rem;
+  }
+
+  #question1{
+    margin-left: 7rem;
+  }
+
+  
 }

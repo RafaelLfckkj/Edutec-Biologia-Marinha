@@ -33,9 +33,9 @@ ul > img{
 
 }
 
-.comeco img{
+.comeco video{
   width: 100%;
-  height: 62.5rem;
+  height: 62%;
 }
 
 .comeco h1 {
@@ -169,6 +169,7 @@ hr{
   height: 22rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box > .ant {
   width: 18rem;
@@ -230,6 +231,7 @@ hr{
   height: 22rem;
   margin-top: 10rem;
   margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
 }
 .box1 > .ant {
   width: 18rem;
