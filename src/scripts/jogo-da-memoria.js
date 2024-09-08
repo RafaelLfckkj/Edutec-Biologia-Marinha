@@ -72,7 +72,7 @@ function checkForMatch() {
 }
 
 function startTimer() {
-    timeLeft = currentPhase === 1 ? 10 : currentPhase === 2 ? 20 : 35;
+    timeLeft = currentPhase === 1 ? 10 : currentPhase === 3 ? 15 : 20;
     document.getElementById('time').textContent = timeLeft;
     clearInterval(timer); // Garante que não exista um timer ativo antes de iniciar um novo
     timer = setInterval(() => {
@@ -116,14 +116,7 @@ function restartPhase() {
 
 function nextPhase() {
     // Avança para a próxima fase corretamente
-    currentPhase++; // Incrementa a fase
-
-    if (currentPhase > 3) {
-        alert("Parabéns! Você completou todas as fases!");
-        goHome();
-        return;
-    }
-
+    currentPhase += 1; // Incrementa a fase
     matchedCards = [];
     flippedCards = [];
     document.getElementById('popup').classList.add('hidden');
@@ -131,12 +124,12 @@ function nextPhase() {
     isGameActive = true; // Ativa o estado do jogo
 
     // Define as cartas para a próxima fase
-    if (currentPhase === 2) {
+    if (currentPhase === 3) {
         cardImages = [
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png',
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png'
         ]; // Imagens da fase 2
-    } else if (currentPhase === 3) {
+    } else if (currentPhase === 4) {
         cardImages = [
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png',
             '.././jogo da memoria/shark.png', '.././jogo da memoria/tentacru.png', '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png',
@@ -148,7 +141,7 @@ function nextPhase() {
 }
 
 function goHome() {
-    window.location.href = '../../index.html'; // Redireciona para a página inicial
+    window.location.href = '../../index.html';
 }
 
 function volte() {

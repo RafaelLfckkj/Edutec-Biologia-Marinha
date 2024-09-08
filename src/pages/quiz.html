@@ -23,7 +23,14 @@
   <title>Quiz</title>
 </head>
 <body>
+  
+  
   <div class="container">
+
+    <div class="onc">
+      <img src="../imagens/ondacimaq.png" alt="">
+    </div>
+    
     <main>
       <!-- QUIZZ CONTAINER -->
       <div id="quizz-container">
@@ -31,48 +38,48 @@
         
           <div id="progress-bar-container">
             <div id="progress-bar"></div>
-
-            
             <div class="question-count" id="question-count">1/5 Questão</div>
           </div>
         
         <p id="question">
-          <span id="question-number">1</span> &#8212;
+          <span id="question-number"></span> &#8212;
           <span id="question-text">Qual é a unidade de medida para metros?</span>
         </p>
         <div id="answers-box">
           
-          <div class="ac">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>          
             <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
             <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-          </div>
-          
-          <div class="bd">
-            
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-          </div>
           
         </div>
       </div>
 
       <!-- SCORE BOARD -->
       <div id="score-container" class="hide">
-        <h2>Parabéns</h2>
+        <h2>Parabéns!!</h2>
         <p id="display-score"><span>90</span>%</p>
         <p>
           Você acertou <span id="correct-answers">0</span> de
           <span id="questions-qty">10</span> perguntas
         </p>
-        <button id="restart">Refazer quizz!</button>
+        <button id="restart">Jogar novamente</button>
+        <nav>
+          <a href="../../index.html">VOLTAR PARA A HOME</a>
+        </nav>
       </div>
 
       <!-- TEMPLATE RESPOSTA -->
       <button class="answer-template hide">
         <span class="btn-letter"></span> <span class="question-answer"></span>
       </button>
+
+      
+      
     </main>
   </div>
-  
+  <div class="onq">
+    <img src="../imagens/ondabaixoq.png" alt="">
+  </div>
 </body>
 </html>

@@ -3,101 +3,85 @@ const question = document.querySelector('#question');
 const answerBox = document.querySelector('#answers-box');
 const quizzContainer = document.querySelector('#quizz-container');
 const scoreContainer = document.querySelector('#score-container');
+const progressBar = document.querySelector('#progress-bar'); // Seleciona a barra de progresso
 const letters = ['a', 'b', 'c', 'd', 'e'];
 let points = 0;
 let actualQuestion = 0;
+let questionAnswered = false; // Controla se a questão já foi respondida
 
 // perguntas
 const questions = [
   {
     question: 'PHP foi desenvolvido para qual fim?',
     answers: [
-      {
-        answer: 'Back-End',
-        correct: true,
-      },
-      {
-        answer: 'Front-End',
-        correct: false,
-      },
-      {
-        answer: 'Sistema operacional',
-        correct: false,
-      },
-      {
-        answer: 'Banco de dados',
-        correct: false,
-      },
+      { answer: 'Back-End', correct: true },
+      { answer: 'Front-End', correct: false },
+      { answer: 'Sistema operacional', correct: false },
+      { answer: 'Banco de dados', correct: false },
     ],
   },
   {
     question: 'Uma forma de declarar variável em JavaScript:',
     answers: [
-      {
-        answer: '$var',
-        correct: false,
-      },
-      {
-        answer: 'var',
-        correct: true,
-      },
-      {
-        answer: '@var',
-        correct: false,
-      },
-      {
-        answer: '#let',
-        correct: false,
-      },
+      { answer: '$var', correct: false },
+      { answer: 'var', correct: true },
+      { answer: '@var', correct: false },
+      { answer: '#let', correct: false },
     ],
   },
   {
     question: 'Qual o seletor de id no CSS?',
     answers: [
-      {
-        answer: '#',
-        correct: true,
-      },
-      {
-        answer: '.',
-        correct: false,
-      },
-      {
-        answer: '@',
-        correct: false,
-      },
-      {
-        answer: '/',
-        correct: false,
-      },
+      { answer: '#', correct: true },
+      { answer: '.', correct: false },
+      { answer: '@', correct: false },
+      { answer: '/', correct: false },
     ],
   },
+  {
+    question: 'O que é HTML?',
+    answers: [
+      { answer: 'Linguagem de programação', correct: false },
+      { answer: 'Linguagem de marcação', correct: true },
+      { answer: 'Banco de dados', correct: false },
+      { answer: 'Framework', correct: false },
+    ],
+  },
+  {
+    question: 'Qual a tag para criar um parágrafo em HTML?',
+    answers: [
+      { answer: '<p>', correct: true },
+      { answer: '<h1>', correct: false },
+      { answer: '<div>', correct: false },
+      { answer: '<a>', correct: false },
+    ],
+  }
 ];
 
 // substituição do quizz para a primeira pergunta
 function init() {
-  // criar primeira pergunta
   createQuestion(0);
 }
 
 // cria uma pergunta
 function createQuestion(i) {
-  // limpar questão anterior
+  questionAnswered = false; // Reseta a variável de controle
+
   const oldButtons = answerBox.querySelectorAll('button');
   oldButtons.forEach((btn) => {
     btn.remove();
   });
 
-  // alterar texto da pergunta
   const questionText = question.querySelector('#question-text');
   const questionNumber = question.querySelector('#question-number');
 
   questionText.textContent = questions[i].question;
   questionNumber.textContent = i + 1;
 
-  // inserir alternativas
+  // Atualiza a barra de progresso
+  updateProgressBar(i + 1, questions.length);
+
   questions[i].answers.forEach((answer, i) => {
-    // cria template botão quizz
     const answerTemplate = document.querySelector('.answer-template').cloneNode(true);
 
     const letterBtn = answerTemplate.querySelector('.btn-letter');
@@ -108,36 +92,32 @@ function createQuestion(i) {
 
     answerTemplate.setAttribute('correct-answer', answer['correct']);
 
-    // remover hide e template class
     answerTemplate.classList.remove('hide');
     answerTemplate.classList.remove('answer-template');
 
-    // inserir alternativa na tela
     answerBox.appendChild(answerTemplate);
 
-    // inserir evento click no botão
+    // Inserir evento click no botão
     answerTemplate.addEventListener('click', function () {
-      checkAnswer(this);
+      if (!questionAnswered) {
+        questionAnswered = true; // Marca que a questão foi respondida
+        checkAnswer(this);
+      }
     });
   });
 
-  // incrementar o número da questão
   actualQuestion++;
 }
 
-// verificar resposta do usuário
+// verifica a resposta do usuário
 function checkAnswer(btn) {
-  // seleciona todos os botões
   const buttons = answerBox.querySelectorAll('button');
 
-  // verifica se resposta correta e add classe
   buttons.forEach((button) => {
     if (button.getAttribute('correct-answer') == 'true') {
       button.classList.add('correct-answer');
 
-      // checa se usuário acertou a pergunta
       if (btn === button) {
-        // incremento dos pontos
         points++;
       }
     } else {
@@ -145,17 +125,13 @@ function checkAnswer(btn) {
     }
   });
 
-  // exibir próxima pergunta
   nextQuestion();
 }
 
-// exibe a pŕoxima pergunta no quizz
+// exibe a próxima pergunta no quizz
 function nextQuestion() {
-  // timer para usuário ver as respostas
   setTimeout(function () {
-    // verifica se ainda há perguntas
     if (actualQuestion >= questions.length) {
-      // apresenta mensagem de sucesso
       showSuccessMessage();
       return;
     }
@@ -164,27 +140,28 @@ function nextQuestion() {
   }, 1200);
 }
 
+// atualiza a barra de progresso
+function updateProgressBar(current, total) {
+  const progressPercentage = (current / total) * 100;
+  progressBar.style.width = `${progressPercentage}%`;
+}
+
 // exibe a tela final
 function showSuccessMessage() {
   hideOrShowQuizz();
 
-  // trocar dados tela de sucesso
-  // calcular score
   const score = ((points / questions.length) * 100).toFixed(2);
-
   const displayScore = document.querySelector('#display-score span');
   displayScore.textContent = score.toString();
 
-  //alterar o número de perguntas corretas
   const correctAnswers = document.querySelector('#correct-answers');
   correctAnswers.textContent = points;
 
-  // alterar o total de perguntas
   const totalQuestions = document.querySelector('#questions-qty');
   totalQuestions.textContent = questions.length;
 }
 
-// mostra ou esonde o score
+// mostra ou esconde o score
 function hideOrShowQuizz() {
   quizzContainer.classList.toggle('hide');
   scoreContainer.classList.toggle('hide');
@@ -193,12 +170,13 @@ function hideOrShowQuizz() {
 // reiniciar quizz
 const restartBtn = document.querySelector('#restart');
 restartBtn.addEventListener('click', function () {
-  //zerar jogo
   actualQuestion = 0;
   points = 0;
   hideOrShowQuizz();
   init();
 });
+// voltar Home
+
 
 // inicialização do quizz
 init();

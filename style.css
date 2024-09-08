@@ -618,7 +618,7 @@ div>.mario {
     .onda {
         left: 60%;
         bottom: 10.5rem;
-    } */
+    }
 
   .seta-direita{
     color: black;
@@ -698,7 +698,7 @@ div>.mario {
     .definition-section .container h2 {
         left: 16.5%;
     }
-  }
+}
 
 @media screen and (min-width: 1500px) {
     .onda {
@@ -723,3 +723,5 @@ div>.mario {
       left: 17%;
   }
 }
+}
+
