@@ -116,3 +116,25 @@ ul > img{
   }
   
 }
+
+@media screen and (min-width: 1600px) {
+  .texto h2{
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    margin-left: 33.5rem;
+    margin-top: 10rem;
+  }
+
+  p{
+    margin-left: 46rem;
+    width: 30%;
+  }
+
+  .texto a {
+    left: 16rem
+  }
+
+  
+}

@@ -287,6 +287,21 @@ hr{
 .circulo:hover .texto {
   opacity: 1;
 }
+
+@media screen and (min-width: 1600px) {
+  .box .texto h4 {
+    margin-left: 18rem;
+  }
+  .box1 .texto h4{
+    margin-left: 8rem;
+  }
+  .box > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+  .box1 > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+}
 h1{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

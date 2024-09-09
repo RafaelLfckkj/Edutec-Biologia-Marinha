@@ -427,8 +427,36 @@ box3 .texto1 > p {
 .circulo:hover .texto1{
   opacity: 1;
 }
-
-
+@media screen and (min-width: 1600px) {
+  .box .texto{
+    margin-left: 8rem;
+  }
+  .box1 .texto1 {
+    margin-left: 8rem;
+  }
+  .box2 .texto1 {
+    margin-left: 8rem;
+  }
+  .box3 .texto1 {
+    margin-left: 8rem;
+  }
+  .box3 .texto1 h4 {
+    margin-left: -4rem;
+  }
+  
+  .box > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+  .box1 > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+  .box2 > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+  .box3 > .circulo:hover{
+    clip-path: circle(100rem);
+  }
+}
 h1{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

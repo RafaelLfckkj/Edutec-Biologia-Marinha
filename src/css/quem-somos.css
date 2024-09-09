@@ -206,3 +206,14 @@ body{
   30% { opacity: 1; }
   100% { bottom: 100%; opacity: 0; transform: translateX(-30px); }
 }
+
+@media screen and (min-width: 1600px) {
+  .tres-cima{
+    margin-top: 10rem;
+    left: 30%;
+  }
+
+  .tres-baixo{
+    left: 30%;
+  }
+}

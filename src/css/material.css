@@ -234,3 +234,14 @@ h3{
   
 }
 
+@media screen and (min-width: 1600px) {
+  .on h1 {
+    left: 23.5%;
+  }
+
+
+  #cards {
+    margin-top: 15rem;
+  }
+}
+

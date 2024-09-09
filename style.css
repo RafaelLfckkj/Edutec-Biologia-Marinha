@@ -723,3 +723,31 @@ div>.mario {
   }
 
 }
+
+
+@media screen and (min-width: 1600px) {
+    .onda {
+        left: 60%;
+        bottom: 15rem;
+    }
+
+    div > .mario {
+      top: 45%;
+    }
+  
+    .sobre-nos p {
+      margin-left: 89%;
+    }
+
+    .definition-section > .container {
+    margin-left: 12.5rem;
+      
+    }
+    .definition-section .container h2 {
+      left: 16.5%;
+      
+    }
+  .definition-section .container p {
+    font-size: 1.25rem;
+  }
+}

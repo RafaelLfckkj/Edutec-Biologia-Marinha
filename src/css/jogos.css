@@ -302,3 +302,16 @@ body{
 
 }
 
+@media screen and (min-width: 1600px){
+
+  #cards {
+    margin-top: 15rem;
+  }
+
+
+  .on h1 {
+    left: 42%;
+  }
+
+}
+
