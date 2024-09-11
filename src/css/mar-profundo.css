@@ -11,9 +11,26 @@
   background-color:  rgba(0, 0, 0, 0.5);
 }
 
+
+html {
+  scroll-behavior: smooth; 
+  overflow-x: hidden;
+}
+
+.barra-de-navegacao > a{
+  color: white;
+}
+
+.barra-de-navegacao a:hover{
+  background-color: #ffffff;;
+  color: black;
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 li{
@@ -30,21 +47,46 @@ ul > img{
   margin-right: 0.625rem; 
   color: white;
   width: 2.5rem;
-
+}
+.comeco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100% 100%);
+  background: #C7E7E3;
+  color: #001D3D;
 }
 
-body {
+.comeco h1 {
+  position: relative;
+  bottom: 10rem;
+}
+.sol {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  left: 20%;
+  bottom: 15rem;
+  width: 627px;
+  height: 609px;
+  flex-shrink: 0;
+  border-radius: 627px;
+  background: linear-gradient(180deg, #FFDD87 0%, #FFB905 100%);
+}
+
+main {
   margin: 0;
   overflow: hidden;
-  background: #001D3D; /* Cor do mar profundo */
-  height: 100vh;
+  background: #C7E7E3;
+  height: 290vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-h1 {
+.sea h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,51 +96,110 @@ h1 {
 }
 .sea {
   position: absolute;
-  bottom: 0;
   width: 200%;
-  height: 200px;
-  background: #003566;
-  overflow: hidden;
-}
-
-/* .wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  opacity: 0.7;
-  animation: wave-animation 4s infinite linear;
-} */
-
-.wave:nth-child(2) {
-  bottom: 20px;
-  animation: wave-animation 6s infinite linear;
-  opacity: 0.5;
+  background: #009AE7;
+  overflow-x: hidden;
 }
 
-@keyframes wave-animation {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.onda {
+  background-color: #C7E7E3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* .fish {
-  width: 40px;
-  height: 20px;
-  background: orange;
+.mane {
   position: absolute;
-  border-radius: 50% 50% 0 50%;
-  transform: rotate(45deg);
-  top: 50%;
-  left: 50%;
-  animation: swim 5s infinite;
+  width: 10%;
+  left: 55%;
+  display: flex;
+  z-index: 1000;
 }
- */
-@keyframes swim {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(-100px, 20px); }
-  100% { transform: translate(0, 0); }
+.atle {
+  position: absolute;
+  width: 7%;
+  left: 30%;
+  display: flex;
+  z-index: 1000;
 }
+.bass {
+  position: relative;
+  width: 5%;
+  top: 15%;
+  left: 42%;
+  display: flex;
+  z-index: 1000;
+}
+.coral {
+  position: relative;
+  width: 6%;
+  top: 15%;
+  left: 60%;
+  display: flex;
+  z-index: 1000;
+}
+.peixeur {
+  position: relative;
+  width: 6%;
+  top: 15%;
+  left: 30%;
+  display: flex;
+  z-index: 1000;
+}
+.palha {
+  position: relative;
+  width: 5%;
+  top: 18%;
+  left: 55%;
+  display: flex;
+  z-index: 1000;
+}
+.barra {
+  position: relative;
+  width: 6%;
+  top: 24%;
+  left: 38%;
+  display: flex;
+  z-index: 1000;
+}
+.blutang {
+  position: relative;
+  width: 5%;
+  top: 28%;
+  left: 53%;
+  display: flex;
+  z-index: 1000;
+}
+.crab {
+  position: relative;
+  width: 3%;
+  top: 35%;
+  left: 30%;
+  display: flex;
+  z-index: 1000;
+}
+.cod {
+  position: relative;
+  width: 6%;
+  top: 38%;
+  left: 38%;
+  display: flex;
+  z-index: 1000;
+}
+.spinysplay {
+  position: relative;
+  width: 7%;
+  top: 37%;
+  left: 27%;
+  display: flex;
+  z-index: 1000;
+}
+@media screen and (min-width: 1600px) {
+  .onda img {
+    width: 50%;
+  }
+}
+
 
 .bubble {
   width: 10px;
@@ -110,18 +211,46 @@ h1 {
 }
 
 .bubble1 {
-  left: 20%;
-  animation-duration: 5s;
+  left: 10%;
+  animation-duration: 3s;
 }
 
 .bubble2 {
-  left: 50%;
-  animation-duration: 7s;
+  left: 20%;
+  animation-duration: 3s;
 }
 
 .bubble3 {
-  left: 70%;
+  left: 30%;
   animation-duration: 4s;
+}
+.bubble4 {
+  left: 40%;
+  animation-duration: 2s;
+}
+.bubble5 {
+  left: 50%;
+  animation-duration: 3s;
+}
+.bubble6 {
+  left: 60%;
+  animation-duration: 1.4s;
+}
+.bubble7 {
+  left: 70%;
+  animation-duration: 1.2s;
+}
+.bubble8 {
+  left: 80%;
+  animation-duration: 1.5s;
+}
+.bubble9 {
+  left: 90%;
+  animation-duration: 1s;
+}
+.bubble10 {
+  left: 99%;
+  animation-duration: 1.1s;
 }
 
 @keyframes bubble-rise {

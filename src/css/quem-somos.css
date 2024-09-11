@@ -210,10 +210,24 @@ body{
 
 @media screen and (min-width: 1600px) {
   .tres-cima{
-    left: 30%;
+    left: 28%;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
   }
 
   .tres-baixo{
-    left: 30%;
+    left: 28%;
   }
+}
+
+@media screen and (min-width: 1900px) {
+  .tres-cima{
+      left: 32%;
+      margin-top: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    .tres-baixo{
+      left: 32%;
+    }
 }

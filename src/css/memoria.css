@@ -193,3 +193,14 @@ main {
 
 }
 
+@media screen and (min-width: 1900px) {
+  .game-board {
+    margin-left: 45rem;
+    left: -2rem;
+  }
+
+  #timer{
+    left: -30rem;
+  }
+}
+

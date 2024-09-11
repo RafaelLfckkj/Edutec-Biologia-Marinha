@@ -61,6 +61,7 @@ ul > img{
   color: #fff;
   font-size: 1.375rem;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .onda-azul img{
@@ -376,5 +377,40 @@ p {
     font-size: 1.25rem;
     text-align: center;
   }
+
+}
+
+
+@media screen and (min-width: 1900px) {
+
+  hr{
+    margin: 0 27rem;
+  }
+
+  .comeco h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    opacity: 75%;
+    font-size: 9.375rem;
+  }
+
+  .texto-alto{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
 
 }

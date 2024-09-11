@@ -30,7 +30,7 @@ ul > img{
   margin-right: 0.625rem; 
   color: white;
   width: 2.5rem;
-  
+
 }
 
 .comeco video{
@@ -89,88 +89,6 @@ ul > img{
   justify-content: center;
 }
 
-.card {
-  position: relative;
-  width: 800px;
-  height: 320px;
-  background: mediumturquoise;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 16rem;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.card::before,
-.card::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: lightblue;
-  transition: all 0.8s;
-}
-
-.card::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.card:hover::before,
-.card:hover::after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.card:hover::after {
-  content:"O habitat principal dos cnidários é o ambiente marinho de águas tropicais rasas Poucas espécies vivem em água doce Nenhum é terrestre Os cnidários apresentam um tipo específico de célula em seus tentáculos o cnidócito Essas células lançam o nematocisto uma espécie de cápsula que contém um filamento com espinhos e um líquido urticante O nematocisto é responsável por injetar substâncias tóxicas que auxiliam na captura de presa e na defesa Em humanospode causar queimaduras Os cnidários apresentam dois tipos morfológicos as medusas e os pólipos Algumas espécies podem apresentar as duas formas em diferentes períodos da vida As medusas são representadas pelos organismos natantes como as águas-vivas Apresentam um corpo gelatinoso em forma de sino com tentáculos em sua margem e a boca central Os pólipos constituem os organismos sésseis ou seja fixos a um substrato Apresentam formato tubular como as anêmonas-do-mar Eles podem viver em colônias ou isoladosOs cnidários não apresentam sistema circulatório digestório e respiratório";
-  font-size: 1rem;
-  white-space: normal;
-  overflow-y: scroll;
-  scrollbar-width: none;
-}
-
-.card:hover::after::-webkit-scrollbar {
-  display: none;
-}
-
-.CG h2{
-  font-size: 4.375rem;
-  text-align: center;
-}
-.CG p{
-  width: 50%;
-  position: relative;
-  left: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .Alimento h3{
   font-size: 1.875rem;
   text-align: center;
@@ -189,7 +107,7 @@ ul > img{
 .Respiração h3{
   font-size: 1.5625rem;
   text-align: center;
-  
+
 }
 
 .Respiração p{
@@ -237,6 +155,7 @@ hr{
   border: 0.0625rem solid black;
   width: 55%;
   margin: 0 20.625rem;
+  margin-top: 5rem;
 }
 
 .ondinha img{
@@ -279,7 +198,7 @@ hr{
   height: 145%;
   clip-path: circle(45rem);
 }
-.texto {
+.box .circulo .texto {
   display: block;
   max-width: 100%;
   right: 0;
@@ -501,7 +420,7 @@ box3 .texto1 > p {
   .box3 .texto1 h4 {
     margin-left: -4rem;
   }
-  
+
   .box > .circulo:hover{
     clip-path: circle(100rem);
   }
@@ -546,6 +465,220 @@ p {
   border-radius: 10px;
 }
 
+.box4 {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
+}
+.box4 > .circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 68rem;
+  position: relative;
+  left: 10%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
+  transition: .5s;
+}
+.box4 > .circulo h2 {
+  position: relative;
+  top: 30%;
+  color: #fff;
+}
+.box4 > .circulo .g {
+  left: -1%;
+  margin-bottom: 3rem;
+}
+.box4 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  left: 0%;
+  clip-path: circle(45rem);
+}
+.box4 > .circulo:hover h2 {
+  top: 10%;
+}
+.box4 .circulo .texto {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.box4 .texto > p {
+  text-align: left;
+  max-width: 90%;
+  margin-left: 5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.box4 .circulo:hover .texto {
+  opacity: 1;
+}
+.box5 {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
+}
+.box5 > .circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 68rem;
+  position: relative;
+  left: 10%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
+  transition: .5s;
+}
+.box5 > .circulo h3 {
+  position: relative;
+  top: 30%;
+  color: #fff;
+}
+.box5 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  left: 0%;
+  clip-path: circle(45rem);
+}
+.box5 > .circulo:hover h3 {
+  top: -10%;
+}
+.box5 .circulo .texto {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.box5 .texto > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.box5 .circulo:hover .texto {
+  opacity: 1;
+}
+.box6 {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
+}
+.box6 > .circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 68rem;
+  position: relative;
+  left: 10%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
+  transition: .5s;
+}
+.box6 > .circulo h3 {
+  position: relative;
+  top: 20%;
+  color: #fff;
+}
+.box6 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  left: 0%;
+  clip-path: circle(45rem);
+  margin-bottom: 2rem;
+}
+.box6 > .circulo:hover h3 {
+  top: -10%;
+}
+.box6 .circulo .texto {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.box6 .texto > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.box6 .circulo:hover .texto {
+  opacity: 1;
+}
+.box7{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+   font-family: "Urbanist", sans-serif;
+}
+.box7 > .circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 68rem;
+  position: relative;
+  left: 10%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
+  transition: .5s;
+}
+.box7 > .circulo h3 {
+  position: relative;
+  top: 45%;
+  color: #fff;
+}
+.box7 > .circulo:hover{
+  display: flex;
+  width: 100%;
+  height: 125%;
+  left: 0%;
+  clip-path: circle(45rem);
+  margin-bottom: 2rem;
+}
+.box7 > .circulo:hover h3 {
+  top: -10%;
+}
+.box7 .circulo .texto {
+  display: block;
+  max-width: 100%;
+  right: 0;
+  opacity: 0;
+}
+.box7 .texto > p {
+  text-align: left;
+  max-width: 100%;
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.box7 .circulo:hover .texto {
+  opacity: 1;
+}
 
 @media screen and (min-width: 1300px) {
   hr{
@@ -625,4 +758,53 @@ p {
     text-align: center;
   }
 
+  .box4  {
+      position: relative;
+      left: 7%;
+  }
+
+  .box5  {
+      position: relative;
+      left: 7%;
+  }
+
+  .box6  {
+    position: relative;
+    left: 7%;
+  }
+
+  .box7  {
+    position: relative;
+    left: 7%;
+  }
+
+  .box8  {
+    position: relative;
+    left: 7%;
+  }
+
+  .box4 > .circulo:hover {
+      width: 80%;
+      left: 1%;
+  }
+
+  .box5 > .circulo:hover {
+      width: 80%;
+      left: 1%;
+  }
+
+  .box6 > .circulo:hover {
+      width: 80%;
+      left: 1%;
+  }
+
+  .box7 > .circulo:hover {
+      width: 80%;
+      left: 1%;
+  }
+
+  .box8 > .circulo:hover {
+      width: 80%;
+      left: 1%;
+  }
 }

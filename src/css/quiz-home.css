@@ -133,8 +133,28 @@ ul > img{
   }
 
   .texto a {
-    left: 4.5rem
+    left: 4.5rem;
+  }
+  
+}
+
+
+@media screen and (min-width: 1900px) {
+  .texto h2{
+    margin-bottom: 3rem;
   }
 
-  
+  h2 {
+    margin-left: 35rem;
+    margin-top: 10rem;
+  }
+
+  p{
+    margin-left: 35rem;
+    width: 50%;
+  }
+
+  .texto a {
+    left: 18rem;
+  }
 }

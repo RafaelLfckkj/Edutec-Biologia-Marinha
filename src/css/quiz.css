@@ -385,3 +385,12 @@ body{
 }
 
 
+@media screen and (min-width: 1900px) {
+  #progress-bar {
+    height: 2.20rem;
+  }
+
+  #question1{
+    margin-left: 4.5rem;
+  }
+}

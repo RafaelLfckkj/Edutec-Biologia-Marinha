@@ -141,3 +141,25 @@ ul > img{
   }
   
 }
+
+
+@media screen and (min-width: 1900px) {
+  .texto h2 {
+    left: 23rem;
+    width: 30%;
+  }
+
+  .texto{
+  top: 0rem;
+  }
+
+  .texto p {
+  left: 12rem;
+  margin-top: 3rem;
+  }
+
+  .texto a {
+  left: 16.5rem;
+  top: 2rem;
+  }
+}

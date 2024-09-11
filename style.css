@@ -737,7 +737,7 @@ div>.mario {
     }
 
     .sobre-nos p {
-      margin-left: 89%;
+      margin-left: 86%;
     }
 
     .definition-section > .container {
@@ -748,8 +748,33 @@ div>.mario {
       left: 18%;
 
     }
-  .definition-section .container p {
+  
+    .definition-section .container p {
     font-size: 1.25rem;
-  }
+    }
 }
 
+
+@media screen and (min-width: 1900px) {
+    .onda {
+      left: 60%;
+      bottom: 15.5rem;
+    }
+
+    .sobre-nos p {
+    margin-left: 90%;
+    }
+
+    .definition-section > .container {
+      margin-left: 15em;
+    }
+
+    .definition-section .container h2 {
+    left: 16.5%;
+
+    }
+
+    .definition-section .container p {
+    font-size: 1.25rem;
+    }
+}

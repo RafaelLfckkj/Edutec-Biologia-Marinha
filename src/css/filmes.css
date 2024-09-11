@@ -59,7 +59,7 @@ h2 {
   margin-left: 1rem;
 }
 
-.filmes div img:hover{
+.filmes div a img:hover{
   border: 5px solid #08084f;
   border-radius: 1rem;
 }
@@ -128,7 +128,7 @@ h2 {
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.card img {
+.card div a img {
   width: 100%;
   height: 100%;
   fill: #333;
@@ -180,16 +180,40 @@ h2 {
   pointer-events: auto;
 }
 .modalDialog > div {
-  width: 600px;
+  width: 800px;
   position: relative;
   margin:  auto;
   padding: 5rem 7rem;
   border-radius: 10px;
   background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
+  background-color: #0C2233;
+  color: white;
 }
+
+.modalDialog > div img{
+  width: 90%;
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+}
+
+
+
+.modalDialog > div  > .botao{
+  background: white;
+  color: black;
+  padding: 7px 100px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20%;
+ 
+}
+.modalDialog > div  > p{
+  margin-top: 2rem;
+}
+
 .close {
   background: #ff0000;
   color: #FFFFFF;
@@ -211,6 +235,73 @@ h2 {
 .close:hover {
   background: #00d9ff;
 }
+
+
+.modalDialogtutu {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialogtutu:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialogtutu > div {
+  width: 800px;
+  position: relative;
+  margin:  auto;
+  padding: 5rem 7rem;
+  border-radius: 10px;
+  background: #fff;
+  background-color: #0C2233;
+  color: white;
+}
+
+.modalDialogtutu > div  > .botao{
+  background: white;
+  color: black;
+  padding: 7px 70px;
+  border-radius: 10px;
+}
+
+.modalDialogtutu > div  > p{
+  margin-top: 3rem;
+}
+
+
+
+.closetutu {
+  background: #ff0000;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.closetutu:hover {
+  background: #00d9ff;
+}
+
 
 .card a {
   color: #fff;
