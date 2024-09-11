@@ -91,7 +91,7 @@ div>.mario {
 .container {
   max-width: 1200px;
   margin: auto;
-  
+
   /* border: 1px solid #ccc; */
 }
 
@@ -602,7 +602,7 @@ div>.mario {
 
   .noticias-section{
     margin-top: 100px;
-   
+
   }
 
   .noticias-section h2{
@@ -611,7 +611,7 @@ div>.mario {
 
   .sobre-nos p {
     margin-left: 83%;
-    
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -700,54 +700,56 @@ div>.mario {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .onda {
-        left: 60%;
-        bottom: 12rem;
+  @media screen and (min-width: 1500px){
+      .onda {
+          left: 60%;
+          bottom: 12.5rem;
+      }
+
+
+    .seta-direita{
+      color: black;
     }
 
-  .seta-direita{
-    color: black;
+    .sobre-nos p {
+        margin-left: 86%;
+    }
+
+    .definition-section > .container {
+      margin-left: 100px; 
+    }
+    .definition-section .container h2 {
+        left: 17%;
+    }
+
   }
 
-
-  .sobre-nos p {
-      margin-left: 86%;
-  }
-
-  .definition-section > .container {
-    margin-left: 100px; 
-  }
-  .definition-section .container h2 {
-      left: 17%;
-  }
-
-}
 
 
 @media screen and (min-width: 1600px) {
     .onda {
         left: 60%;
-        bottom: 15rem;
+        bottom: 13.5rem;
     }
 
     div > .mario {
       top: 45%;
     }
-  
+
     .sobre-nos p {
       margin-left: 89%;
     }
 
     .definition-section > .container {
     margin-left: 12.5rem;
-      
     }
+  
     .definition-section .container h2 {
-      left: 16.5%;
-      
+      left: 18%;
+
     }
   .definition-section .container p {
     font-size: 1.25rem;
   }
 }
+

@@ -236,12 +236,20 @@ h3{
 
 @media screen and (min-width: 1600px) {
   .on h1 {
-    left: 23.5%;
+    left: 22%;
   }
 
 
   #cards {
-    margin-top: 15rem;
+    margin-top: 12rem;
+  }
+
+  .Mar .mare {
+    width: 200%;
+  }
+
+  .Mar .omeio {
+    width: 190%
   }
 }
 

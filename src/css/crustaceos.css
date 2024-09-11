@@ -395,3 +395,49 @@ p {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 1600px) {
+
+  hr{
+    margin: 0 22rem;
+  }
+
+  .comeco h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    color: #fff;
+    opacity: 75%;
+    font-size: 9.375rem;
+  }
+
+  .texto-alto{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .texto-baixo{  
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+}

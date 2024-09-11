@@ -220,7 +220,6 @@ body{
   align-items: center;
   flex-direction: column;
   padding-right: 0.5rem;
-  border-radius: 2.5rem;
   border: 0.5rem solid #0162A3;
   background: #E8E8E8;
   margin: 0;
@@ -291,7 +290,7 @@ body{
     margin-top: 9.01rem;
   }
   #question1{
-    margin-left: 1rem;
+    margin-left: -7.6rem;
   }
   body{
     display: block;
@@ -331,7 +330,6 @@ body{
     align-items: center;
     flex-direction: column;
     padding-right: 0.5rem;
-    border-radius: 2.5rem;
     border: 0.5rem solid #002775;
     background: #0C2233;
     margin: 0;
@@ -381,4 +379,3 @@ body{
 }
 
 
-/* https://www.youtube.com/watch?v=MMNEEdGa5eE */

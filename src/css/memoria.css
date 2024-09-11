@@ -81,7 +81,7 @@ main {
   max-width: 100%;
   display: flex;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
   gap: 12px;
   margin-left: 20rem;
   margin-top: 7rem;
@@ -185,6 +185,11 @@ main {
   }
 }
 
-/* #1fase
-#2fase
-#3fase */
+@media screen and (min-width: 1600px) {
+  .game-board {
+    left: 0rem;
+  }
+
+
+}
+

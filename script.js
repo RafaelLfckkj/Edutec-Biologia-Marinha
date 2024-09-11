@@ -29,14 +29,14 @@ nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
 
 
 function redirecionarParanot1() {
-  location.href = 'https://g1.globo.com/es/espirito-santo/noticia/2024/02/24/video-novo-ecossistema-marinho-com-recife-de-ate-60-metros-de-altura-e-descoberto-na-costa-do-es.ghtml'; 
+  window.open('https://g1.globo.com/es/espirito-santo/noticia/2024/02/24/video-novo-ecossistema-marinho-com-recife-de-ate-60-metros-de-altura-e-descoberto-na-costa-do-es.ghtml', '_blank');
 }
 
 function redirecionarParanot2() {
- location.href = 'https://jornal.usp.br/radio-usp/biotecnologia-marinha-e-uma-importante-estrategia-de-utilizacao-sustentavel-do-oceano/#:~:text=%E2%80%9CO%20oceano%20estabiliza%20o%20clima,o%20uso%20sustent%C3%A1vel%20do%20oceano.'; 
+   window.open('https://jornal.usp.br/radio-usp/biotecnologia-marinha-e-uma-importante-estrategia-de-utilizacao-sustentavel-do-oceano/#:~:text=%E2%80%9CO%20oceano%20estabiliza%20o%20clima,o%20uso%20sustent%C3%A1vel%20do%20oceano.', '_blank');
 }
 
 
 function redirecionarquemsomos() {
- window.location.href = '..//src/pages/quem-somos.html'; 
+ window.location.href = '..//src/pages/quem-somos.html' ; 
 }

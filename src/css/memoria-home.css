@@ -122,9 +122,8 @@ ul > img{
 @media screen and (min-width: 1600px) {
   
   .texto h2 {
-    left: 21rem;
+    left: 14rem;
     width: 30%;
-    margin-top: 10rem;
   }
 
   .texto{
@@ -132,12 +131,12 @@ ul > img{
   }
 
   .texto p {
-  left: 10rem;
+  left: 4rem;
   margin-top: 3rem;
   }
 
   .texto a {
-  left: 13.7rem;
+  left: 4rem;
   top: 2rem;
   }
   

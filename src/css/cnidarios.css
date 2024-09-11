@@ -77,17 +77,6 @@ ul > img{
   text-align: center;
 }
 
-.retangulo-roxo{
-  width: 100%;
-  background-color: black;
-  padding: 3.125rem;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 0.5625rem;
-  z-index: -1;
-}
-
 .onda-azulescuro img{
   width: 100%;
   position: relative;
@@ -98,6 +87,75 @@ ul > img{
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 16rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.8s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card:hover::before,
+.card:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover::after {
+  content:"O habitat principal dos cnidários é o ambiente marinho de águas tropicais rasas Poucas espécies vivem em água doce Nenhum é terrestre Os cnidários apresentam um tipo específico de célula em seus tentáculos o cnidócito Essas células lançam o nematocisto uma espécie de cápsula que contém um filamento com espinhos e um líquido urticante O nematocisto é responsável por injetar substâncias tóxicas que auxiliam na captura de presa e na defesa Em humanospode causar queimaduras Os cnidários apresentam dois tipos morfológicos as medusas e os pólipos Algumas espécies podem apresentar as duas formas em diferentes períodos da vida As medusas são representadas pelos organismos natantes como as águas-vivas Apresentam um corpo gelatinoso em forma de sino com tentáculos em sua margem e a boca central Os pólipos constituem os organismos sésseis ou seja fixos a um substrato Apresentam formato tubular como as anêmonas-do-mar Eles podem viver em colônias ou isoladosOs cnidários não apresentam sistema circulatório digestório e respiratório";
+  font-size: 1rem;
+  white-space: normal;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.card:hover::after::-webkit-scrollbar {
+  display: none;
 }
 
 .CG h2{
@@ -486,4 +544,85 @@ p {
   padding: 7px 25px;
   transition: all 1s ease;
   border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1300px) {
+  hr{
+    margin: 0 22rem;
+    position: relative;
+    right: 2rem;
+  }
+
+  .texto-alto{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .texto-baixo{  
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width: 1600px) {
+
+  hr{
+    margin: 0 22rem;
+  }
+
+  .comeco h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    opacity: 75%;
+    font-size: 9.375rem;
+  }
+
+  .texto-alto{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .texto-baixo{  
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
 }

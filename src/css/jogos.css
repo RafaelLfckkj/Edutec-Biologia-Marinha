@@ -54,8 +54,9 @@ ul > img{
   position: relative;
   z-index: 2;
   color: #ffffff;
-  left: 38%;
-  top: 3.8rem;
+  left: 40%;
+  top: 4rem;
+  font-size: 4rem;
 }
 
 
@@ -76,15 +77,11 @@ ul > img{
   gap: 3rem;
   border-radius: 30px;
   padding-inline: 2rem;
-  padding-block: 5rem;
-  width: 20rem;
-  border: 7px solid #11549c;;
+  padding-block: 4rem;
   color: #11549c;;
+  height: 23.5rem;
 }
 
-#quiz, #jogo-memoria > img{
-  width: 10rem;
-}
 
 hr{
   border: 1px solid #11549c;
@@ -92,7 +89,7 @@ hr{
 }
 
 #jogo-memoria{
-  width: 22%;
+  width: 17%;
   background: #CEEDFF;
   position: relative;
   bottom: 2rem;
@@ -100,7 +97,7 @@ hr{
 }
 
 #quiz{
-  width: 22%;
+  width: 19%;
   background: #CEEDFF;
   position: relative;
   bottom: 2rem;
@@ -237,10 +234,18 @@ body{
 
 
 @media screen and (min-width: 1300px) {
-
+  .on h1 {
+    position: relative;
+    z-index: 2;
+    left: 42%;
+    top: 5rem;
+    font-size: 4.3rem;
+  }
+  
   .quiz h3 {
     bottom: 3rem;
   }
+  
   .pa {
     display: flex;
     flex-direction: column;
@@ -305,12 +310,12 @@ body{
 @media screen and (min-width: 1600px){
 
   #cards {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
 
 
   .on h1 {
-    left: 42%;
+    left: 40%;
   }
 
 }

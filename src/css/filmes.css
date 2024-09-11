@@ -55,288 +55,235 @@ h2 {
 
 .filmes {
   display: flex;
-  margin-right: 1rem;
+  gap: 4.5rem;
+  margin-left: 1rem;
 }
-
 .card {
   position: relative;
-  width: 21.85rem;
-  aspect-ratio: 10/10;
-  background-color: #0C2233;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.8rem;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #0C2233;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card1 {
   position: relative;
-  width: 21.85rem;
-  aspect-ratio: 10/10;
-  background-color: #0C2233;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.8rem;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #0C2233;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card2 {
   position: relative;
-  width: 21.85rem;
-  aspect-ratio: 10/10;
-  background-color: #0C2233;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.8rem;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #0C2233;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card3 {
   position: relative;
-  width: 21.85rem;
-  aspect-ratio: 10/10;
-  background-color: #0C2233;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.8rem;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #0C2233;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card4 {
   position: relative;
-  width: 21.85rem;
-  aspect-ratio: 10/10;
-  background-color: #0C2233;
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.8rem;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #0C2233;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
 .card img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card img {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
 }
 .card1 img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card1 img {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card2 img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card2 img {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card3 img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card3 img {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card4 img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-.card4 img {
-  width: 99%;
-  height: 99%;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
-}
-.card1:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+/* .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} */
+/* .card1:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .card2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+.card3:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 .card4:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
-}
-.card__content {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} */
+/* .card__content {
   position: absolute;
-  top: 45%;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
   background-color: #0C2233;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card:hover .card__content {
-  transform: rotateX(0deg);
-}
-.card1:hover .card__content {
-  transform: rotateX(0deg);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+} */
+/* .card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+} */
+/* .card1:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 .card2:hover .card__content {
-  transform: rotateX(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 .card3:hover .card__content {
-  transform: rotateX(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 .card4:hover .card__content {
-  transform: rotateX(0deg);
-}
-
-.card:hover img {
-  scale: 100%;
-}
-.card1:hover img {
-  scale: 100%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+} */
+/* .card:hover img {
+  scale: 0;
+} */
+/* .card1:hover img {
+  scale: 0;
 }
 .card2:hover img {
-  scale: 100%;
+  scale: 0;
 }
 .card3:hover img {
-  scale: 100%;
+  scale: 0;
 }
 .card4:hover img {
-  scale: 100%;
-}
-
-.card__description {
-  margin: 10px 0 10px;
-  font-size: 0.7rem;
+  scale: 0;
+} */
+.card a {
   color: #fff;
-  line-height: 1;
+  font-size: 1rem;
 }
-.card1 .card__description {
-  margin: 0.1rem;
-  font-size: 0.7rem;
+.card1 a {
   color: #fff;
-  line-height: 1;
+  font-size: 1rem;
 }
-.card2 .card__description {
-  margin: 0.1rem;
-  font-size: 0.7rem;
+.card2 a {
   color: #fff;
-  line-height: 1;
+  font-size: 1rem;
 }
-.card3 .card__description {
-  margin: 0.1rem;
-  font-size: 0.7rem;
+.card3 a {
   color: #fff;
-  line-height: 1;
+  font-size: 1rem;
 }
-.card4 .card__description {
-  margin: 0.1rem;
-  font-size: 0.7rem;
+.card4 a {
   color: #fff;
-  line-height: 1;
+  font-size: 1rem;
 }
-
-.card__button {
-  padding: 0.5rem;
-  border-radius: 1rem;
-  background: black;
-  border: none;
-  color: white;
-  position: relative;
-  left: 25%;
-}
-
-.secondary {
-  color: #0C2233;
-  border: 1px solid #777;
-}
-
-
 @media screen and (min-width: 1300px){
   .card__description {
     margin: 10px 0 10px;
-    font-size: 0.65rem;
+    font-size: 1rem;
     color: #fff;
     line-height: 1;
   }
   .card1 .card__description {
     margin: 0.1rem;
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     color: #fff;
     line-height: 1;
   }
   .card2 .card__description {
     margin: 0.1rem;
-    font-size: 0.61rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
   .card3 .card__description {
     margin: 0.1rem;
-    font-size: 0.61rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
   .card4 .card__description {
     margin: 0.1rem;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
   .serie .card__description{
     margin: 10px 0 10px;
-    font-size: 0.65rem;
+    font-size: 1rem;
     color: #fff;
     line-height: 1;
   }
   .serie .card1 .card__description{
     margin: 10px 0 10px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
   .jogo .card .card__description{
     margin: 10px 0 10px;
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
   .jogo .card1 .card__description{
     margin: 10px 0 10px;
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     color: #fff;
     line-height: 1;
   }
@@ -344,11 +291,13 @@ h2 {
 
 .serie {
   display: flex;
-  margin-right: 1rem;
+  gap: 4.5rem;
+  margin-left: 1rem;
 }
 .jogo {
   display: flex;
-  margin-right: 1rem;
+  gap: 4.5rem;
+  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 

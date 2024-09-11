@@ -159,3 +159,5 @@ document.getElementById('popup-btn').addEventListener('click', function () {
 
 // Inicializa o tabuleiro
 createBoard();
+
+
