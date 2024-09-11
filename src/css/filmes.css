@@ -211,69 +211,7 @@ h2 {
 .close:hover {
   background: #00d9ff;
 }
-/* .card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-} */
-/* .card1:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.card2:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.card3:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.card4:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-} */
-/* .card__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #0C2233;
-  opacity: 0;
-  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-} */
-/* .card:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-} */
-/* .card1:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-.card2:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-.card3:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-.card4:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-} */
-/* .card:hover img {
-  scale: 0;
-} */
-/* .card1:hover img {
-  scale: 0;
-}
-.card2:hover img {
-  scale: 0;
-}
-.card3:hover img {
-  scale: 0;
-}
-.card4:hover img {
-  scale: 0;
-} */
+
 .card a {
   color: #fff;
   font-size: 1rem;

@@ -58,6 +58,7 @@ body{
   color: #fff;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
+  height: 17.5rem;
 }
 
 .card-client:hover {
@@ -169,7 +170,7 @@ body{
   display: flex;
   gap: 3rem;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   position: relative;
   left: 25%;
 }
