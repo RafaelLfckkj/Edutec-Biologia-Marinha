@@ -11,10 +11,18 @@
   background-color:  rgba(0, 0, 0, 0.5);
 }
 
+body{
+  overflow-y: hidden;
+}
+
 
 html {
   scroll-behavior: smooth; 
   overflow-y: hidden;
+}
+
+body{
+  overflow-y: hiddenjogo
 }
 
 .barra-de-navegacao > a{
@@ -82,140 +90,136 @@ ul > img{
 }
 
 
-hr{
-  border: 1px solid #11549c;
-  width: 90%;
-}
-
-#jogo-memoria{
-  width: 17%;
-  background: #CEEDFF;
-  position: relative;
-  bottom: 2rem;
-  z-index: 2;
-}
-
 #quiz{
-  width: 19%;
-  background: #CEEDFF;
-  position: relative;
-  bottom: 2rem;
-  margin-left: 10rem;
-  z-index: 2;
+  margin-top: 3.5rem;
 }
-.quiz {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+
+
+
+.e-card {
+  margin: 100px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#393edb,#366abf 60%,#029ec5);
+
+}
+
+
+
+.infotop {
   text-align: center;
-}
-.quiz h3 {
-  bottom: 2rem;
-}
-.quiz h3, hr {
-  position: relative;
-  margin-bottom: 1rem;
-}
-.quiz hr {
-  bottom: 2rem;
-}
-.quiz > .aon {
-  width: 100%;
+  font-size: 20px;
   position: absolute;
-  bottom: 1rem;
-  z-index: -2;
+  top: 3em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
-.quiz > .ona {
-  width: 100%;
-  position: absolute;
-  bottom: 0.0rem;
-  z-index: -1;
+
+.infotop img{
+  width: 50%;
 }
-.pa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.infotop p{
+  margin-top: 16px;
+  font-size: 20px;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.infotop img{
+  width: 50%;
+}
+
+.infotopa {
   text-align: center;
-  position: relative;
-  z-index: 1;
-  bottom: 20%;
-}
-.pa h3 {
-  margin-top: 5%;
-}
-.pa hr {
-  font-size: 1.5rem;;
-  width: 110%;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-
-#quiz .reto {
+  font-size: 20px;
   position: absolute;
-  top: 24%;
-  margin-top: 1rem;
-  bottom: 0;
+  top: 1em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
-#quiz .omeio {
-  position: relative;
-  z-index: 1;
-  top: 3rem;
+.infotopa p{
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.pa > .an {
-  position: absolute;
-  width: 140%;
-  z-index: -2;
-  top: 12rem;
-  bottom: 0;
-}
-.pa > .na {
-  position: absolute;
-  width: 139%;
-  z-index: -1;
-  top: 15.6rem;
-  bottom: 0;
-}
-
-.cirbaixo img {
-  position: absolute;
-  width: 30%;
-  left: 50rem;
-  top: 10rem;
-  bottom: 0;
-}
-
-.ondi img{
-  position: absolute;
-  width: 100%;
-  top: 28rem;
-  margin-bottom: 0;
-}
-.ondi {
-  bottom: 0;
+.infotopa .mem{
+  width: 60%;
 }
 
 
-#jogo-memoria:hover {
-  background: linear-gradient(to bottom right, #c4e4e9, #38afd6);
-  cursor: pointer;
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
 }
 
-#quiz:hover {
-  background: linear-gradient(to bottom left, #c4e4e9, #38afd6);
-  cursor: pointer;
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
 }
 
-#quiz a:hover, #jogo-memoria a:hover{
-  text-decoration: underline;
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
 }
 
-button:hover{
-  cursor: pointer;
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
 }
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 h3{
   font-size: 25px;

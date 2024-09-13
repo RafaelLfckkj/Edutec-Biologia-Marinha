@@ -62,7 +62,7 @@ ul > img{
   color: #fff;
   font-size: 1.375rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 4px 6px rgba(0, 0, 0,10);
 }
 
 .onda-azul img{

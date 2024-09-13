@@ -188,6 +188,7 @@ body{
   position: absolute;
   border-radius: 50%;
   animation: bubble-rise 3s infinite ease-in;
+  z-index: -1;
 }
 
 .bubble1 { left: 20%; animation-duration: 5s; }

@@ -11,6 +11,43 @@
   z-index: 99999;
 }
 
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 6.25rem;
+}
+
+h2{
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.0625rem;
+}
+
+h3{
+  font-family: "Text Me One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 1rem 0rem;
+
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+a {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 html {
   scroll-behavior: smooth; 
@@ -340,6 +377,157 @@ main {
   width: 7%;
   top: 2%;
   left: 45%;
+  display: flex;
+  z-index: 1000;
+}
+.mike {
+  position: relative;
+  width: 6%;
+  top: 2.2%;
+  left: 35%;
+  display: flex;
+  z-index: 1000;
+}
+.dext {
+  position: relative;
+  width: 8%;
+  top: 2.3%;
+  left: 60%;
+  display: flex;
+  z-index: 1000;
+}
+.twilight {
+  position: relative;
+  width: 15%;
+  height: 50%;
+  top: 2.5%;
+  left: 45%;
+  z-index: 1000;
+}
+.twilight .zone {
+  color: #E0B0FF;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 1rem;
+  right: 3rem;
+}
+.pin {
+  position: relative;
+  width: 15%;
+  top: 0.1%;
+  left: 35%;
+  display: flex;
+  z-index: 1000;
+}
+.wol {
+  position: relative;
+  width: 50%;
+  top: 0.4%;
+  right: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.had {
+  position: relative;
+  width: 50%;
+  top: 0.1%;
+  left: 95%;
+  display: flex;
+  z-index: 1000;
+}
+.cc {
+  position: relative;
+  width: 90%;
+  top: 0.5%;
+  left: 37%;
+  display: flex;
+  z-index: 1000;
+}
+.ke {
+  position: relative;
+  width: 25%;
+  top: 0.5%;
+  right: 27%;
+  display: flex;
+  z-index: 1000;
+}
+.lag {
+  position: relative;
+  width: 40%;
+  top: 0.7%;
+  left: 110%;
+  display: flex;
+  z-index: 1000;
+}
+
+.tt {
+  position: relative;
+  width: 40%;
+  top: 0.8%;
+  right: 27%;
+  display: flex;
+  z-index: 1000;
+}
+
+.shark {
+  position: relative;
+  width: 100%;
+  top: 0.9%;
+  left: 60%;
+  display: flex;
+  z-index: 1000;
+}
+.bd {
+  position: relative;
+  width: 70%;
+  top: 1.7%;
+  right: 18%;
+  display: flex;
+  z-index: 1000;
+}
+
+.lu {
+  position: relative;
+  width: 20%;
+  top: 2.5%;
+  left: 96%;
+  display: flex;
+  z-index: 1000;
+}
+
+.gum {
+  position: relative;
+  width: 85%;
+  top: 3%;
+  right: 24%;
+  display: flex;
+  z-index: 1000;
+}
+.tet {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 120%;
+  top: 4%;
+  right: 70%;
+}
+.dive {
+  position: relative;
+  width: 80%;
+  top: 3.5%;
+  left: 90%;
   display: flex;
   z-index: 1000;
 }

@@ -33,9 +33,9 @@ ul > img{
 
 }
 
-.comeco img{
+.comeco .imagem > video{
   width: 100%;
-  height: 62.5rem;
+  height: 100%;
 }
 
 .comeco h1 {
@@ -61,7 +61,7 @@ ul > img{
   color: #ffffff;
   font-size: 1.375rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 4px 6px rgba(0, 0, 0,10);
 }
 
 .onda-azul img{
