@@ -33,10 +33,9 @@ ul > img{
 }
 
 .barra-de-navegacao a:hover{
-  background-color: #ffffff;;
-  color: black;
+  background-color: #53a6ea;;
   padding: 7px 25px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   border-radius: 10px;
 }
 

@@ -23,10 +23,9 @@
 } */
 
 .barra-de-navegacao a:hover{
-  background-color: #ffffff;;
-  color: black;
+  background-color: #53a6ea;;
   padding: 7px 25px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   border-radius: 10px;
 }
 
@@ -53,7 +52,7 @@ ul > img{
   position: relative;
   align-items: center;
   justify-content: center;
-  top: -1rem;
+  top: -10rem;
   left: -1rem;
   z-index: 100;
 }
@@ -62,20 +61,20 @@ ul > img{
   margin-bottom: 1rem;
   left: 4rem;
   width: 40%;
-  bottom: 20rem;
+  bottom: 5rem;
 }
 .texto p {
   position: relative;
+  top: 55%;
   left: -1rem;
-  margin-bottom: 2rem;
   text-align: center;
   color: #027EA7;
 }
 
 .texto a {
   position: relative;
+  top: 80%;
   left: -4rem;
-  top: -1rem;
   background-color: #027EA7;
 }
 .ond {
@@ -123,7 +122,37 @@ ul > img{
   }
   
 }
+@media screen and (min-width: 1300px){
+  .texto {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -10rem;
+    left: -1rem;
+    z-index: 100;
+  }
+  .texto h2{
+    position: relative;
+    margin-bottom: 1rem;
+    left: 4rem;
+    width: 40%;
+    bottom: 5rem;
+  }
+  .texto p {
+    position: absolute;
+    top: 55%;
+    left: -1rem;
+    text-align: center;
+    color: #027EA7;
+  }
 
+  .texto a {
+    position: absolute;
+    top: 80%;
+    left: -4rem;
+    background-color: #027EA7;
+  }
+}
 @media screen and (min-width: 1600px) {
   
   .texto h2 {
@@ -161,13 +190,13 @@ ul > img{
 
   .texto p {
     left: 12rem;
-    margin-top: 3rem;
+    margin-top: -7rem;
     bottom: 15rem;
+    font-size: 2rem;
   }
 
   .texto a {
-    left: 16.5rem;
-    top: -18rem;
-    display: flex;
+    margin-top: 8rem;
+    left: 16rem;
   }
 }

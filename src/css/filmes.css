@@ -20,10 +20,9 @@ body {
 }
 
 .barra-de-navegacao a:hover{
-  background-color: #ffffff;;
-  color: black;
+  background-color: #53a6ea;;
   padding: 7px 25px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   border-radius: 10px;
 }
 
@@ -62,13 +61,21 @@ h2 {
 
 
 .filmes div img{
-  width: 13rem;
+  width: 100%;
+  border-radius: 10px;
+}
+.serie div img{
+  width: 100%;
+  border-radius: 10px;
+}
+.jogo div img{
+  width: 100%;
   border-radius: 10px;
 }
 
 .card {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
@@ -80,7 +87,7 @@ h2 {
 }
 .card1 {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
@@ -92,7 +99,7 @@ h2 {
 }
 .card2 {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
@@ -104,7 +111,7 @@ h2 {
 }
 .card3 {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
@@ -116,7 +123,7 @@ h2 {
 }
 .card4 {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: 300px;
   background: linear-gradient(-45deg, #0C2233 0%, #0C2233 100%);
   border-radius: 10px;
@@ -334,7 +341,7 @@ h2 {
   color: #fff;
   font-size: 1rem;
 }
-@media screen and (min-width: 1300px){
+/* @media screen and (min-width: 1300px){
   .card__description {
     margin: 10px 0 10px;
     font-size: 1rem;
@@ -389,7 +396,7 @@ h2 {
     color: #fff;
     line-height: 1;
   }
-}
+} */
 
 .serie {
   display: flex;
@@ -443,5 +450,16 @@ h2 {
       gap: 13rem;
       margin-left: 4rem;
   }
-  
+  .filmes div img{
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .serie div img{
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .jogo div img{
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
