@@ -57,15 +57,13 @@ h2 {
   display: flex;
   gap: 4.5rem;
   margin-left: 1rem;
+  
 }
 
-.filmes div a img:hover{
-  border: 5px solid #08084f;
-  border-radius: 1rem;
-}
 
 .filmes div img{
-  width: 10rem;
+  width: 13rem;
+  border-radius: 10px;
 }
 
 .card {
@@ -183,6 +181,7 @@ h2 {
   width: 800px;
   position: relative;
   margin:  auto;
+  margin-top: 5rem;
   padding: 5rem 7rem;
   border-radius: 10px;
   background: #fff;
@@ -191,7 +190,7 @@ h2 {
 }
 
 .modalDialog > div img{
-  width: 90%;
+  width: 100%;
   margin-left: 1.2rem;
   margin-bottom: 1.2rem;
   border-radius: 10px;
@@ -260,6 +259,7 @@ h2 {
   width: 800px;
   position: relative;
   margin:  auto;
+  margin-top: 5rem;
   padding: 5rem 7rem;
   border-radius: 10px;
   background: #fff;
@@ -270,8 +270,12 @@ h2 {
 .modalDialogtutu > div  > .botao{
   background: white;
   color: black;
-  padding: 7px 70px;
+  padding: 7px 100px;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20%;
 }
 
 .modalDialogtutu > div  > p{
@@ -300,6 +304,13 @@ h2 {
 }
 .closetutu:hover {
   background: #00d9ff;
+}
+
+.modalDialogtutu > div img {
+    width: 100%;
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
 }
 
 
@@ -423,4 +434,14 @@ h2 {
     color: #fff;
     line-height: 1;
   }
+}
+
+
+
+@media screen and (min-width: 1900px){
+  .filmes {
+      gap: 13rem;
+      margin-left: 4rem;
+  }
+  
 }

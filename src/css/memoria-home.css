@@ -20,8 +20,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-}
- */
+} */
+
 .barra-de-navegacao a:hover{
   background-color: #ffffff;;
   color: black;
@@ -62,6 +62,7 @@ ul > img{
   margin-bottom: 1rem;
   left: 4rem;
   width: 40%;
+  bottom: 20rem;
 }
 .texto p {
   position: relative;
@@ -95,6 +96,10 @@ ul > img{
   display: flex;
   position: absolute;
   bottom: 0rem;
+}
+
+.ond .ondd{
+  width: 100%;
 }
 
 @media screen and (min-width: 1500px){
@@ -147,6 +152,7 @@ ul > img{
   .texto h2 {
     left: 23rem;
     width: 30%;
+    bottom: 15rem;
   }
 
   .texto{
@@ -154,12 +160,14 @@ ul > img{
   }
 
   .texto p {
-  left: 12rem;
-  margin-top: 3rem;
+    left: 12rem;
+    margin-top: 3rem;
+    bottom: 15rem;
   }
 
   .texto a {
-  left: 16.5rem;
-  top: 2rem;
+    left: 16.5rem;
+    top: -18rem;
+    display: flex;
   }
 }

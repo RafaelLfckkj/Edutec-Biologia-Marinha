@@ -225,3 +225,8 @@ h3{
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .on h1 {
+    left: 38.5%;
+  }
+}

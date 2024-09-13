@@ -178,7 +178,7 @@ main {
 .barra {
   position: relative;
   width: 6%;
-  top: 0.3%;
+  top: 1%;
   left: 40%;
   display: flex;
   z-index: 1000;
@@ -186,7 +186,7 @@ main {
 .blutang {
   position: relative;
   width: 5%;
-  top: 0.6%;
+  top: 4%;
   left: 53%;
   display: flex;
   z-index: 1000;
@@ -194,7 +194,7 @@ main {
 .crab {
   position: relative;
   width: 3%;
-  top: 0.6%;
+  top: 3%;
   left: 30%;
   display: flex;
   z-index: 1000;
@@ -202,145 +202,16 @@ main {
 .cod {
   position: relative;
   width: 6%;
-  top: 0.7%;
-  left: 40.2%;
+  top: 5%;
+  left: 40%;
   display: flex;
   z-index: 1000;
 }
 .spinysplay {
   position: relative;
   width: 7%;
-  top: 0.8%;
+  top: 6%;
   left: 27%;
-  display: flex;
-  z-index: 1000;
-}
-.leaf {
-  position: relative;
-  width: 7%;
-  top: 0.6%;
-  left: 63%;
-  display: flex;
-  z-index: 1000;
-}
-.mahi {
-  position: relative;
-  width: 10%;
-  top: 0.6%;
-  left: 46%;
-  display: flex;
-  z-index: 1000;
-}
-.spok {
-  position: relative;
-  width: 6%;
-  top: 0.8%;
-  left: 63%;
-  display: flex;
-  z-index: 1000;
-}
-.fou {
-  position: relative;
-  width: 7%;
-  top: 0.8%;
-  left: 27%;
-  display: flex;
-  z-index: 1000;
-}
-.azul {
-  position: relative;
-  width: 5.5%;
-  top: 1%;
-  left: 27%;
-  display: flex;
-  z-index: 1000;
-}
-.bar {
-  position: relative;
-  width: 2%;
-  top: 0.8%;
-  left: 58%;
-  display: flex;
-  z-index: 1000;
-}
-.baru {
-  position: relative;
-  width: 6%;
-  top: 1%;
-  left: 60%;
-  display: flex;
-  z-index: 1000;
-}
-.queen {
-  position: relative;
-  width: 4.5%;
-  top: 1.3%;
-  left: 27%;
-  display: flex;
-  z-index: 1000;
-}
-.drum {
-  position: relative;
-  width: 4%;
-  top: 2.4%;
-  left: 29%;
-  display: flex;
-  z-index: 1000;
-}
-.belu {
-  position: relative;
-  width: 12%;
-  top: 0.6%;
-  left: 43%;
-  display: flex;
-  z-index: 1000;
-}
-.ass {
-  position: relative;
-  width: 18%;
-  top: 0.9%;
-  left: 41%;
-  display: flex;
-  z-index: 1000;
-}
-.pela {
-  position: relative;
-  width: 5%;
-  top: 1.2%;
-  left: 55%;
-  display: flex;
-  z-index: 1000;
-}
-.lion {
-  position: relative;
-  width: 7%;
-  top: 1.4%;
-  left: 37%;
-  display: flex;
-  z-index: 1000;
-}
-.bull {
-  position: relative;
-  width: 12%;
-  top: 1.5%;
-  left: 50%;
-  display: flex;
-  z-index: 1000;
-}
-
-.lepto {
-  position: relative;
-  width: 1.5%;
-  top: 1.2%;
-  left: 63%;
-  display: flex;
-  z-index: 1000;
-}
-.tortu {
-  position: relative;
-  width: 7%;
-  top: 2%;
-  left: 45%;
   display: flex;
   z-index: 1000;
 }
@@ -368,45 +239,45 @@ main {
 
 .bubble1 {
   left: 10%;
-  animation-duration: 150s;
+  animation-duration: 50s;
 }
 
 .bubble2 {
   left: 20%;
-  animation-duration: 140s;
+  animation-duration: 60s;
 }
 
 .bubble3 {
   left: 30%;
-  animation-duration: 60s;
+  animation-duration: 6s;
 }
 .bubble4 {
   left: 40%;
-  animation-duration: 130s;
+  animation-duration: 5s;
 }
 .bubble5 {
   left: 50%;
-  animation-duration: 120s;
+  animation-duration: 12s;
 }
 .bubble6 {
   left: 60%;
-  animation-duration: 80s;
+  animation-duration: 8s;
 }
 .bubble7 {
   left: 70%;
-  animation-duration: 70s;
+  animation-duration: 7s;
 }
 .bubble8 {
   left: 80%;
-  animation-duration: 99s;
+  animation-duration: 5s;
 }
 .bubble9 {
   left: 90%;
-  animation-duration: 95s;
+  animation-duration: 9s;
 }
 .bubble10 {
   left: 99%;
-  animation-duration: 50s;
+  animation-duration: 5s;
 }
 
 @keyframes bubble-rise {

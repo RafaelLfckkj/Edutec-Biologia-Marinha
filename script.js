@@ -9,6 +9,11 @@ function showSlide(index) {
   if (index > carouselItems.length);
   currentIndex = index;
   carouselImages.style.transform = `translateX(-${index * 150}%)`;
+  if(index <= -1) {
+    (carouselImages.style.transform = `translateX(${index * 450}%)`);
+    index = 3;
+    currentIndex = index;
+  }
   while (index > 3){
     if(index > 3) {
       (carouselImages.style.transform = `translateX(${index / 300}%)`);
@@ -19,7 +24,6 @@ function showSlide(index) {
     index = 0;
     currentIndex = index;
   }
-
   console.log(currentIndex)
   console.log(index)
 }

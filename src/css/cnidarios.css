@@ -89,6 +89,25 @@ ul > img{
   justify-content: center;
 }
 
+
+
+.card:hover::after::-webkit-scrollbar {
+  display: none;
+}
+
+.CG h2{
+  font-size: 4.375rem;
+  text-align: center;
+}
+.CG p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Alimento h3{
   font-size: 1.875rem;
   text-align: center;
@@ -155,7 +174,6 @@ hr{
   border: 0.0625rem solid black;
   width: 55%;
   margin: 0 20.625rem;
-  margin-top: 5rem;
 }
 
 .ondinha img{
@@ -198,7 +216,7 @@ hr{
   height: 145%;
   clip-path: circle(45rem);
 }
-.box .circulo .texto {
+.texto {
   display: block;
   max-width: 100%;
   right: 0;
@@ -465,220 +483,6 @@ p {
   border-radius: 10px;
 }
 
-.box4 {
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  margin-top: 3.125rem;
-  margin-bottom: 5rem;
-   font-family: "Urbanist", sans-serif;
-}
-.box4 > .circulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 68rem;
-  position: relative;
-  left: 10%;
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
-  transition: .5s;
-}
-.box4 > .circulo h2 {
-  position: relative;
-  top: 30%;
-  color: #fff;
-}
-.box4 > .circulo .g {
-  left: -1%;
-  margin-bottom: 3rem;
-}
-.box4 > .circulo:hover{
-  display: flex;
-  width: 100%;
-  height: 125%;
-  left: 0%;
-  clip-path: circle(45rem);
-}
-.box4 > .circulo:hover h2 {
-  top: 10%;
-}
-.box4 .circulo .texto {
-  display: block;
-  max-width: 100%;
-  right: 0;
-  opacity: 0;
-}
-.box4 .texto > p {
-  text-align: left;
-  max-width: 90%;
-  margin-left: 5rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-.box4 .circulo:hover .texto {
-  opacity: 1;
-}
-.box5 {
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  margin-top: 3.125rem;
-  margin-bottom: 5rem;
-   font-family: "Urbanist", sans-serif;
-}
-.box5 > .circulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 68rem;
-  position: relative;
-  left: 10%;
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
-  transition: .5s;
-}
-.box5 > .circulo h3 {
-  position: relative;
-  top: 30%;
-  color: #fff;
-}
-.box5 > .circulo:hover{
-  display: flex;
-  width: 100%;
-  height: 125%;
-  left: 0%;
-  clip-path: circle(45rem);
-}
-.box5 > .circulo:hover h3 {
-  top: -10%;
-}
-.box5 .circulo .texto {
-  display: block;
-  max-width: 100%;
-  right: 0;
-  opacity: 0;
-}
-.box5 .texto > p {
-  text-align: left;
-  max-width: 100%;
-  margin-left: 2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-.box5 .circulo:hover .texto {
-  opacity: 1;
-}
-.box6 {
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  margin-top: 3.125rem;
-  margin-bottom: 5rem;
-   font-family: "Urbanist", sans-serif;
-}
-.box6 > .circulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 68rem;
-  position: relative;
-  left: 10%;
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
-  transition: .5s;
-}
-.box6 > .circulo h3 {
-  position: relative;
-  top: 20%;
-  color: #fff;
-}
-.box6 > .circulo:hover{
-  display: flex;
-  width: 100%;
-  height: 125%;
-  left: 0%;
-  clip-path: circle(45rem);
-  margin-bottom: 2rem;
-}
-.box6 > .circulo:hover h3 {
-  top: -10%;
-}
-.box6 .circulo .texto {
-  display: block;
-  max-width: 100%;
-  right: 0;
-  opacity: 0;
-}
-.box6 .texto > p {
-  text-align: left;
-  max-width: 100%;
-  margin-left: 2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-.box6 .circulo:hover .texto {
-  opacity: 1;
-}
-.box7{
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  margin-top: 3.125rem;
-  margin-bottom: 5rem;
-   font-family: "Urbanist", sans-serif;
-}
-.box7 > .circulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 68rem;
-  position: relative;
-  left: 10%;
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #01040B 0%, #010D2B 100%);
-  transition: .5s;
-}
-.box7 > .circulo h3 {
-  position: relative;
-  top: 45%;
-  color: #fff;
-}
-.box7 > .circulo:hover{
-  display: flex;
-  width: 100%;
-  height: 125%;
-  left: 0%;
-  clip-path: circle(45rem);
-  margin-bottom: 2rem;
-}
-.box7 > .circulo:hover h3 {
-  top: -10%;
-}
-.box7 .circulo .texto {
-  display: block;
-  max-width: 100%;
-  right: 0;
-  opacity: 0;
-}
-.box7 .texto > p {
-  text-align: left;
-  max-width: 100%;
-  margin-left: 2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-.box7 .circulo:hover .texto {
-  opacity: 1;
-}
 
 @media screen and (min-width: 1300px) {
   hr{
@@ -758,53 +562,38 @@ p {
     text-align: center;
   }
 
-  .box4  {
-      position: relative;
-      left: 7%;
+}
+
+@media screen and (min-width: 1900px) {
+
+  .texto-alto{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40.5%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+
   }
 
-  .box5  {
-      position: relative;
-      left: 7%;
+  hr{
+    margin: 0 29rem;
   }
 
-  .box6  {
-    position: relative;
-    left: 7%;
-  }
+  .texto-baixo{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40.5%;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
 
-  .box7  {
-    position: relative;
-    left: 7%;
-  }
-
-  .box8  {
-    position: relative;
-    left: 7%;
-  }
-
-  .box4 > .circulo:hover {
-      width: 80%;
-      left: 1%;
-  }
-
-  .box5 > .circulo:hover {
-      width: 80%;
-      left: 1%;
-  }
-
-  .box6 > .circulo:hover {
-      width: 80%;
-      left: 1%;
-  }
-
-  .box7 > .circulo:hover {
-      width: 80%;
-      left: 1%;
-  }
-
-  .box8 > .circulo:hover {
-      width: 80%;
-      left: 1%;
   }
 }
