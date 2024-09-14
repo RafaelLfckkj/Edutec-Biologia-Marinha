@@ -34,11 +34,6 @@ li{
   display: inline-block;
 }
 
-/* hr{
-  width: 90%;
-  margin: 0 5rem;
-} */
-
 a{
   color: white;
   margin: 2.5rem;
@@ -365,62 +360,6 @@ a img:hover {
   color: #fff;
   font-size: 1rem;
 }
-/* @media screen and (min-width: 1300px){
-  .card__description {
-    margin: 10px 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card1 .card__description {
-    margin: 0.1rem;
-    font-size: 0.9rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card2 .card__description {
-    margin: 0.1rem;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card3 .card__description {
-    margin: 0.1rem;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card4 .card__description {
-    margin: 0.1rem;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .serie .card__description{
-    margin: 10px 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .serie .card1 .card__description{
-    margin: 10px 0 10px;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .jogo .card .card__description{
-    margin: 10px 0 10px;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .jogo .card1 .card__description{
-    margin: 10px 0 10px;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1;
-  }
-} */
 
 .serie {
   display: flex;
@@ -444,13 +383,13 @@ a img:hover {
 
 .bubble1 { left: 20%; animation-duration: 5s; }
 .bubble2 { left: 50%; animation-duration: 7s; }
-.bubble3 { left: 70%; animation-duration: 4s; }
-.bubble4 { left: 10%; animation-duration: 6s; }
+.bubble3 { left: 70%; animation-duration: 8s; }
+.bubble4 { left: 10%; animation-duration: 9s; }
 .bubble5 { left: 30%; animation-duration: 8s; }
-.bubble6 { left: 40%; animation-duration: 3s; }
+.bubble6 { left: 40%; animation-duration: 7s; }
 .bubble7 { left: 60%; animation-duration: 5s; }
 .bubble8 { left: 80%; animation-duration: 7s; }
-.bubble9 { left: 90%; animation-duration: 4s; }
+.bubble9 { left: 90%; animation-duration: 8s; }
 .bubble10 { left: 15%; animation-duration: 6s; }
 
 @keyframes bubble-rise {
@@ -459,36 +398,7 @@ a img:hover {
   100% { bottom: 100%; opacity: 0; transform: translateX(-30px) t; }
 }
 @media screen and (min-width: 1500px){
-  .card__description {
-    margin: 10px 0 10px;
-    font-size: 0.7rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card1 .card__description {
-    margin: 0.1rem;
-    font-size: 0.7rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card2 .card__description {
-    margin: 0.1rem;
-    font-size: 0.7rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card3 .card__description {
-    margin: 0.1rem;
-    font-size: 0.7rem;
-    color: #fff;
-    line-height: 1;
-  }
-  .card4 .card__description {
-    margin: 0.1rem;
-    font-size: 0.7rem;
-    color: #fff;
-    line-height: 1;
-  }
+  
 }
 
 @media screen and (min-width: 1300px){
@@ -515,6 +425,9 @@ a img:hover {
       gap: 2rem;
       margin-left: 12rem;
   }
+
+  
+  
   .filmes div a img{
     width: 80%;
     border-radius: 1rem;

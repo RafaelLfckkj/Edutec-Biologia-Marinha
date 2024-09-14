@@ -461,4 +461,24 @@ p {
   hr{
     margin: 0 27rem;
   }
+
+  .box3 .texto .ciri{
+    margin-left: 35rem;
+    text-align: left;
+  }
+
+  .box2 .texto h4{
+    text-align: left;
+    margin-left: 35rem;
+  }
+
+  .box1 .texto h4{
+    text-align: left;
+    margin-left: 35rem;
+  }
+
+  .box .texto h4{
+    text-align: left;
+    margin-left: 35rem;
+  }
 }

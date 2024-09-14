@@ -411,5 +411,34 @@ p {
     text-align: center;
   }
 
+  /* .box .texto .bvd{
+    margin-left: 9rem;
+  }
 
+  .box .texto .ca{
+    margin-left: 24rem;
+  }
+
+  .box1 .texto .cef{
+    margin-left: 11rem;
+  }
+
+  .box1 .texto .sv{
+    margin-left: 22rem;
+  }
+
+  .box1 .texto .gt{
+    margin-left: 17rem;
+  } */
+
+
+  .box .texto h4{
+    text-align: left;
+    margin-left: 40rem;
+  }
+
+  .box1 .texto h4{
+    text-align: left;
+    margin-left: 40rem;
+  }
 }

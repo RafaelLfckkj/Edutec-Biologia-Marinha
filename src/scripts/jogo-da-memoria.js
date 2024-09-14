@@ -72,7 +72,7 @@ function checkForMatch() {
 }
 
 function startTimer() {
-    timeLeft = currentPhase === 1 ? 10 : currentPhase === 3 ? 15 : 20;
+    timeLeft = currentPhase === 1 ? 10 : currentPhase === 3 ? 15 : currentPhase === 5 ? 20 : 45;
     document.getElementById('time').textContent = timeLeft;
     clearInterval(timer); // Garante que não exista um timer ativo antes de iniciar um novo
     timer = setInterval(() => {

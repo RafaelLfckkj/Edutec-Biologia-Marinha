@@ -1,16 +1,8 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+const depthElement = document.getElementById('depth');
 
-let idx = 0;
-
-function carrossel() {
-  idx ++ ;
-
-  if (idx > img.length -1){
-    idx = 0;
-  }
-
-  imgs.style.transform = `translateX(${-idx * 500}px)`;
-}
-
-setInterval(carrossel, 1800)
+// Função para atualizar a profundidade com base no scroll
+window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY; // Posição do scroll
+  let depth = Math.floor(scrollPosition * 10); // Aumenta a profundidade conforme o scroll
+  depthElement.textContent = depth;
+});

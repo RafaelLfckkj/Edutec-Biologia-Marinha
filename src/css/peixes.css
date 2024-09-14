@@ -440,4 +440,45 @@ p {
   hr{
     margin: 0 27rem;
   }
+
+  .box .texto h4{
+    text-align: left;
+    margin-left: 40rem;
+  }
+
+  .box1 .texto h4{
+    text-align: left;
+    margin-left: 40rem;
+  }
+
+  .box2 .texto h4{
+    text-align: left;
+    margin-left: 40rem;
+  }
+
+  /* .texto .ha{
+    margin-left: 15rem;
+  }
+
+  .texto .con{
+    margin-left: -0.3rem;
+  }
+
+  .texto .cons{
+    margin-left: -1rem;
+  }
+
+  .texto .conr{
+    margin-left: 1rem;
+  }
+
+  .texto .os{
+    margin-left: -1rem;
+  }
+
+  .texto .en{
+    margin-left: 11rem;
+  } */
+
+
 }

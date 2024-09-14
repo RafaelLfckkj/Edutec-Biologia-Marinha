@@ -115,7 +115,8 @@ main {
   margin: 0;
   overflow: hidden;
   background: #C7E7E3;
-  height: 49950px;
+  height: 10000px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,6 +175,7 @@ main {
   bottom: 1rem;
   right: 3rem;
 }
+
 .atle {
   position: absolute;
   width: 7%;
@@ -807,7 +809,7 @@ main {
   position: relative;
   width: 15%;
   height: 50%;
-  top: -24.5%;
+  top: 9%;
   left: 45%;
   z-index: 1000;
 }

@@ -1,11 +1,8 @@
-// Seleciona o elemento contador
-const counter = document.getElementById('scroll-counter');
-let scrollcount = 0;
-// Inicializa o contador
-// Função para atualizar o contador quando o usuário rolar a páginawindow.scroll({
-window.addEventListener("scroll", (evento) => {
-  scrollcount++;
+const depthElement = document.getElementById('depth');
+
+// Função para atualizar a profundidade com base no scroll
+window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY; // Posição do scroll
+  let depth = Math.floor(scrollPosition * 1); // Aumenta a profundidade conforme o scroll
+  depthElement.textContent = depth;
 });
-onscroll = (evento) => {
-  counter.innertext = scrollcount;
-};

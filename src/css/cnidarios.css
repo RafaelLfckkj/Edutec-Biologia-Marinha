@@ -595,4 +595,44 @@ p {
     text-align: center;
 
   }
+
+  .texto > p {
+    margin-left: 30rem;
+  }
+  .texto h4 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: 8.5rem;
+  }
+
+  .texto .pr {
+    margin-left: 17rem;
+  }
+  
+
+  .texto1 > p {
+    margin-left: 30rem;
+  }
+  
+  .texto1 h4 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: 6rem;
+  }
+
+  .texto1 .hp {
+    margin-left: 13rem;
+  }
+
+  .texto1 > .agv {
+    margin-left: -3rem;
+  }
+
+  .box3 .texto1 .cbz{
+    margin-left: -10rem;
+  }
+
+  .box3 .texto1 .rc{
+    margin-left: 2rem;
+  }
 }
