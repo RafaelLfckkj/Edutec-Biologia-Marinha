@@ -127,9 +127,19 @@ main {
   justify-content: center;
   align-items: center;
   transform: translate(100% 100%);
-  z-index: 100;
+  z-index: 99999;
   color: #ffffff;
 }
+
+.sea h2{
+  position: fixed;
+  z-index: 99999;
+  padding: 10px;
+  color: white;
+  background-color:  rgba(0, 0, 0, 0.5);
+
+}
+
 .sea {
   position: absolute;
   width: 200%;
@@ -152,7 +162,7 @@ main {
   z-index: 1000;
 }
 
-.m0 {
+.counter {
   color: var( #fffFFF);
   text-align: center;
   font-family: Roboto;
@@ -530,6 +540,339 @@ main {
   left: 90%;
   display: flex;
   z-index: 1000;
+}
+.sharkb {
+  position: relative;
+  width: 80%;
+  top: 4%;
+  right: 70%;
+  display: flex;
+  z-index: 1000;
+}
+
+.fri {
+  position: relative;
+  width: 39%;
+  top: 4.5%;
+  left: 96%;
+  display: flex;
+  z-index: 1000;
+}
+.bt {
+  position: relative;
+  width: 50%;
+  top: 5.6%;
+  left: 37%;
+  display: flex;
+  z-index: 1000;
+}
+.angel {
+  position: relative;
+  width: 25%;
+  top: 7.4%;
+  right: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.text {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  top: 7.6%;
+  right: 100%;
+}
+.angel {
+  position: relative;
+  width: 25%;
+  top: 7.4%;
+  right: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.cs {
+  position: relative;
+  width: 35%;
+  top: 8%;
+  left: 90%;
+  display: flex;
+  z-index: 1000;
+}
+.mako {
+  position: relative;
+  width: 85%;
+  top: 8.9%;
+  right: 24%;
+  display: flex;
+  z-index: 1000;
+}
+.ep {
+  position: relative;
+  width: 39%;
+  top: 9.8%;
+  left: 50%;
+  display: flex;
+  z-index: 1000;
+}
+.esp {
+  position: relative;
+  width: 85%;
+  top: 10.6%;
+  right: 24%;
+  display: flex;
+  z-index: 1000;
+}
+.nau {
+  position: relative;
+  width: 13%;
+  top: 11.5%;
+  left: 110%;
+  display: flex;
+  z-index: 1000;
+}
+.bc {
+  position: relative;
+  width: 40%;
+  top: 14%;
+  right: 0%;
+  display: flex;
+  z-index: 1000;
+}
+.sun {
+  position: relative;
+  width: 25%;
+  top: 12.4%;
+  right: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.japa {
+  position: relative;
+  width: 60%;
+  top: 16%;
+  right: 0%;
+  display: flex;
+  z-index: 1000;
+}
+.teti {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 16.2%;
+  right: 40%;
+}
+.coe {
+  position: relative;
+  width: 60%;
+  top: 19%;
+  right: 0%;
+  display: flex;
+  z-index: 1000;
+}
+.t {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 19.1%;
+  right: 10%;
+}
+.kc {
+  position: relative;
+  width: 30%;
+  top: 20%;
+  left: 110%;
+  display: flex;
+  z-index: 1000;
+}
+.gp {
+  position: relative;
+  width: 60%;
+  top: 21%;
+  right: 10%;
+  display: flex;
+  z-index: 1000;
+}
+.go {
+  position: relative;
+  width: 70%;
+  top: 22%;
+  right: 0%;
+  display: flex;
+  z-index: 1000;
+}
+.te {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 22.2%;
+  right: 40%;
+}
+.ma {
+  position: relative;
+  width: 45%;
+  top: 23%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+}
+.co {
+  position: relative;
+  width: 44%;
+  top: 24%;
+  left: 105%;
+  display: flex;
+  z-index: 1000;
+}
+.me {
+  position: relative;
+  width: 10%;
+  top: 24.4%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+}
+.vi {
+  position: relative;
+  width: 30%;
+  top: 25.8%;
+  left: 85%;
+  display: flex;
+  z-index: 1000;
+}
+.sper {
+  position: relative;
+  width: 135%;
+  top: 27.3%;
+  right: 30%;
+  display: flex;
+  z-index: 1000;
+}
+.trugia {
+  position: relative;
+  width: 65%;
+  top: 28.5%;
+  right: 90%;
+  display: flex;
+  z-index: 1000;
+}
+.tex {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 28.2%;
+  left: 35%;
+}
+.bbw {
+  position: relative;
+  width: 100%;
+  top: 29.4%;
+  display: flex;
+  z-index: 1000;
+}
+.mid {
+  position: relative;
+  width: 15%;
+  height: 50%;
+  top: -24.5%;
+  left: 45%;
+  z-index: 1000;
+}
+.mid .zone {
+  color: #E0B0FF;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0rem;
+  left: -18%;
+}
+.t1 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 0.5%;
+  left: -25%;
+}
+.t2 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 0.8%;
+  left: -25%;
+}
+.angle {
+  position: relative;
+  width: 25%;
+  top: 2.3%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+}
+.t3 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 2.5%;
+  left: -24%;
 }
 @media screen and (min-width: 1600px) {
   .onda img {
