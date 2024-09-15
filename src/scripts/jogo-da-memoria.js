@@ -10,7 +10,8 @@ let timeLeft = 10;
 let timer;
 let currentPhase = 1;
 let isGameActive = false; // Variável para controlar o estado do jogo
-
+const scoreContainer = document.querySelector('#score-container');
+const restartbuton = document.querySelector('#restart');
 // Função para embaralhar as cartas
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -72,16 +73,16 @@ function checkForMatch() {
 }
 
 function startTimer() {
-    timeLeft = currentPhase === 1 ? 10 : currentPhase === 3 ? 15 : currentPhase === 5 ? 20 : 45;
+    timeLeft = currentPhase === 1 ? 10 : currentPhase === 3 ? 15 : 20 ;
     document.getElementById('time').textContent = timeLeft;
     clearInterval(timer); // Garante que não exista um timer ativo antes de iniciar um novo
     timer = setInterval(() => {
         if (isGameActive) {
             timeLeft = timeLeft - 1;
             document.getElementById('time').textContent = timeLeft;
-            if (timeLeft <= 0) {
+            if (timeLeft === 0) {
                 clearInterval(timer);
-                showPopup('Tempo esgotado! Você perdeu!', 'Recomeçar');
+                showPopup('Tempo esgotado! Você perdeu!', 'Tentar novamente');
                 isGameActive = false; // Jogo termina ao perder
             }
         }
@@ -104,7 +105,10 @@ function restartPhase() {
     document.getElementById('popup').classList.add('hidden');
     gameBoard.classList.remove('no-click'); // Reabilita cliques no tabuleiro
     isGameActive = false; // Reinicia o estado do jogo como inativo
-
+    jogonumber.classList.remove('fase2');
+    jogonumber.classList.remove('fase3');
+    jogonumber.classList.remove('hide');
+    scoreContainer.classList.add('hide')
     // Recarrega as cartas da fase 1
     cardImages = [
         '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', 
@@ -113,7 +117,7 @@ function restartPhase() {
 
     createBoard(); // Recria o tabuleiro atual com as cartas embaralhadas
 }
-
+const jogonumber = document.querySelector('div.jogo');
 function nextPhase() {
     // Avança para a próxima fase corretamente
     currentPhase += 1; // Incrementa a fase
@@ -122,23 +126,31 @@ function nextPhase() {
     document.getElementById('popup').classList.add('hidden');
     gameBoard.classList.remove('no-click'); // Reabilita cliques no tabuleiro
     isGameActive = true; // Ativa o estado do jogo
-
     // Define as cartas para a próxima fase
     if (currentPhase === 3) {
+        jogonumber.classList.toggle('fase2');
         cardImages = [
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png',
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png'
         ]; // Imagens da fase 2
     } else if (currentPhase === 4) {
+        currentPhase = 4;
+        jogonumber.classList.remove('fase2');
+        jogonumber.classList.toggle('fase3')
         cardImages = [
             '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png',
             '.././jogo da memoria/shark.png', '.././jogo da memoria/tentacru.png', '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png',
             '.././jogo da memoria/molu.png', '.././jogo da memoria/polvo.png', '.././jogo da memoria/shark.png', '.././jogo da memoria/tentacru.png'
         ]; // Imagens da fase 3
+    } else if (currentPhase >= 6) {
+        jogonumber.classList.remove('fase3');
+        hideOrShowQuizz();
+        return(startTimer)
     }
 
     createBoard();
 }
+
 
 function goHome() {
     window.location.href = '../../index.html';
@@ -150,14 +162,22 @@ function volte() {
 
 // Atribuir ações aos botões de popup
 document.getElementById('popup-btn').addEventListener('click', function () {
-    if (this.textContent === 'Recomeçar') {
+    if (this.textContent === 'Tentar novamente') {
         restartPhase(); // Reinicia o jogo para a fase inicial
-    } else {
+    } else if(this.textContent === 'Próxima fase!') {
         nextPhase(); // Avança para a próxima fase
     }
 });
 
+// mostra ou esconde o score
+function hideOrShowQuizz() {
+  jogonumber.classList.add('hide');
+  scoreContainer.classList.remove('hide');
+};
+restartbuton.addEventListener('click', function () {
+     restartPhase();
+      jogonumber.classList.remove('hide');
+      scoreContainer.classList.add('hide');
+})
 // Inicializa o tabuleiro
 createBoard();
-
-

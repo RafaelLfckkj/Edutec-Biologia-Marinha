@@ -6,7 +6,9 @@ body {
   height: 100vh;
   margin: 0;
 }
-
+.hide {
+  display: none !important;
+}
 .onc {
   display: flex;
 }
@@ -16,7 +18,7 @@ body {
   height: 20%;
   display: flex;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .onc .ondacm {
@@ -24,21 +26,7 @@ body {
   height: 28%;
   display: flex;
   position: absolute;
-  z-index: 1;
-}
-
-.cire img {
-  position: absolute;
   z-index: 0;
-  width: 10%;
-  height: 95%;
-}
-
-.cird img {
-  position: absolute;
-  z-index: 0;
-  width: 44%;
-  left: 56%;
 }
 
 main {
@@ -51,6 +39,8 @@ main {
   height: 55%;
   margin: 0;
 }
+
+
 
 #exit-btn {
   position: absolute;
@@ -76,10 +66,42 @@ main {
   border-radius: 5px;
   z-index: 2;
 }
-
+.fase2 > .game-board {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr ;
+  gap: 15px;
+  margin-left: 25rem;
+  margin-top: 7.5rem;
+  align-items: center;
+  position: relative;
+  top: 9rem;
+  left: 1rem;
+  overflow: hidden;
+}
+.fase2  #timer {
+  top: -19rem;
+  left: 32rem;
+}
+.fase3 .gameboard{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 12px;
+  margin-left: 20rem;
+  margin-top: 7rem;
+  align-items: center;
+  position: relative;
+  top: 9rem;
+  left: 1rem;
+  overflow: hidden;
+}
+.fase3  #timer {
+  top: -18rem;
+  left: 33rem;
+}
 .game-board {
   max-width: 100%;
-  display: flex;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
   gap: 12px;
@@ -114,8 +136,8 @@ main {
   padding-bottom: 0.5rem;
   position: relative;
   text-align: center;
-  left: -28rem;
-  top: -6rem;
+  left: 34rem;
+  top: -14rem;
   font-size: 1.5rem;
   border: 2px #ffffff solid;
   border-radius: 2rem;
@@ -155,24 +177,6 @@ main {
   width: 100%;
 }
 
-.ond .ondb{
-  width: 100%;
-  height: 20%;
-  display: flex;
-  position: absolute;
-  left: 0rem;
-  bottom: 0rem;
-  z-index: 1;
-}
-
-.ond .ondba{
-  width: 100%;
-  height: 33%;
-  position: absolute;
-  display: flex;
-  bottom: 0rem;
-  left: 0rem;
-}
 
 @media screen and (min-width: 1500px) {
   .game-board {
@@ -193,14 +197,326 @@ main {
 
 }
 
+#score-container a {
+  background-color: #00c9c8;
+  color: #fff;
+  height: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 1.7rem;
+  position: relative;
+  top: 5rem;
+  padding: 0.6rem;
+  margin: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#score-container a:hover {
+  background-color: #2a272a;
+  color: #ffffff;
+}
+
+#score-container h2, p{
+  text-align: center;
+}
+
+#score-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 0.5rem;
+  border: 0.5rem solid #0162A3;
+  background: #E8E8E8;
+  margin: 0;
+  z-index: 3;
+}
+
+.bubble {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 50%;
+  animation: bubble-rise 3s infinite ease-in;
+}
+
+.bubble1 { left: 20%; animation-duration: 5s; }
+.bubble2 { left: 50%; animation-duration: 7s; }
+.bubble3 { left: 70%; animation-duration: 4s; }
+.bubble4 { left: 10%; animation-duration: 6s; }
+.bubble5 { left: 30%; animation-duration: 8s; }
+.bubble6 { left: 40%; animation-duration: 3s; }
+.bubble7 { left: 60%; animation-duration: 5s; }
+.bubble8 { left: 80%; animation-duration: 7s; }
+.bubble9 { left: 90%; animation-duration: 4s; }
+.bubble10 { left: 15%; animation-duration: 6s; }
+
+@keyframes bubble-rise {
+  0% { bottom: 0; opacity: 0; transform: translateX(0); }
+  30% { opacity: 1; }
+  100% { bottom: 100%; opacity: 0; transform: translateX(-30px); }
+}
 @media screen and (min-width: 1900px) {
+  #exit-btn {
+    position: absolute;
+    top: 10px;
+    left: 5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  #volta {
+    position: absolute;
+    top: 10px;
+    left: 10rem;
+    background-color: yellow;
+    color: #000;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  #score-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+    border: 0.5rem solid #0162A3;
+    background: #E8E8E8;
+    margin: 0;
+    z-index: 1;
+  }
+  #score-container button {
+    background-color: #00c9c8;
+    color: #fff;
+    height: 3rem;
+    border: 1.2px solid #e0e0e0;
+    border-radius: 1.7rem;
+    position: relative;
+    top: 2rem;
+    padding: 0.6rem;
+    margin: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: t;
+    font-size: 1.4rem;
+  }
+
+  #score-container button:hover {
+    background-color: #2a272a;
+    color: #ffffff;
+  }
   .game-board {
-    margin-left: 45rem;
+    margin-left: 7rem;
     left: -2rem;
   }
 
   #timer{
-    left: -30rem;
+    left: 15rem;
+  }
+  .fase2 > .game-board {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr ;
+    gap: 15px;
+    margin-left: 4rem;
+    margin-top: 9rem;
+    align-items: center;
+    position: relative;
+    top: 9rem;
+    left: 0rem;
+    overflow: hidden;
+  }
+  .fase2  #timer {
+    top: -19rem;
+    left: 9rem;
+  }
+  .fase3 .gameboard{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 12px;
+    margin-left: 20rem;
+    margin-top: 6rem;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+    left: 0rem;
+    overflow: hidden;
+  }
+  .fase3  #timer {
+    top: -17rem;
+    left: 17rem;
   }
 }
 
+@media screen and (min-width: 1300px) {
+  #score-container{
+    width: 200rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 9rem;
+    border: 0.5rem solid #0162A3;
+    background: #E8E8E8;
+    margin: 0;
+    z-index: 1;
+  }
+  #score-container button {
+    background-color: #00c9c8;
+    color: #fff;
+    height: 3rem;
+    border: 1.2px solid #e0e0e0;
+    border-radius: 1.7rem;
+    position: relative;
+    top: 2rem;
+    padding: 0.6rem;
+    margin: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: t;
+    font-size: 1.4rem;
+  }
+
+  #score-container button:hover {
+    background-color: #2a272a;
+    color: #ffffff;
+  }
+  #progress-bar-container .question-count {
+    margin-left: 35%;
+    margin-top: 7rem;
+    font-size: 2rem;
+    color: #A5CBD8;
+    font-family: "Sniglet", system-ui;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .onq img {
+    margin-top: 9.3rem;
+  }
+
+  #question1{
+    margin-left: 7rem;
+  }
+
+}
+
+#score-container{
+  background-color: #033b5e;
+  color: white;
+}
+
+@media screen and (min-width: 1600px) {
+  .onq img {
+    margin-top: 9.01rem;
+  }
+  #question1{
+    margin-left: -7.6rem;
+  }
+  body{
+    display: block;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 100%;
+  }
+  #question {
+    text-align: center;
+    margin-bottom: 12rem;
+    font-size: 2rem;
+    color: #0F5B85;
+    opacity: 65%;
+    font-weight: bold;
+    position: relative;
+    top: 8rem;
+  }
+  #answers-box button {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 50%;
+    height: 4rem;
+    border: none;
+    text-align: left;
+    color: #00263A;
+    background-color: #80B4C6;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 1rem;
+  }
+  #score-container{
+    width: 100%;
+    height: 59.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    border: 0.5rem solid #002775;
+    background: #0C2233;
+    margin: 0;
+    z-index: 1;
+  }
+  #score-container a {
+    background-color: #033b5e;
+    color: #fff;
+    height: 0.75rem;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    top: 5rem;
+    padding: 0.6rem;
+    margin: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #score-container button {
+    background-color: #033b5e;
+  }
+  #score-container h2, p{
+    text-align: center;
+    top: 2rem;
+    font-size: 4rem;
+    color: #e0e0e0;
+  }
+  #question1 {
+    display: flex;
+    position: absolute;
+    transform: translate(385%, 160%);
+  }
+  #answers-box .btn-letter {
+    font-size: 1.6rem; 
+  }
+  .question-answer {
+    font-size: 1.2rem;
+    color: #062351;
+  }
+
+
+}

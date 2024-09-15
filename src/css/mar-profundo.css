@@ -49,11 +49,6 @@ a {
 }
 
 
-html {
-  scroll-behavior: smooth; 
-  overflow-x: hidden;
-}
-
 .barra-de-navegacao > a{
   color: white;
 }
@@ -67,6 +62,14 @@ html {
 
 html {
   scroll-behavior: smooth;
+  overflow: auto;
+}
+
+body{
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 li{
@@ -88,7 +91,7 @@ ul > img{
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(100% 100%);
+  transform: translate(0% 100%);
   background: #009AE7;
   color: #001D3D;
   position: relative;
@@ -101,8 +104,8 @@ ul > img{
 .sol {
   position: relative;
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: flex-end; 
+  align-items: flex-end;
   left: 20%;
   bottom: 15rem;
   width: 627px;
@@ -119,6 +122,7 @@ main {
   height: 35000px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -129,29 +133,31 @@ main {
   justify-content: center;
   align-items: center;
   transform: translate(100% 100%);
-  z-index: 99999;
+  z-index: 2;
   color: #ffffff;
 }
 .sea .zone0 {
   font-size: 2rem;
 }
-.sea h2{
+.sea .counter{
   position: fixed;
-  z-index: 99999;
+  z-index: 1001;
   padding: 10px;
   color: white;
   background-color:  rgba(0, 0, 0, 0.5);
-
 }
 
 .sea {
   position: absolute;
   width: 200%;
   height: 100%;
-  background: linear-gradient(180deg, #009AE7 5%, #000 100%);
+  background: linear-gradient(180deg, #009AE7 5%, #010209ff 40%, #000 70%);
   overflow-x: hidden;
 }
-
+.prof0 {
+  dipslay: flex;
+  flew-direction: column;  
+}
 .mane {
   position: absolute;
   width: 10%;
@@ -826,7 +832,7 @@ main {
 .twilight {
   position: relative;
   width: 15%;
-  height: 50%;
+  height: 55%;
   top: 2.5%;
   left: 45%;
   z-index: 1000;
@@ -852,6 +858,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.murreb {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -5%;
+  top: 0.1%;
+}
 .wol {
   position: relative;
   width: 50%;
@@ -859,6 +879,20 @@ main {
   right: 70%;
   display: flex;
   z-index: 1000;
+}
+.enguialo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -90%;
+  top: 0.2%;
 }
 .had {
   position: relative;
@@ -868,6 +902,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.arin {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 70%;
+  top: 0.1%;
+}
 .cc {
   position: relative;
   width: 90%;
@@ -875,6 +923,20 @@ main {
   left: 37%;
   display: flex;
   z-index: 1000;
+}
+.cadeia {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 30%;
+  top: 0.5%;
 }
 .ke {
   position: relative;
@@ -884,6 +946,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.alga {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -65%;
+  top: 0.5%;
+}
 .lag {
   position: relative;
   width: 40%;
@@ -892,7 +968,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.lgt {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 80%;
+  top: 0.7%;
+}
 .tt {
   position: relative;
   width: 40%;
@@ -901,7 +990,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.taroli {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -30%;
+  top: 0.6%;
+}
 .shark {
   position: relative;
   width: 100%;
@@ -909,6 +1011,20 @@ main {
   left: 60%;
   display: flex;
   z-index: 1000;
+}
+.branco {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 0.7%;
 }
 .bd {
   position: relative;
@@ -918,7 +1034,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.nariz {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -30%;
+  top: 1.7%;
+}
 .lu {
   position: relative;
   width: 20%;
@@ -927,7 +1056,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.lulac {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 60%;
+  top: 2.5%;
+}
 .gum {
   position: relative;
   width: 85%;
@@ -935,6 +1077,20 @@ main {
   right: 24%;
   display: flex;
   z-index: 1000;
+}
+.gumtub {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -30%;
+  top: 2.9%;
 }
 .tet {
   color: #ffffff;  
@@ -958,6 +1114,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.human {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 80%;
+  top: 3.5%;
+}
 .sharkb {
   position: relative;
   width: 80%;
@@ -966,7 +1136,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.tutuazul {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -85%;
+  top: 3.8%;
+}
 .fri {
   position: relative;
   width: 39%;
@@ -974,6 +1157,20 @@ main {
   left: 96%;
   display: flex;
   z-index: 1000;
+}
+.vagalula {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 60%;
+  top: 4.5%;
 }
 .bt {
   position: relative;
@@ -983,6 +1180,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.atumpa {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 10%;
+  top: 5.7%;
+}
 .angel {
   position: relative;
   width: 25%;
@@ -990,6 +1201,20 @@ main {
   right: 70%;
   display: flex;
   z-index: 1000;
+}
+.angelo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -101%;
+  top: 7.4%;
 }
 .text {
   color: #ffffff;  
@@ -1021,6 +1246,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.salmaochi {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 60%;
+  top: 8.1%;
+}
 .mako {
   position: relative;
   width: 85%;
@@ -1028,6 +1267,20 @@ main {
   right: 24%;
   display: flex;
   z-index: 1000;
+}
+.makotu {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -24%;
+  top: 8.8%;
 }
 .ep {
   position: relative;
@@ -1037,6 +1290,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.imperador {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 20%;
+  top: 9.7%;
+}
 .esp {
   position: relative;
   width: 85%;
@@ -1044,6 +1311,20 @@ main {
   right: 24%;
   display: flex;
   z-index: 1000;
+}
+.espada {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -19%;
+  top: 10.6%;
 }
 .nau {
   position: relative;
@@ -1053,6 +1334,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.naut {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 70%;
+  top: 11.5%;
+}
 .bc {
   position: relative;
   width: 40%;
@@ -1060,6 +1355,20 @@ main {
   right: 0%;
   display: flex;
   z-index: 1000;
+}
+.bambucor {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -30%;
+  top: 14%;
 }
 .sun {
   position: relative;
@@ -1069,6 +1378,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.luapei {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -105%;
+  top: 12.35%;
+}
 .japa {
   position: relative;
   width: 60%;
@@ -1076,6 +1399,20 @@ main {
   right: 0%;
   display: flex;
   z-index: 1000;
+}
+.caranhjapones {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -15%;
+  top: 16%;
 }
 .teti {
   color: #ffffff;  
@@ -1099,6 +1436,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.coelacan {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20%;
+  top: 19%;
+}
 .t {
   color: #ffffff;  
   text-align: center;
@@ -1121,6 +1472,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.caranreal {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 75%;
+  top: 20%;
+}
 .gp {
   position: relative;
   width: 60%;
@@ -1129,6 +1494,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.polvogigante {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -25%;
+  top: 21%;
+}
 .go {
   position: relative;
   width: 70%;
@@ -1136,6 +1515,20 @@ main {
   right: 0%;
   display: flex;
   z-index: 1000;
+}
+.peixeremo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -15%;
+  top: 22%;
 }
 .te {
   color: #ffffff;  
@@ -1159,6 +1552,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.tamboril {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -60%;
+  top: 23%;
+}
 .co {
   position: relative;
   width: 24%;
@@ -1166,6 +1573,20 @@ main {
   left: 105%;
   display: flex;
   z-index: 1000;
+}
+.bacapaci {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 65%;
+  top: 24%;
 }
 .me {
   position: relative;
@@ -1175,6 +1596,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.marrus {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -85%;
+  top: 24.5%;
+}
 .vi {
   position: relative;
   width: 30%;
@@ -1182,6 +1617,20 @@ main {
   left: 85%;
   display: flex;
   z-index: 1000;
+}
+.vitor {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 55%;
+  top: 25.9%;
 }
 .sper {
   position: relative;
@@ -1191,6 +1640,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.cacha {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 0%;
+  top: 27.3%;
+}
 .trugia {
   position: relative;
   width: 65%;
@@ -1198,6 +1661,20 @@ main {
   right: 90%;
   display: flex;
   z-index: 1000;
+}
+.decouro {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -100%;
+  top: 28.5%;
 }
 .tex {
   color: #ffffff;  
@@ -1220,7 +1697,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.baleiabicuda {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 5%;
+  top: 29.4%;
+}
 .mid {
   position: relative;
   width: 15%;
@@ -1278,6 +1768,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.pescador {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -105%;
+  top: 2.3%;
+}
 .t3 {
   color: #ffffff;  
   text-align: center;
@@ -1300,6 +1804,21 @@ main {
   display: flex;
   z-index: 1000;
 }
+.phero {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  top: 3.4%;
+}
+
 .orange {
   position: relative;
   width: 45%;
@@ -1307,6 +1826,20 @@ main {
   right: 55%;
   display: flex;
   z-index: 1000;
+}
+.laranja {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -80%;
+  top: 4.8%;
 }
 .ora {
   color: #ffffff;  
@@ -1330,6 +1863,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.anemo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -10%;
+  top: 5.8%;
+}
 .bob {
   position: relative;
   width: 30%;
@@ -1338,6 +1885,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.bolhapei {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -120%;
+  top: 6.7%;
+}
 .frisbe {
   position: relative;
   width: 95%;
@@ -1345,6 +1906,20 @@ main {
   left: 70%;
   display: flex;
   z-index: 1000;
+}
+.tubafris {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 70%;
+  top: 7%;
 }
 .ragoblin {
   position: relative;
@@ -1973,7 +2548,7 @@ main {
 .toot {
   position: relative;
   width: 44%;
-  top: 106.8%;
+  top: 101%;
   right: 40%;
   display: flex;
   z-index: 1000;
@@ -1990,27 +2565,68 @@ main {
   text-transform: uppercase;
   position: relative;
   width: 130%;
-  top: 107%;
+  top: 101.2%;
   left: -80%;
 }
 .dumbo {
   position: relative;
   width: 25%;
-  top: 108%;
+  top: 103%;
   right: 40%;
   display: flex;
-  z-index: 1000;
+  z-index: 1;
   margin-bottom: 1rem;
 }
-/* vou te mandar uma print pra ajeitar dps
-
-Acabei? 
-
-acho que sim 
-não prescisa fazer tudo
-agora só falta fazer a fase boss do jogo da memoria ou uma tela de vc ganhou :)
-
-*/
+.sea img {
+  z-index: 1;
+}
+.abissal {
+  position: relative;
+  width: 15%;
+  height: 50%;
+  top: 1%;
+  left: 45%;
+  z-index: 1000;
+}
+.abissal .zone {
+  color: #E0B0FF;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0rem;
+  left: -15%;
+}
+.abissal p {
+  color: #ffffff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  position: relative;
+  top: 5rem;
+  left: -15%;
+}
+.abissal h2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  position: relative;
+  top: 8rem;
+  left: -15%;
+}
 @media screen and (min-width: 1600px) {
   .onda img {
     width: 50%;
@@ -2023,6 +2639,9 @@ agora só falta fazer a fase boss do jogo da memoria ou uma tela de vc ganhou :)
   }
   .twilight {
     height: 55.3%;
+  }
+  .abissal {
+    top: 6%;
   }
 }
 
@@ -2076,11 +2695,1019 @@ agora só falta fazer a fase boss do jogo da memoria ou uma tela de vc ganhou :)
 }
 .bubble10 {
   left: 99%;
-  animation-duration: 50s;
+  animation-duration: 77s;
+}
+
+.bubble11 {
+  left: 15%;
+  animation-duration: 155s;
+}
+
+.bubble12 {
+  left: 25%;
+  animation-duration: 130s;
+}
+
+.bubble13 {
+  left: 35%;
+  animation-duration: 75s;
+}
+.bubble14 {
+  left: 45%;
+  animation-duration: 125s;
+}
+.bubble15 {
+  left: 57%;
+  animation-duration: 115s;
+}
+.bubble16 {
+  left: 65%;
+  animation-duration: 88s;
+}
+.bubble17 {
+  left: 75%;
+  animation-duration: 80s;
+}
+.bubble18 {
+  left: 85%;
+  animation-duration: 96s;
+}
+.bubble19 {
+  left: 95%;
+  animation-duration: 95s;
+}
+.bubble20 {
+  left: 98%;
+  animation-duration: 90s;
 }
 
 @keyframes bubble-rise {
   0% { bottom: 0; opacity: 0; }
   30% { opacity: 1; }
   100% { bottom: 100%; opacity: 0; }
+}
+
+@media screen and (min-width: 1900px){
+  .vi {
+      position: relative;
+      width: 30%;
+      top: 23%;
+      left: 105%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .me {
+      position: relative;
+      width: 10%;
+      top: 23%;
+      right: 100%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .ma {
+      position: relative;
+      width: 45%;
+      top: 23%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .ep {
+      position: relative;
+      width: 39%;
+      top: 9.8%;
+      left: -80%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .gp {
+      position: relative;
+      width: 60%;
+      top: 21%;
+      right: 99%;
+      display: flex;
+      z-index: 1000;
+  }
+
+
+  .imperador {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -105%;
+      top: 9.7%;
+  }
+
+  .gumtub {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -90%;
+      top: 2.9%;
+  }
+
+  .nariz {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -99%;
+      top: 1.7%;
+  }
+
+    .polvogigante {
+        color: #fff;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        opacity: 50%;
+        text-transform: uppercase;
+        position: relative;
+        left: -115%;
+        top: 21%;
+    }
+
+  .bacapaci {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: 110%;
+      top: 23%;
+  }
+
+  .marrus {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -85%;
+      top: 24.5%;
+  }
+
+  .marrus {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -150%;
+      top: 23%;
+  }
+
+  .vitor {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: 70%;
+      top: 23%;
+  }
+
+  .cacha {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: 0%;
+      top: 23.5%;
+  }
+
+  .decouro {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -100%;
+      top: 25.5%;
+  }
+
+  .baleiabicuda {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: 50%;
+      top: 25%;
+  }
+
+  .taroli {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 50%;
+      text-transform: uppercase;
+      position: relative;
+      left: -110%;
+      top: 0.9%;
+  }
+
+  .bbw {
+      position: relative;
+      width: 100%;
+      top: 24.8%;
+      display: flex;
+      z-index: 1000;
+      left: 50%;
+  }
+
+  .angle {
+      position: relative;
+      width: 25%;
+      top: 3%;
+      right: 70%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .t3 {
+      color: #ffffff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      position: relative;
+      width: 110%;
+      top: 2.7%;
+      left: -40%;
+  }
+
+  .co {
+      position: relative;
+      width: 24%;
+      top: 23%;
+      left: 150%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .sper {
+      position: relative;
+      width: 135%;
+      top: 23.5%;
+      right: 30%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .mid {
+      position: relative;
+      width: 15%;
+      height: 50%;
+      top: -20%;
+      left: 45%;
+      z-index: 1000;
+  }
+
+
+
+  .trugia {
+    position: relative;
+    width: 65%;
+    top: 25.3%;
+    right: 90%;
+    display: flex;
+    z-index: 1000;
+  }
+
+  .tex {
+      color: #ffffff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      position: relative;
+      width: 150%;
+      top: 23.5%;
+      left: -110%;
+  }
+
+
+  .gren {
+      position: relative;
+      width: 40%;
+      top: 11.6%;
+      left: -100%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .yet {
+      position: relative;
+      width: 20%;
+      top: 13.8%;
+      right: 90%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .y {
+      color: #ffffff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      position: relative;
+      width: 110%;
+      top: 13.9%;
+      left: -130%;
+  }
+
+  .isopd {
+      position: relative;
+      width: 50%;
+      top: 18.6%;
+      right: 60%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .squiwo {
+      position: relative;
+      width: 45%;
+      top: 29.9%;
+      left: -20%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .snail {
+      position: relative;
+      width: 34%;
+      top: 35.3%;
+      display: flex;
+      z-index: 1000;
+      right: 0%;
+  }
+
+  .tt {
+      position: relative;
+      width: 40%;
+      top: 0.8%;
+      right: 88%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .bd {
+      position: relative;
+      width: 70%;
+      top: 1.7%;
+      right: 78%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .gum {
+      position: relative;
+      width: 85%;
+      top: 3%;
+      right: 99%;
+      display: flex;
+      z-index: 1000;
+  }
+
+  .t {
+      color: #ffffff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      position: relative;
+      width: 150%;
+      top: 19.1%;
+      right: 40%;
+  }
+
+  
+  
+}
+.tubarafel {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -0%;
+  top: 2.3%;
+}
+.chiclete {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -125%;
+  top: 8.9%;
+}
+.peimacha {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  top: 9.5%;
+}
+.peixedra {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -65%;
+  top: 10.2%;
+}
+.gav {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 25%;
+  top: 10.9%;
+}
+.alabote {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 70%;
+  top: 11.7%;
+}
+.vermetu {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 65%;
+  top: 12.4%;
+}
+.yeticaran {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -75%;
+  top: 13.8%;
+}
+.tubaraosix {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 55%;
+  top: 14.2%;
+}
+.narval {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -10%;
+  top: 14.6%;
+}
+.lulajo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  top: 15.5%;
+}
+.cantam {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -125%;
+  top: 16.1%;
+}
+.tele {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 17.1%;
+}
+.giganiso {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -30%;
+  top: 18.6%;
+}
+.tubagroe {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 30%;
+  top: 19.2%;
+}
+.lulacolo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -10%;
+  top: 20.3%;
+}
+.barril {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -50%;
+  top: 21.7%;
+}
+.elefante {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 10%;
+  top: 23%;
+}
+.gigan {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -50%;
+  top: 24.6%;
+}
+.quime {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 60%;
+  top: 27.5%;
+}
+.lulamolusc {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20%;
+  top: 29.9%;
+}
+.neg {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 0%;
+  top: 31.9%;
+}
+.vibo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -120%;
+  top: 33%;
+}
+.peixescamo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -80%;
+  top: 35.3%;
+}
+.lulavam {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -120%;
+  top: 38.4%;
+}
+.frango {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  top: 40%;
+}
+.zumbi {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -90%;
+  top: 42.3%;
+}
+.bicocuv {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -10%;
+  top: 44.8%;
+}
+.vidroes {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -100%;
+  top: 47.1%;
+}
+.enguia {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 20%;
+  top: 53%;
+}
+.aguacosmi {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -15%;
+  top: 55%;
+}
+.semaforo {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -25%;
+  top: 59%;
+}
+.harpasopnja {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 65%;
+}
+.biscoito {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -5%;
+  top: 68.7%;
+}
+.lagarto {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 35%;
+  top: 74%;
+}
+.flacido {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -65%;
+  top: 78%;
+}
+.titanic {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -5%;
+  top: 98.7%;
+}
+.negra {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -65%;
+  top: 101%;
+}
+.polvodum {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -78%;
+  top: 102.9%;
 }

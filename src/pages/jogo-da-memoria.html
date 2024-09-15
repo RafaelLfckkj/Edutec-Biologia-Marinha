@@ -29,13 +29,36 @@
   </div>
   
   <main>
-    <button id="exit-btn" onclick="goHome()">Sair</button>
-    <button id="volta" onclick="volte()">Voltar</button>
-    <div id="game-board" class="game-board"></div>
-    <div id="timer">TEMPO: <span id="time">10</span></div>
-    <div id="popup" class="popup hidden">
-        <div id="popup-message"></div>
-        <button id="popup-btn" onclick="nextPhase()">Próxima fase</button>
+    <div class="jogo">
+      <button id="exit-btn" onclick="goHome()">Sair</button>
+      <button id="volta" onclick="volte()">Voltar</button>
+      <div id="game-board" class="game-board"></div>
+      <div id="timer">TEMPO: <span id="time">10</span></div>
+      <div id="popup" class="popup hidden">
+          <div id="popup-message"></div>
+          <button id="popup-btn" onclick="nextPhase()" onclick="restartPhase()">Próxima fase</button>
+      </div>
+    </div>
+    <div id="score-container" class="hide">
+      <h2>Parabéns!!</h2>
+
+      <p>
+        Você Ganhou
+      </p>
+      <button id="restart">Jogar novamente</button>
+      <nav>
+        <a href="../../index.html">VOLTAR PARA A HOME</a>
+      </nav>
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+      <div class="bubble bubble4"></div>
+      <div class="bubble bubble5"></div>
+      <div class="bubble bubble6"></div>
+      <div class="bubble bubble7"></div>
+      <div class="bubble bubble8"></div>
+      <div class="bubble bubble9"></div>
+      <div class="bubble bubble10"></div>
     </div>
   </main>
 </body>

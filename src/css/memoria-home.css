@@ -181,9 +181,9 @@ ul > img{
 
 @media screen and (min-width: 1900px) {
   .texto h2 {
-    left: 23rem;
-    width: 30%;
-    bottom: 15rem;
+      left: -1rem;
+      width: 70%;
+      bottom: 15rem;
   }
 
   .texto{
