@@ -89,8 +89,9 @@ ul > img{
   justify-content: center;
   align-items: center;
   transform: translate(100% 100%);
-  background: #C7E7E3;
+  background: #009AE7;
   color: #001D3D;
+  position: relative;
 }
 
 .comeco h1 {
@@ -115,12 +116,12 @@ main {
   margin: 0;
   overflow: hidden;
   background: #C7E7E3;
-  height: 10000px;
+  height: 35000px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
 }
 
 .sea h1 {
@@ -131,7 +132,9 @@ main {
   z-index: 99999;
   color: #ffffff;
 }
-
+.sea .zone0 {
+  font-size: 2rem;
+}
 .sea h2{
   position: fixed;
   z-index: 99999;
@@ -149,12 +152,6 @@ main {
   overflow-x: hidden;
 }
 
-.onda {
-  background-color: #C7E7E3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .mane {
   position: absolute;
   width: 10%;
@@ -162,18 +159,31 @@ main {
   display: flex;
   z-index: 1000;
 }
+.manat {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 10%;
+  top: 0.2%;
+}
 
 .counter {
-  color: var( #fffFFF);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  position: relative;
-  bottom: 1rem;
-  right: 3rem;
+  position: fixed;
+  bottom: 10px; 
+  right: 10px; 
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
 }
 
 .atle {
@@ -183,6 +193,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.artla {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -16%;
+  top: 0.2%;
+}
 .bass {
   position: relative;
   width: 5%;
@@ -190,6 +214,20 @@ main {
   left: 43%;
   display: flex;
   z-index: 1000;
+}
+.listra {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -5%;
+  top: 0.2%;
 }
 .coral {
   position: relative;
@@ -199,6 +237,20 @@ main {
   z-index: 1000;
   margin-top: 1rem;
 }
+.cor {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 16%;
+  top: 0.01%;
+}
 .peixeur {
   position: relative;
   width: 6%;
@@ -206,6 +258,20 @@ main {
   left: 30%;
   display: flex;
   z-index: 1000;
+}
+.euro {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -17%;
+  top: 0.6%;
 }
 .polo {
   position: relative;
@@ -215,6 +281,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.polar {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 7%;
+  top: 0.3%;
+}
 .palha {
   position: relative;
   width: 5%;
@@ -222,6 +302,20 @@ main {
   left: 63%;
   display: flex;
   z-index: 1000;
+}
+.ppalha {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 16%;
+  top: 0.5%;
 }
 .barra {
   position: relative;
@@ -231,6 +325,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.barram {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -7%;
+  top: 0.3%;
+}
 .blutang {
   position: relative;
   width: 5%;
@@ -238,6 +346,20 @@ main {
   left: 53%;
   display: flex;
   z-index: 1000;
+}
+.tazul {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 6.2%;
+  top: 0.6%;
 }
 .crab {
   position: relative;
@@ -247,6 +369,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.crabv {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -18%;
+  top: 0.63%;
+}
 .cod {
   position: relative;
   width: 6%;
@@ -254,6 +390,20 @@ main {
   left: 40.2%;
   display: flex;
   z-index: 1000;
+}
+.acod {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -7%;
+  top: 0.7%;
 }
 .spinysplay {
   position: relative;
@@ -263,6 +413,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.cces {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20%;
+  top: 0.8%;
+}
 .leaf {
   position: relative;
   width: 7%;
@@ -270,6 +434,20 @@ main {
   left: 63%;
   display: flex;
   z-index: 1000;
+}
+.dragonleaf {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 17%;
+  top: 0.6%;
 }
 .mahi {
   position: relative;
@@ -279,6 +457,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.mahimahi {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -0%;
+  top: 0.6%;
+}
 .spok {
   position: relative;
   width: 6%;
@@ -286,6 +478,20 @@ main {
   left: 63%;
   display: flex;
   z-index: 1000;
+}
+.machado {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 15%;
+  top: 0.8%;
 }
 .fou {
   position: relative;
@@ -295,6 +501,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.lingua {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20%;
+  top: 0.8%;
+}
 .azul {
   position: relative;
   width: 5.5%;
@@ -302,6 +522,20 @@ main {
   left: 27%;
   display: flex;
   z-index: 1000;
+}
+.ancho {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20.5%;
+  top: 1%;
 }
 .bar {
   position: relative;
@@ -311,6 +545,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.craca {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 9%;
+  top: 0.8%;
+}
 .baru {
   position: relative;
   width: 6%;
@@ -318,6 +566,20 @@ main {
   left: 60%;
   display: flex;
   z-index: 1000;
+}
+.grandeb {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 13%;
+  top: 1%;
 }
 .queen {
   position: relative;
@@ -327,6 +589,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.rainhap {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -20.5%;
+  top: 1.3%;
+}
 .drum {
   position: relative;
   width: 4%;
@@ -334,6 +610,20 @@ main {
   left: 29%;
   display: flex;
   z-index: 1000;
+}
+.tamborp {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -19%;
+  top: 2.4%;
 }
 .belu {
   position: relative;
@@ -343,6 +633,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.bbelu {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -1%;
+  top: 0.6%;
+}
 .ass {
   position: relative;
   width: 18%;
@@ -350,6 +654,20 @@ main {
   left: 41%;
   display: flex;
   z-index: 1000;
+}
+.orca {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -1%;
+  top: 0.85%;
 }
 .pela {
   position: relative;
@@ -359,6 +677,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.arraipe {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 7.5%;
+  top: 1.2%;
+}
 .lion {
   position: relative;
   width: 7%;
@@ -366,6 +698,20 @@ main {
   left: 37%;
   display: flex;
   z-index: 1000;
+}
+.leaom {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -8.3%;
+  top: 1.34%;
 }
 .bull {
   position: relative;
@@ -375,7 +721,20 @@ main {
   display: flex;
   z-index: 1000;
 }
-
+.tubatou {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 7%;
+  top: 1.5%;
+}
 .lepto {
   position: relative;
   width: 1.5%;
@@ -383,6 +742,20 @@ main {
   left: 63%;
   display: flex;
   z-index: 1000;
+}
+.leptose {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 14%;
+  top: 1.2%;
 }
 .tortu {
   position: relative;
@@ -392,6 +765,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.greentar {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 0%;
+  top: 2%;
+}
 .mike {
   position: relative;
   width: 6%;
@@ -400,6 +787,20 @@ main {
   display: flex;
   z-index: 1000;
 }
+.cavala {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: -12%;
+  top: 2.2%;
+}
 .dext {
   position: relative;
   width: 8%;
@@ -407,6 +808,20 @@ main {
   left: 60%;
   display: flex;
   z-index: 1000;
+}
+.den {
+  color: #fff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 50%;
+  text-transform: uppercase;
+  position: relative;
+  left: 15%;
+  top: 2.3%;
 }
 .twilight {
   position: relative;
@@ -746,7 +1161,7 @@ main {
 }
 .co {
   position: relative;
-  width: 44%;
+  width: 24%;
   top: 24%;
   left: 105%;
   display: flex;
@@ -805,11 +1220,12 @@ main {
   display: flex;
   z-index: 1000;
 }
+
 .mid {
   position: relative;
   width: 15%;
   height: 50%;
-  top: 9%;
+  top: -21%;
   left: 45%;
   z-index: 1000;
 }
@@ -824,7 +1240,7 @@ main {
   text-transform: uppercase;
   position: relative;
   bottom: 0rem;
-  left: -18%;
+  left: -15%;
 }
 .t1 {
   color: #ffffff;  
@@ -837,8 +1253,8 @@ main {
   text-transform: uppercase;
   position: relative;
   width: 150%;
-  top: 0.5%;
-  left: -25%;
+  top: 0.7%;
+  left: -35%;
 }
 .t2 {
   color: #ffffff;  
@@ -851,14 +1267,14 @@ main {
   text-transform: uppercase;
   position: relative;
   width: 150%;
-  top: 0.8%;
-  left: -25%;
+  top: 1.5%;
+  left: -34%;
 }
 .angle {
   position: relative;
   width: 25%;
   top: 2.3%;
-  right: 40%;
+  right: 70%;
   display: flex;
   z-index: 1000;
 }
@@ -874,8 +1290,727 @@ main {
   position: relative;
   width: 110%;
   top: 2.5%;
+  left: -54%;
+}
+.ph {
+  position: relative;
+  width: 9%;
+  top: 3.4%;
+  left: 95%;
+  display: flex;
+  z-index: 1000;
+}
+.orange {
+  position: relative;
+  width: 45%;
+  top: 4.8%;
+  right: 55%;
+  display: flex;
+  z-index: 1000;
+}
+.ora {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 5%;
+  left: -94%;
+}
+.venu {
+  position: relative;
+  width: 15%;
+  top: 5.8%;
+  left: 30%;
+  display: flex;
+  z-index: 1000;
+}
+.bob {
+  position: relative;
+  width: 30%;
+  top: 6.6%;
+  right: 90%;
+  display: flex;
+  z-index: 1000;
+}
+.frisbe {
+  position: relative;
+  width: 95%;
+  top: 7%;
+  left: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.ragoblin {
+  position: relative;
+  width: 95%;
+  top: 8%;
+  right: 20%;
+  display: flex;
+  z-index: 1000;
+}
+.to {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 8.1%;
   left: -24%;
 }
+
+.bubgum {
+  position: relative;
+  width: 25%;
+  top: 8.9%;
+  right: 90%;
+  display: flex;
+  z-index: 1000;
+}
+.hat {
+  position: relative;
+  width: 25%;
+  top: 9.5%;
+  left: 90%;
+  display: flex;
+  z-index: 1000;
+} 
+
+
+.dragonf {
+  position: relative;
+  width: 60%;
+  top: 10.2%;
+  right: 50%;
+  display: flex;
+  z-index: 1000;
+}
+.brj {
+  position: relative;
+  width: 30%;
+  top: 10.9%;
+  left: 60%;
+  display: flex;
+  z-index: 1000;
+}
+.j {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  top: 11.1%;
+  left: 24%;
+}
+.gren {
+  position: relative;
+  width: 40%;
+  top: 11.6%;
+  left: 100%;
+  display: flex;
+  z-index: 1000;
+}
+.giant {
+  position: relative;
+  width: 20%;
+  top: 12.38%;
+  left: 100%;
+  display: flex;
+  z-index: 1000;
+}
+.gi {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 12.5%;
+  left: 84%;
+}
+.ps1 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 13%;
+  left: -24%;
+}
+.ps2 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 13.4%;
+  left: -24%;
+}
+.yet {
+  position: relative;
+  width: 20%;
+  top: 13.8%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+}
+.y {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 13.9%;
+  left: -70%;
+}
+.six {
+  position: relative;
+  width: 70%;
+  top: 14.2%;
+  left: 70%;
+  display: flex;
+  z-index: 1000;
+}
+.x {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 14.3%;
+  left: 70%;
+}
+.narva {
+  position: relative;
+  width: 70%;
+  top: 14.8%;
+  display: flex;
+  z-index: 1000;
+}
+.n {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 14.9%;
+  left: -24%;
+}
+.jew {
+  position: relative;
+  width: 40%;
+  top: 15.5%;
+  left: 78%;
+  display: flex;
+  z-index: 1000;
+}
+.pen {
+  position: relative;
+  width: 5%;
+  top: 16.1%;
+  right: 78%;
+  display: flex;
+  z-index: 1000;
+}
+.teles {
+  position: relative;
+  width: 20%;
+  top: 17.1%;
+  left: 78%;
+  display: flex;
+  z-index: 1000;
+}
+.tel {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 17.5%;
+  left: 40%;
+}
+.isopd {
+  position: relative;
+  width: 50%;
+  top: 18.6%;
+  right: 8%;
+  display: flex;
+  z-index: 1000;
+}
+.is {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 18.8%;
+  left: -84%;
+}
+.gsha {
+  position: relative;
+  width: 60%;
+  top: 19.2%;
+  left: 50%;
+  display: flex;
+  z-index: 1000;
+}
+.colo {
+  position: relative;
+  width: 150%;
+  top: 20.3%;
+  left: -40%;
+  display: flex;
+  z-index: 1000;
+}
+.cot {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 20.5%;
+  left: -34%;
+}
+.barley {
+  position: relative;
+  width: 35%;
+  top: 21.7%;
+  left: -15%;
+  display: flex;
+  z-index: 1000;
+}
+.barle {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 22%;
+  right: 70%;
+}
+.elefant {
+  position: relative;
+  width: 55%;
+  top: 23%;
+  left: 30%;
+  display: flex;
+  z-index: 1000;
+}
+.tatic {
+  position: relative;
+  width: 45%;
+  top: 24.6%;
+  right: 25%;
+  display: flex;
+  z-index: 1000;
+}
+.chima {
+  position: relative;
+  width: 45%;
+  top: 27.4%;
+  left: 85%;
+  display: flex;
+  z-index: 1000;
+}
+.squiwo {
+  position: relative;
+  width: 45%;
+  top: 29.9%;
+  left: 5%;
+  display: flex;
+  z-index: 1000;
+}
+.squiwor {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 30%;
+  left: -50%;
+}
+
+.moragua {
+  position: relative;
+  width: 45%;
+  top: 31.8%;
+  left: 25%;
+  display: flex;
+  z-index: 1000;
+}
+.swall {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 32%;
+  left: -24%;
+}
+
+.viper {
+  position: relative;
+  width: 34%;
+  top: 33%;
+  right: 85%;
+  display: flex;
+  z-index: 1000;
+}
+.snail {
+  position: relative;
+  width: 34%;
+  top: 35.3%;
+  right: 55%;
+  display: flex;
+  z-index: 1000;
+}
+.sna {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 155%;
+  top: 35.5%;
+  left: -65%;
+}
+.vamp {
+  position: relative;
+  width: 40%;
+  top: 38.5%;
+  right: 85%;
+  display: flex;
+  z-index: 1000;
+}
+.vam {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 115%;
+  top: 38.7%;
+  left: -85%;
+}
+.chicke {
+  position: relative;
+  width: 19%;
+  top: 40%;
+  left: 90%;
+  display: flex;
+  z-index: 1000;
+}
+.chick {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 115%;
+  top: 40.2%;
+  left: 35%;
+}
+.zombi {
+  position: relative;
+  width: 13%;
+  top: 42.3%;
+  right: 50%;
+  display: flex;
+  z-index: 1000;
+}
+.cuwha {
+  position: relative;
+  width: 85%;
+  top: 44.8%;
+  left: 8%;
+  display: flex;
+  z-index: 1000;
+}
+.cuwh {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 45%;
+  left: -10%;
+}
+
+.vidroponja {
+  position: relative;
+  width: 20%;
+  top: 47%;
+  right: 60%;
+  display: flex;
+  z-index: 1000;
+}
+.eel {
+  position: relative;
+  width: 45%;
+  top: 53%;
+  left: 45%;
+  display: flex;
+  z-index: 1000;
+}
+.cosmi {
+  position: relative;
+  width: 50%;
+  top: 55%;
+  left: 5%;
+  display: flex;
+  z-index: 1000;
+}
+.stop {
+  position: relative;
+  width: 40%;
+  top: 59%;
+  left: 1%;
+  display: flex;
+  z-index: 1000;
+}
+.harpa {
+  position: relative;
+  width: 35%;
+  top: 65%;
+  left: 75%;
+  display: flex;
+  z-index: 1000;
+}
+.cookie {
+  position: relative;
+  width: 65%;
+  top: 68.7%;
+  left: 10%;
+  display: flex;
+  z-index: 1000;
+}
+.coo {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 150%;
+  top: 68.9%;
+  left: -40%;
+}
+.liza {
+  position: relative;
+  width: 45%;
+  top: 74%;
+  left: 65%;
+  display: flex;
+  z-index: 1000;
+}
+.fabby {
+  position: relative;
+  width: 35%;
+  top: 78%;
+  right: 35%;
+  display: flex;
+  z-index: 1000;
+}
+.pb {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 85%;
+  left: -24%;
+}
+.pb1 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 87%;
+  left: -24%;
+}
+.pb2 {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 90%;
+  left: -24%;
+}
+.titan {
+  position: relative;
+  width: 100%;
+  top: 98.7%;
+  right: 10%;
+  display: flex;
+  z-index: 1000;
+}
+.tita {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 110%;
+  top: 98.8%;
+  left: -10%;
+}
+
+.toot {
+  position: relative;
+  width: 44%;
+  top: 106.8%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+}
+
+.tooth {
+  color: #ffffff;  
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  width: 130%;
+  top: 107%;
+  left: -80%;
+}
+.dumbo {
+  position: relative;
+  width: 25%;
+  top: 108%;
+  right: 40%;
+  display: flex;
+  z-index: 1000;
+  margin-bottom: 1rem;
+}
+/* vou te mandar uma print pra ajeitar dps
+
+Acabei? 
+
+acho que sim 
+não prescisa fazer tudo
+agora só falta fazer a fase boss do jogo da memoria ou uma tela de vc ganhou :)
+
+*/
 @media screen and (min-width: 1600px) {
   .onda img {
     width: 50%;
@@ -885,6 +2020,9 @@ main {
 @media screen and (min-width: 1900px) {
   .onda img {
     width: 70%;
+  }
+  .twilight {
+    height: 55.3%;
   }
 }
 
