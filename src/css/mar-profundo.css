@@ -11,6 +11,7 @@
   z-index: 99999;
 }
 
+
 h1{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -62,16 +63,21 @@ a {
 
 html {
   scroll-behavior: smooth;
-  overflow: auto;
+  height: auto;
+  overflow-x: hidden;
 }
 
 body{
-  overflow: auto;
   overflow-x: hidden;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
-
+html, body {
+  height: 100%; /* Garante que o body use toda a altura da janela */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Para evitar rolagem lateral acidental */
+}
 li{
   display: inline-block;
 }
@@ -87,20 +93,22 @@ ul > img{
   color: white;
   width: 2.5rem;
 }
+
 .comeco {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translate(0% 100%);
-  background: #009AE7;
-  color: #001D3D;
+  background: #c2fffb;
+  color: #2C2C54;
   position: relative;
 } 
 
 
-.comeco h1 {
+.sea .comeco > h1 {
   position: relative;
   bottom: 10rem;
+  color: #2C2C54;
 }
 .sol {
   position: relative;
@@ -115,12 +123,16 @@ ul > img{
   border-radius: 627px;
   background: linear-gradient(180deg, #FFDD87 0%, #FFB905 100%);
 }
-
+.onda {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  top: 48%;
+}
 main {
   margin: 0;
-  overflow: hidden;
   background: #C7E7E3;
-  height: 35000px;
+  height: 4750rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -156,8 +168,8 @@ main {
   overflow-x: hidden;
 }
 .prof0 {
-  dipslay: flex;
-  flew-direction: column;  
+  display: flex;
+  flex-direction: column;  
 }
 .mane {
   position: absolute;
@@ -718,7 +730,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -8.3%;
-  top: 1.34%;
+  top: 1.36%;
 }
 .bull {
   position: relative;
@@ -893,7 +905,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -90%;
-  top: 0.2%;
+  top: 0.35%;
 }
 .had {
   position: relative;
@@ -1002,8 +1014,8 @@ main {
   opacity: 50%;
   text-transform: uppercase;
   position: relative;
-  left: -30%;
-  top: 0.6%;
+  left: -50%;
+  top: 0.8%;
 }
 .shark {
   position: relative;
@@ -1025,7 +1037,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: 45%;
-  top: 0.7%;
+  top: 0.8%;
 }
 .bd {
   position: relative;
@@ -1091,7 +1103,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -30%;
-  top: 2.9%;
+  top: 3%;
 }
 .tet {
   color: #ffffff;  
@@ -1149,7 +1161,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -85%;
-  top: 3.8%;
+  top: 3.9%;
 }
 .fri {
   position: relative;
@@ -1281,7 +1293,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -24%;
-  top: 8.8%;
+  top: 8.9%;
 }
 .ep {
   position: relative;
@@ -1303,7 +1315,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: 20%;
-  top: 9.7%;
+  top: 9.8%;
 }
 .esp {
   position: relative;
@@ -1391,7 +1403,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -105%;
-  top: 12.35%;
+  top: 12.4%;
 }
 .japa {
   position: relative;
@@ -2635,6 +2647,10 @@ main {
 }
 
 @media screen and (min-width: 1900px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
   .onda img {
     width: 70%;
   }
@@ -2749,6 +2765,15 @@ main {
 }
 
 @media screen and (min-width: 1900px){
+
+  .sol {
+    left: 15%;
+  }
+
+  .onda {
+      top: 58%;
+      width: 53%;
+  }
   .vi {
       position: relative;
       width: 30%;
@@ -3177,8 +3202,8 @@ main {
   opacity: 50%;
   text-transform: uppercase;
   position: relative;
-  left: -0%;
-  top: 2.3%;
+  left: -20%;
+  top: 8%;
 }
 .chiclete {
   color: #fff;  
@@ -3304,7 +3329,7 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -10%;
-  top: 14.6%;
+  top: 14.7%;
 }
 .lulajo {
   color: #fff;  
@@ -3513,8 +3538,8 @@ main {
   opacity: 50%;
   text-transform: uppercase;
   position: relative;
-  left: -120%;
-  top: 38.4%;
+  left: -113%;
+  top: 38.5%;
 }
 .frango {
   color: #fff;  
@@ -3710,5 +3735,5 @@ main {
   text-transform: uppercase;
   position: relative;
   left: -78%;
-  top: 102.9%;
+  top: 103%;
 }

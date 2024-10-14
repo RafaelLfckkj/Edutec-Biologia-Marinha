@@ -762,6 +762,15 @@ div>.mario {
       bottom: 15.5rem;
     }
 
+  div>.bill {
+    font-size: 4rem;
+  }
+
+  div>.mario {
+    font-size: 4rem;
+  }
+
+
     .sobre-nos p {
     margin-left: 90%;
     }
