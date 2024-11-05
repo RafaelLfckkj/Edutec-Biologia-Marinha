@@ -37,6 +37,19 @@ ul>img {
   width: 2.5rem;
 }
 
+a>button {
+  float: right;
+  width: 6.5rem;
+  padding: 0.5rem;
+  background-color: #0590A9;
+  color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+}
+button:hover {
+  background-color: #0C2233;
+  cursor: pointer;
+}
 
 .imagem {
   width: 100%;
@@ -540,7 +553,7 @@ div>.mario {
 }
 
 
-.barra-de-navegacao a:hover{
+.barra-de-navegacao .a1:hover{
   background-color: #53a6ea;;
   padding: 7px 25px;
   transition: all 0.5s ease;
