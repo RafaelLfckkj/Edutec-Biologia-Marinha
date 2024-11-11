@@ -37,6 +37,8 @@ ul>img {
   width: 2.5rem;
 }
 
+
+
 a>button {
   float: right;
   width: 6.5rem;
@@ -45,7 +47,9 @@ a>button {
   color: #ffffff;
   border: none;
   border-radius: 1rem;
+  margin-left: auto;
 }
+
 button:hover {
   background-color: #0C2233;
   cursor: pointer;
@@ -800,4 +804,5 @@ div>.mario {
     .definition-section .container p {
     font-size: 1.25rem;
     }
+ }
 }
