@@ -1,11 +1,8 @@
 .barra-de-navegacao {
   background-color: #082841;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   text-align: center;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
@@ -25,18 +22,41 @@ li {
   display: inline-block;
 }
 
+ul>li>  .a1{
+  position: relative;
+  top: 1rem;
+}
+
 a {
   color: white;
   margin: 2.5rem;
 }
+
 
 ul>img {
   float: left;
   margin-right: 0.625rem;
   color: white;
   width: 2.5rem;
+
 }
 
+.botao-login{
+ position: relative;
+ margin-left: 85%;
+ bottom: 1.5rem;
+ font-size: 1rem;
+}
+
+.logina{
+  padding: 0.5rem;
+  background-color: #0590A9;
+  color: #ffffff; 
+  border-radius: 1rem;
+
+}
+
+/* 
 a>button {
   float: right;
   width: 6.5rem;
@@ -45,11 +65,14 @@ a>button {
   color: #ffffff;
   border: none;
   border-radius: 1rem;
+
 }
+
+
 button:hover {
   background-color: #0C2233;
   cursor: pointer;
-}
+} */
 
 .imagem {
   width: 100%;
