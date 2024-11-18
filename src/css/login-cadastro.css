@@ -12,6 +12,10 @@
   z-index: -1000;
 }
 
+.esqueceu-senha{
+  color: white;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
