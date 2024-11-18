@@ -86,6 +86,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container > #fileira1 > li {
+  margin-bottom: 1rem;
+}
+.container > #fileira2 > li {
+  margin-bottom: 1rem;
+}
 .bubble {
   width: 10px;
   height: 10px;

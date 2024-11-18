@@ -393,4 +393,21 @@ body{
   #question1{
     margin-left: 4.5rem;
   }
+
+  .onq{
+    margin-top: 1rem;
+  }
+
+  #score-container a {
+    padding: 0.6rem;
+    margin: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }

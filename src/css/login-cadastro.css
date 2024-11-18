@@ -139,3 +139,19 @@ body {
   background-color: #0C2233;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1900px)   {
+  .container {
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 8%;
+    padding: 0.1rem;
+  }
+  .register-container {
+    padding: 12rem;
+    left: 0.7rem;
+  }
+  .register-container > form > h1 {
+    bottom: 30rem;
+  }
+}

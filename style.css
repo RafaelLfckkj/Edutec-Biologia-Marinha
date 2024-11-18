@@ -41,10 +41,6 @@ ul>img {
 
 }
 
-<<<<<<< HEAD
-
-
-=======
 .botao-login{
  position: relative;
  margin-left: 85%;
@@ -60,8 +56,6 @@ ul>img {
 
 }
 
-/* 
->>>>>>> 2369244c3dc9e5917cb04a64e5bfe1143d168f90
 a>button {
   float: right;
   width: 6.5rem;
@@ -70,20 +64,13 @@ a>button {
   color: #ffffff;
   border: none;
   border-radius: 1rem;
-<<<<<<< HEAD
   margin-left: auto;
 }
 
-=======
-
-}
-
-
->>>>>>> 2369244c3dc9e5917cb04a64e5bfe1143d168f90
 button:hover {
   background-color: #0C2233;
   cursor: pointer;
-} */
+}
 
 .imagem {
   width: 100%;
@@ -808,6 +795,24 @@ div>.mario {
       left: 60%;
       bottom: 15.5rem;
     }
+
+    .barra-de-navegacao {
+      padding: 0.5rem 2rem;
+    }
+
+    ul>li>  .a1{
+      position: relative;
+      top: 0.5rem;
+    }
+    
+    .botao-login{
+     position: relative;
+     margin-left: 85%;
+     bottom: 1rem;
+     font-size: 1rem;
+    }
+    
+    
 
   div>.bill {
     font-size: 4rem;
