@@ -67,7 +67,7 @@ a>button {
   margin-left: auto;
 }
 
-button:hover {
+a>button:hover {
   background-color: #0C2233;
   cursor: pointer;
 }
