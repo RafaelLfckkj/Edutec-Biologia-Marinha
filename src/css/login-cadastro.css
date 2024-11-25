@@ -283,6 +283,7 @@ display: block;
 .active3>form>button:hover {
   cursor: pointer;
   background-color: #0C2233;
+}
 
 @media screen and (min-width: 1900px)   {
   .container {
@@ -291,10 +292,33 @@ display: block;
     margin-top: 8%;
     padding: 0.1rem;
   }
+  
   .register-container {
     padding: 12rem;
     left: 0.7rem;
   }
+
+  .container > .active1 {
+    background-color: #ffffff;
+    width: 50rem;
+    padding: 16.5rem;
+    padding-top: 13rem;
+    padding-bottom: 11rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    color: white;
+    border-radius: 2rem;
+    z-index: -1;
+}
+
+.login-titulo{
+ margin-right: 2,5rem;
+}
+
+.register-container {
+  margin-right: 0rem;
+}
+
   .register-container > form > h1 {
     bottom: 30rem;
   }
