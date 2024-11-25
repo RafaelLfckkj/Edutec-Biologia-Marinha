@@ -3,8 +3,7 @@
   margin: auto;
   display: flex;
   position: relative;
-  background-color:  rgba(0, 0, 0, 0.5);
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imagem video {
@@ -12,7 +11,7 @@
   z-index: -1000;
 }
 
-.esqueceu-senha{
+.esqueceu-senha {
   color: white;
 }
 
@@ -20,6 +19,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 .container {
   z-index: 1;
   position: absolute;
@@ -30,99 +30,60 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
-  padding: 0.1rem;
+  padding: 0.01rem;
   background-color: #0590A9;
   border-radius: 2rem;
 }
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   float: left;
   position: relative;
-  left: 2.5rem;
+  left: 4rem;
   width: 35rem;
   padding: 10rem;
   color: white;
 }
-.login-container > form > h1 {
+
+.login-container>.escolheu>h1 {
   display: flex;
   position: absolute;
-  font-size: 3.5rem;
-  bottom: 26rem;
+  font-size: 4rem;
+  bottom: 15rem;
+  right: 14rem;
 }
-.login-container > form > p {
+
+.login-container>.escolheu>p {
   display: flex;
-  position: absolute;
+  opacity: 80%;
   font-size: 1rem;
-  right: 8rem;
-  bottom: 24rem;
-}
-.login-container > form > input {
-  display: flex;
-  margin-bottom: 1.5rem;
-  margin-right: 3rem;
-  background-color: #D9D9D9;
-  border: none;
-  border-radius: 0.8rem;
-  padding: 0.6rem;
+  position: relative;
   width: 20rem;
+  top: 2.5rem;
 }
-.login-container > form > a {
-  display: flex;
-  font-size: 1rem;
-  margin-right: 1rem;
-}
-.login-container > form > button {
+
+.login-container>.escolheu>button {
   background-color: #BFBFBF;
   color: #ffffff;
-  border: none;
-  font-size: 0.9rem;
-  padding: 0.3rem;
+  border: #FFFFFF solid 0.08rem;
+  font-size: 1rem;
+  padding: 0.4rem;
   padding-left: 5rem;
   padding-right: 5rem;
   border-radius: 1rem;
   z-index: 1;
-  margin-top: 2rem;
+  position: relative;
+  top: 5rem;
   margin-right: 3rem;
 }
-.register-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #ffffff;
-  width: 35rem;
-  padding: 11rem;
-  padding-bottom: 10rem;
-  border-radius: 2rem;
-}
-.register-container > form > h1 {
-  display: flex;
-  position: absolute;
-  font-size: 3.5rem;
-  bottom: 27rem;
-}
-.register-container > form > input {
-  display: flex;
-  margin-bottom: 1.5rem;
-  background-color: #D9D9D9;
-  border: none;
-  border-radius: 0.8rem;
-  padding: 0.6rem;
-  width: 20rem;
-}
-.register-container > form > button {
+
+.escolheu>button:hover {
+  cursor: pointer;
   background-color: #0590A9;
-  color: #ffffff;
-  border: none;
-  font-size: 0.9rem;
-  padding: 0.3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border-radius: 1rem;
-  z-index: 1;
 }
+
 .volte {
   position: absolute;
   width: 6.5rem;
@@ -135,7 +96,191 @@ body {
   margin-top: 1rem;
   margin-left: 1rem;
 }
+
 .volte:hover {
   background-color: #0C2233;
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.login-container > .active {
+  display: block;
+}
+.container > .active1 {
+  background-color: #ffffff;
+  width: 38rem;
+  padding: 16.5rem;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  margin-right: 3rem;
+  color: white;
+  border-radius: 2rem;
+  z-index: -1;
+}
+.login-container>.active>input {
+  display: flex;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  width: 20rem;
+}
+
+.login-container>.active>a {
+  display: flex;
+  font-size: 1rem;
+  color: black;
+  opacity: 80%;
+  position: relative;
+  bottom: 3.8rem;
+  left: 13rem;
+}
+.login-container>.active>#lembre {
+  display: flex;
+  position: relative;
+  right: 9rem;
+}
+.login-container>.active>h1 {
+  display: flex;
+  position: absolute;
+  font-size: 4rem;
+  bottom: 28rem;
+  right: 15rem;
+  color: black;
+}
+
+.login-container>.active>p {
+  display: flex;
+  font-size: 1rem;
+  position: relative;
+  color: black;
+  bottom: 2.5rem;
+  left: 2rem;
+}
+
+.login-container>.active>button {
+  background-color: #0590A9;
+  color: #ffffff;
+  border: #FFFFFF solid 0.08rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 1rem;
+  z-index: 1;
+  position: relative;
+  margin-right: 3rem;
+}
+
+.login-container>.active>button:hover {
+  cursor: pointer;
+  background-color: #0C2233;
+}
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #0590A9;
+  width: 35rem;
+  padding: 11rem;
+  padding-bottom: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 2rem;
+  margin-right: 5rem;
+  z-index: -2;
+}
+.active4 {
+display: block;
+}
+.register-container>.active4>h1 {
+  display: flex;
+  position: relative;
+  font-size: 4rem;
+  bottom: 8rem;
+  color: white;
+}
+
+.register-container>.active4>p {
+  display: flex;
+  opacity: 80%;
+  font-size: 1rem;
+  position: relative;
+  width: 20rem;
+  bottom: 6rem;
+  color: #ffffff;
+  left: 1rem;
+}
+
+.register-container>.active4>button {
+  background-color: #BFBFBF;
+  color: #ffffff;
+  border: #FFFFFF solid 0.08rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 1rem;
+  z-index: 1;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.active4>button:hover {
+  cursor: pointer;
+  background-color: #0590A9;
+}
+.active3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  width: 35rem;
+  padding: 12rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  border-radius: 2rem;
+  left: 1.4rem;
+}
+
+.active3>form>h1 {
+  display: flex;
+  position: absolute;
+  font-size: 3.5rem;
+  bottom: 27rem;
+}
+
+.active3>form>input {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  width: 20rem;
+}
+
+.active3>form>button {
+  background-color: #0590A9;
+  color: #ffffff;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+.active3>form>button:hover {
+  cursor: pointer;
+  background-color: #0C2233;
 }
