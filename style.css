@@ -56,7 +56,6 @@ ul>img {
 
 }
 
-/* 
 a>button {
   float: right;
   width: 6.5rem;
@@ -65,14 +64,13 @@ a>button {
   color: #ffffff;
   border: none;
   border-radius: 1rem;
-
+  margin-left: auto;
 }
 
-
-button:hover {
+a>button:hover {
   background-color: #0C2233;
   cursor: pointer;
-} */
+}
 
 .imagem {
   width: 100%;
@@ -798,6 +796,24 @@ div>.mario {
       bottom: 15.5rem;
     }
 
+    .barra-de-navegacao {
+      padding: 0.5rem 2rem;
+    }
+
+    ul>li>  .a1{
+      position: relative;
+      top: 0.5rem;
+    }
+    
+    .botao-login{
+     position: relative;
+     margin-left: 85%;
+     bottom: 1rem;
+     font-size: 1rem;
+    }
+    
+    
+
   div>.bill {
     font-size: 4rem;
   }
@@ -823,4 +839,5 @@ div>.mario {
     .definition-section .container p {
     font-size: 1.25rem;
     }
+ }
 }
