@@ -188,7 +188,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #0590A9;
+
   width: 35rem;
   padding: 11rem;
   padding-bottom: 10rem;
@@ -295,12 +295,11 @@ display: block;
   
   .register-container {
     padding: 12rem;
-    left: 0.7rem;
+    left: 3.2em;
   }
 
   .container > .active1 {
     background-color: #ffffff;
-    width: 50rem;
     padding: 16.5rem;
     padding-top: 13rem;
     padding-bottom: 11rem;
@@ -315,11 +314,45 @@ display: block;
  margin-right: 2,5rem;
 }
 
-.register-container {
-  margin-right: 0rem;
-}
 
-  .register-container > form > h1 {
+.register-container > form > h1 {
     bottom: 30rem;
   }
+
+
+  .faca-cadas{
+    margin-right: 5rem;
+
+  }
+
+  .register-container>.active4>p {
+    display: flex
+;
+    opacity: 80%;
+    font-size: 1rem;
+    position: relative;
+    width: 20rem;
+    bottom: 6rem;
+    color: #ffffff;
+    left: -1rem;
+}
+
+.register-container>.active4>button {
+  background-color: #BFBFBF;
+  color: #ffffff;
+  border: #FFFFFF solid 0.08rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 1rem;
+  z-index: 1;
+  position: relative;
+  margin-left: -6rem;
+}
+
+.register-container>.active4>button:hover{
+  background-color: #0590A9;
+}
+
 }
