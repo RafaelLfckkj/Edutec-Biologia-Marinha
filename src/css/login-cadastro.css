@@ -64,7 +64,7 @@ body {
   top: 2.5rem;
 }
 
-.login-container>.escolheu>button {
+.login-container>.escolheu>a {
   background-color: #BFBFBF;
   color: #ffffff;
   border: #FFFFFF solid 0.08rem;
@@ -79,7 +79,7 @@ body {
   margin-right: 3rem;
 }
 
-.escolheu>button:hover {
+.escolheu>a:hover {
   cursor: pointer;
   background-color: #0590A9;
 }
@@ -354,5 +354,7 @@ display: block;
 .register-container>.active4>button:hover{
   background-color: #0590A9;
 }
-
+  .titulo-login{
+  margin-top: 5rem;
+  }
 }
