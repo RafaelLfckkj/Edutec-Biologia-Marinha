@@ -10,9 +10,11 @@
   width: 100%;
   z-index: -1000;
 }
-
-.esqueceu-senha {
+a {
   color: white;
+}
+.esqueceu-senha {
+  color: black;
 }
 
 body {
@@ -52,7 +54,7 @@ body {
   position: absolute;
   font-size: 4rem;
   bottom: 15rem;
-  right: 14rem;
+  right: 14.5rem;
 }
 
 .login-container>.escolheu>p {
@@ -64,7 +66,7 @@ body {
   top: 2.5rem;
 }
 
-.login-container>.escolheu>a {
+.login-container>.escolheu>button {
   background-color: #BFBFBF;
   color: #ffffff;
   border: #FFFFFF solid 0.08rem;
@@ -79,7 +81,7 @@ body {
   margin-right: 3rem;
 }
 
-.escolheu>a:hover {
+.escolheu>button:hover {
   cursor: pointer;
   background-color: #0590A9;
 }
@@ -102,14 +104,10 @@ body {
   cursor: pointer;
 }
 
-.hide {
-  display: none;
-}
-
-.login-container > .active {
+.login-container > .escolheu1 {
   display: block;
 }
-.container > .active1 {
+.container > .escolheu1 {
   background-color: #ffffff;
   width: 38rem;
   padding: 16.5rem;
@@ -122,7 +120,7 @@ body {
   border-radius: 2rem;
   z-index: -1;
 }
-.login-container>.active>input {
+.login-container>.escolheu1>input {
   display: flex;
   margin-bottom: 1.5rem;
   margin-right: 3rem;
@@ -133,7 +131,7 @@ body {
   width: 20rem;
 }
 
-.login-container>.active>a {
+.escolheu1>a {
   display: flex;
   font-size: 1rem;
   color: black;
@@ -142,12 +140,12 @@ body {
   bottom: 3.8rem;
   left: 13rem;
 }
-.login-container>.active>#lembre {
+.escolheu1>#lembre {
   display: flex;
   position: relative;
   right: 9rem;
 }
-.login-container>.active>h1 {
+.login-container>.escolheu1>h1 {
   display: flex;
   position: absolute;
   font-size: 4rem;
@@ -156,7 +154,7 @@ body {
   color: black;
 }
 
-.login-container>.active>p {
+.escolheu1>p {
   display: flex;
   font-size: 1rem;
   position: relative;
@@ -165,7 +163,7 @@ body {
   left: 2rem;
 }
 
-.login-container>.active>button {
+.login-container>.escolheu1>button {
   background-color: #0590A9;
   color: #ffffff;
   border: #FFFFFF solid 0.08rem;
@@ -179,7 +177,7 @@ body {
   margin-right: 3rem;
 }
 
-.login-container>.active>button:hover {
+.login-container>.escolheu1>button:hover {
   cursor: pointer;
   background-color: #0C2233;
 }
@@ -197,46 +195,6 @@ body {
   border-radius: 2rem;
   margin-right: 5rem;
   z-index: -2;
-}
-.active4 {
-display: block;
-}
-.register-container>.active4>h1 {
-  display: flex;
-  position: relative;
-  font-size: 4rem;
-  bottom: 8rem;
-  color: white;
-}
-
-.register-container>.active4>p {
-  display: flex;
-  opacity: 80%;
-  font-size: 1rem;
-  position: relative;
-  width: 20rem;
-  bottom: 6rem;
-  color: #ffffff;
-  left: 1rem;
-}
-
-.register-container>.active4>button {
-  background-color: #BFBFBF;
-  color: #ffffff;
-  border: #FFFFFF solid 0.08rem;
-  font-size: 1rem;
-  padding: 0.4rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border-radius: 1rem;
-  z-index: 1;
-  position: relative;
-  margin-left: 1rem;
-}
-
-.active4>button:hover {
-  cursor: pointer;
-  background-color: #0590A9;
 }
 .active3 {
   display: flex;
@@ -285,6 +243,26 @@ display: block;
   background-color: #0C2233;
 }
 
+.titulo_login{
+margin-top: 12rem;
+margin-left: 4rem;
+}
+
+.cadastro-titulo {
+position: relative;
+left: 6.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1900px)   {
   .container {
     width: 60%;
@@ -310,26 +288,36 @@ display: block;
     z-index: -1;
 }
 
-.login-titulo{
- margin-right: 2,5rem;
+.login-container > .escolheu > .login-titulo{
+ font-size: 5.5rem;
+ left: 9rem;
+}
+.login-container > .escolheu > p{
+ font-size: 1.3rem;
+ right: 2rem;
+}
+.login-container > .escolheu > button{
+ font-size: 1.5rem;
+}
+.register-container > form > h1 {
+    bottom: 33rem;
+    font-size: 3.5rem;
+}
+.login-container.active2>.escolheu > h1 {
+bottom: 17rem;
+}
+.login-container.active2>.escolheu > button {
+padding-left: 2rem;
+padding-right: 2rem;
+}
+.faca-cadas{
+    margin-right: 5rem;
 }
 
-
-.register-container > form > h1 {
-    bottom: 30rem;
-  }
-
-
-  .faca-cadas{
-    margin-right: 5rem;
-
-  }
-
-  .register-container>.active4>p {
-    display: flex
-;
+.register-container>.active3>p {
+    display: flex;
     opacity: 80%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
     width: 20rem;
     bottom: 6rem;
@@ -337,24 +325,37 @@ display: block;
     left: -1rem;
 }
 
-.register-container>.active4>button {
-  background-color: #BFBFBF;
-  color: #ffffff;
-  border: #FFFFFF solid 0.08rem;
-  font-size: 1rem;
-  padding: 0.4rem;
+.register-container.active3 > .escolheu1> button {
+  font-size: 1.3rem;
+  padding: 0.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
   border-radius: 1rem;
   z-index: 1;
-  position: relative;
-  margin-left: -6rem;
 }
 
-.register-container>.active4>button:hover{
-  background-color: #0590A9;
+.register-container.active3>.escolheu1> input{
+  font-size: 1.4rem;
 }
-  .titulo-login{
-  margin-top: 5rem;
+
+.escolheu1>#lembre {
+padding: 2.5rem;
+right: 12rem;
+}
+.escolheu1>p {
+  font-size: 1.3rem;
+  left: -1rem;
+  bottom: 2.7rem;
+}
+.escolheu1>a {
+font-size: 1.3rem;
+bottom: 5rem;
+left: 15rem;
+}
+.escolheu1 * {
+margin-bottom: 0.85rem;
+}
+  .titulo_login{
+  margin-top: 12rem;
   }
 }
