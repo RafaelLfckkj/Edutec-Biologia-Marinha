@@ -1,12 +1,5 @@
-function verifyToken() {
-    const token = localStorage.getItem("token")
+import {verifyToken} from "./verify-token.js"
 
-    if(!token) {
-        window.location.href = "./src/pages/cadastro.html"
-        return
-    }
+const url = "./src/pages/login.html"
 
-}
-
-
-verifyToken()
+verifyToken(url)

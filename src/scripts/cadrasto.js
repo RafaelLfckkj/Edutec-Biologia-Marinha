@@ -33,12 +33,12 @@ const response = await fetch("http://localhost:3000/register", {
 
   alert(response.message);
 
-  if (response.userExist) {
+  if (response.userExists) {
   window;location.reload();
   return
   }
 
- 
+  window.location.href = "../pages/login.html";
   
 }
 
