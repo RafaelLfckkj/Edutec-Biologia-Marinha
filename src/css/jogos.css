@@ -57,6 +57,29 @@ ul > img{
 
 }
 
+.login{
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+.user{
+  padding: 0.5rem;
+  background-color: #0590A9;
+  color: #ffffff; 
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+
+}
+
+#logout-button{
+  padding: 0.5rem;
+  border: 2px solid #0590A9;
+  background-color: #082841;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
 .on h1 {
   position: relative;
   z-index: 2;

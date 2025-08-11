@@ -1,3 +1,10 @@
+import {verifyToken} from "../../verify-token.js"
+
+const url = "../pages/login.html"
+
+verifyToken(url)
+
+
 window.onload = function() {
     document.body.offsetHeight;  // Força o recálculo do layout
 // Função para verificar a distância percorrida ao rolar

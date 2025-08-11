@@ -1,3 +1,10 @@
+import {verifyToken} from "../../verify-token.js"
+
+const url = "../pages/login.html"
+
+verifyToken(url)
+
+
 // declaração de variáveis
 const question = document.querySelector('#question');
 const questionu = document.querySelector('#question1');

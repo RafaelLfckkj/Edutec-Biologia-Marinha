@@ -23,7 +23,7 @@ const user = {
 }
   
 
-const response = await fetch("http://localhost:3000/register", {
+const response = await fetch("https://edutec-biologia-marinha-backend.vercel.app/register", {
   method: "POST",
   headers: {
   "Content-Type": "application/json"
@@ -33,12 +33,12 @@ const response = await fetch("http://localhost:3000/register", {
 
   alert(response.message);
 
-  if (response.userExist) {
+  if (response.userExists) {
   window;location.reload();
   return
   }
 
- 
+  window.location.href = "../pages/login.html";
   
 }
 
