@@ -1,10 +1,3 @@
-import {verifyToken} from "../../verify-token.js"
-
-const url = "../pages/login.html"
-
-verifyToken(url)
-
-
 const backImage = '.././jogo da memoria/back.png'; // Imagem da parte de trás das cartas
 let cardImages = [
     '.././jogo da memoria/caran.png', '.././jogo da memoria/magicarp.png', '.././jogo da memoria/molu.png', 
